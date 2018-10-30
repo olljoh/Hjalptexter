@@ -347,12 +347,12 @@ Land och År ska ligga inom Primär utgivning.
 #### Övriga fysiska detaljer
 * Övriga fysiska detaljer (other physical details = 300 ‡b)  
   Skriv in uppgiften.  
-  ```Exempel: faksimil```
+  ```Exempel: faksimil```  
 
 #### Matt 
 * Mått/Mått/Benämning (hasDimensions/Dimensions/label = 300 ‡c)  
   Skriv in uppgiften.  
-  ```Exempel: 24 cm``` 
+  ```Exempel: 24 cm```  
   
 #### Bilagor
 * Tillsammans med/Instans/Benämning (Bilagor) (accompaniedBy/Instance/label = 300 ‡e) 
@@ -420,7 +420,7 @@ Lägg till Medverkan och funktion under Verk (inom Seriemedlemskap) genom att kl
 #### Anmarkning
 * Anmärkning/Anmärkning/Benämning (hasNote/Note/label = 500 ‡a)   
   Skriv in allmänna anmärkningar här.    
-  Skriv in uppgiften. 
+  Skriv in uppgiften.    
   ```Exempel: Med realiserad, ej besiffrad, b.c.-stämma```  
   ```Exempel: Noter med övnings-cd typ ”Music minus one”```  
   ```Exempel: Speltid: 21 min.```  
@@ -582,16 +582,16 @@ För översättningar i flera led, länka först till det mellanliggande språke
 * Medverkan och funktion/Primär medverkan/Funktion (contribution/PrimaryContribution/role = 100 ‡4)  
   Länka till entitet. Klicka på plustecknet vid Funktion (Lägg till funktion) och sök fram funktionskod. Skriv in kod eller utskriven form i sökrutan eller tryck på mellanslagstangenten för att se alla koder. Välj kod genom att klicka på plustecknet vid koden eller på koden.    
 För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funktions- och relationskoder](http://www.kb.se/katalogisering/Formathandboken/Funktionskoder/)  
-  ```Exempel: relator/author (= Författare)```
-  
+  ```Exempel: relator/composer (= Kompositör, tonsättare, cmp)```
 * Medverkan och funktion/Medverkan/Agent/Person (contribution/agent/Person = 700 1/- ‡a)  
   Länka till entitet. Börja alltid med att söka efter om agenten redan finns. Vid behov, skapa ny entitet för agent (se Skapa ny agent i hjälpsektionen). I undantagsfall, skapa lokal entitet.   
   ```Exempel: Skoglund, Svante, 1960-```  
 * Medverkan och funktion/Medverkan/Funktion (contribution/role = 700 ‡4)  
   Länka till entitet. Klicka på plustecknet vid Funktion (Lägg till funktion) och sök fram funktionskod. Skriv in kod eller utskriven form i sökrutan eller tryck på mellanslagstangenten för att se alla koder. Välj kod genom att klicka på plustecknet vid koden eller på koden.    
 För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funktions- och relationskoder](http://www.kb.se/katalogisering/Formathandboken/Funktionskoder/)    
-  ```Exempel: relator/trl (= översättare)```  
-  
+  ```Exempel: relator/lyr (= textförfattare)```  
+  ```Exempel: relator/editor (= redaktör/edt)```    
+
 #### Klassifikation 
 * DDK-klassifikation  
   För att lägga till DDK-klassifikation:  
@@ -601,7 +601,7 @@ För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funkt
 
 * Klassifikation/DDK-klassifikation/Kod (classification/ClassificationDdc/code = 082 0/4 ‡a)  
   Skriv in uppgiften.  
-  ```Exempel: 327.12092```
+  ```Exempel: 782.5```
 * Klassifikation/DDK-klassifikation/Klassifikationsupplaga  
   (classification/ClassificationDdc/edition = 082 ‡2)  
   ```full```  
@@ -630,7 +630,7 @@ Klicka sedan på plustecknet vid DDK-klassifikation (sekundär) (Lägg till ddk-
    Skriv in uppgiften under Kod.  
 * Klassifikation/Klassifikation/Kod (classification/Classification/code = 084 0/4 ‡a)  
      Skriv in uppgiften.  
-  ```Exempel: Sei-e```   
+  ```Exempel: Xpbc```   
 * Klassifikation/Termlista/Termlista/Kod (classification/Classification/inScheme/ConceptScheme/code = 084 ‡2)  
  ```Exempel: kssb```  
 * Klassifikation/Termlista/Termlista/Version (classification/Classification/inScheme/ConceptScheme/version = 084 ‡2)  
