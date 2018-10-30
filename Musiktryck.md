@@ -227,18 +227,18 @@ Vid behov, klicka även på plustecknet vid Parallelltitel och lägg till Övrig
 <br/>För ogiltiga ISBN, använd Indirekt identifierad av, direkt under Instans. Använd inte Ogiltigt värde under Identifikator/ISBN (identifiedBy/marc:hiddenValue).  
   
 * Identifikator/ISMN/Värde (identifiedBy/ISMN/value = 024 2 _ ‡a)
-Skriv in uppgiften.
-```Exempel: 9790006466641```
+  Skriv in uppgiften.
+  ```Exempel: 9790006466641```
 * Identifikator/Plåtnummer/Värde (identifiedBy/MusicPlate/value = 028 2 1 ‡a)
 Skriv in uppgiften.
 ```Exempel: N.M.S. 1090```
 * Identifikator/Editionsnummer
-o Värde (identifiedBy/MusicPublisherNumber/value = 028 3 1 ‡a)
-Skriv in uppgiften.
-```Exempel: HN 6027```
-o Agent/organisation/namn (identifiedBy/MusicPublisherNumber/agent/Organization/name = 028 3 1 ‡b)
-Skriv in förlagets namn, om det anges i omedelbar anslutning till editionsnumret.
-```Exempel: Henle```
+  o Värde (identifiedBy/MusicPublisherNumber/value = 028 3 1 ‡a)
+  Skriv in uppgiften.
+  ```Exempel: HN 6027```
+  o Agent/organisation/namn (identifiedBy/MusicPublisherNumber/agent/Organization/name = 028 3 1 ‡b)
+  Skriv in förlagets namn, om det anges i omedelbar anslutning till editionsnumret.
+  ```Exempel: Henle```
 
 #### Indirekt identifierad av  
 Ange ogiltiga ISBN här och inte under Identifikator/ISBN/Ogiltigt värde. 
@@ -344,10 +344,10 @@ Land och År ska ligga inom Primär utgivning.
   ```Exempel: 1 partitur (ix, 43 sidor)```  
   ```Exempel: 1 klaverutdrag (18 sidor) + 2 stämmor```  
     
-#### Illustrationer    
+#### Övriga fysiska detaljer
 * Övriga fysiska detaljer (other physical details = 300 ‡b)  
   Skriv in uppgiften.  
-  ```Exempel: illustrationer```
+  ```Exempel: faksimil```
 
 #### Matt 
 * Mått/Mått/Benämning (hasDimensions/Dimensions/label = 300 ‡c)  
@@ -358,7 +358,7 @@ Land och År ska ligga inom Primär utgivning.
 * Tillsammans med/Instans/Benämning (Bilagor) (accompaniedBy/Instance/label = 300 ‡e) 
 För att lägga till Tillsammans med, klicka på plustecknet Lägg till egenskaper under: Post och välj Tillsammans med. Skapa Instans som lokal entitet. (Plustecknet vid Tillsammans med, välj Skapa lokal entitet, längst ner i sidorutan till höger, skriv Instans och välj ** Instans.) Lägg till Benämning (plustecknet vid Instans - Lägg till egenskaper under: Instans).    
 Skriv in uppgiften.  
-  ```Exempel: 10 mönsterark```  
+  ```Exempel: 1 CD```  
 
 #### Medietyp
 * Medietyp (mediaType/Mediatype = 337 ‡b)  
@@ -385,7 +385,7 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
 * Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel (seriesMembership/inSeries/InstanceofWork/Work/hasTitle/Title/mainTitle = 830 ‡a)  
   Ange den auktoriserade sökingången för serien här (gäller serier som har seriehuvudpost) i de fall den avviker från serieuppgiften. Om endast Serieuppgift men inte Ingår i serie/Instans av Verk/Verk finns, t ex i en förhandspost från Bokinfo, fungerar det för närvarande bäst att skapa ett helt nytt seriemedlemskap och flytta över Serieuppgift dit. Ange sedan den auktoriserade sökingången för serien under Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel. Ta bort det första seriemedlemskapet så att endast ett seriemedlemskap återstår.  
   Skriv in uppgiften.   
-  ```Exempel: Årstasällskapets för Fredrika Bremer-studier skriftserie```  
+  ```Exempel: Neue Ausgabe sämtlicher Werke. Serie 2, Kammermusik```  
 ##### ISSN  
 * Seriemedlemskap/Ingår i serie/Instans/Identifikator/ISSN/Värde (seriesMembership/inSeries/Instance/identifiedBy/ISSN/Value) (490 ‡x, 830 ‡x)  
   Skriv in uppgiften.  
@@ -393,7 +393,7 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
 ##### Serieuppgift  
 * Seriemedlemskap/Serieuppgift (seriesMembership/seriesStatement = 490 ‡a)  
   Skriv in uppgiften.  
-   ```Exempel: Årstasällskapets skriftserie```   
+   ```Exempel: Neue Ausgabe sämtlicher Werke. Serie 2, Kammermusik```   
 ##### Numrering inom serie  
 * Seriemedlemskap/Numrering inom serie (seriesMembership/seriesEnumeration = 490 ‡v, 830 ‡v)  
   Skriv in uppgiften.  
@@ -420,13 +420,17 @@ Lägg till Medverkan och funktion under Verk (inom Seriemedlemskap) genom att kl
 #### Anmarkning
 * Anmärkning/Anmärkning/Benämning (hasNote/Note/label = 500 ‡a)   
   Skriv in allmänna anmärkningar här.    
-  Skriv in uppgiften.  
-   
+  Skriv in uppgiften. 
+  ```Exempel: Med realiserad, ej besiffrad, b.c.-stämma```  
+  ```Exempel: Noter med övnings-cd typ ”Music minus one”```  
+  ```Exempel: Speltid: 21 min.```  
+
 #### Innehallsanmarkning  
 * Har innehållsförteckning/Innehållsförteckning/Benämning (tableofContents = 505 8/_)  
   För en enkel innehållsanmärkning (505 ‡a), lägg till Har innehållsförteckning (från Lägg till egenskaper under: Instans). Lägg därefter till Innehållsförteckning (plustecknet under Har innehållsförteckning i vänstermenyn). Skriv in uppgiften under Benämning.     
-  ```Exempel: Culture at home -- Culture and the global -- Global youth -- Global music -- Territories of global globalization.```  
-  
+  ```Exempel: Concerto nach italienischem Gusto, BWV 971 ; Ouverture nach französischer Art, BWV 831 ; Appendix: Ouverture in c, BWV 831a```  
+  ```Exempel: Chain of fools / Donald Covay -- A deeper love / David Cole, Robert Clivilles -- Do right woman, do right man / Chips Moman, Dan Penn -- I knew you were waiting (for me) / Dennis Morgan, Simon Climie```  
+
 * Har innehållsförteckning/Innehållsförteckning/Har del/Utökad innehållsanmärkning/Benämning/Upphovsuppgift (tableofContents = 505 8/0 ‡t, ‡r)  
 För en utökad innehållsanmärkning med titlar och upphovsuppgifter, lägg till Har innehållsförteckning (från Lägg till egenskaper under: Instans). Klicka på plustecknet under Har innehållsförteckning i vänstermenyn (Lägg till innehållsförteckning). Lägg till Har del (plustecknet vid Innehållsförteckning - Lägg till egenskaper under: Innehållsförteckning). Skriv Har del i sökrutan och välj det. Klicka på plustecknet vid Har del (Lägg till resurs) och välj Skapa lokal entitet (längst ner i sidorutan till höger). Skriv Utökad innehållsanmärkning i rutan för Skapa lokal entitet och välj * Utökad innehållsanmärkning. Utökad innehållsanmärkning läggs till under Har del. Klicka på Utökad innehållsanmärkning och det fälls ut. Lägg in titel under Benämning. Lägg in upphovsuppgift under Upphovsuppgift.  
 Upprepa, för ytterligare titel (Benämning) + upphovsuppgift, genom att lägga till ytterligare en Utökad innehållsanmärkning som lokal entitet (klicka på Duplicera entitet).
