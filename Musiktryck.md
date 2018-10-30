@@ -130,16 +130,18 @@ Följande anmärkningar är under arbete och fungerar ännu inte fullt ut:
 För att lägga till Har titel, klicka på plustecknet Lägg till egenskaper under: Post.  
   Återge huvudtiteln från titelsidan eller annan föredragen källa så som den förekommer i källan. se [Anvisningar för katalogisering - RDA](http://www.kb.se/rdakatalogisering/Anvisningar/Arbetsfloden/Tryckta-monografier/#huvudtitel "Anvisningar för katalogisering - RDA").  
   Skriv in uppgiften.    
- ```Exempel: En arbetsdag i skriftsamhället```  
+ ```Exempel: Lichtbogen```  
+ ```Exempel: Quartett Nr. 2 op. 92 für 2 Violinen, Viola und Violoncello```  
     För en titel som börjar med bestämd eller obestämd artikel, ska artikeln fileras bort. Ange fileringsvärde genom att lägga till fileringsvärde (plustecknet vid Titel - Lägg till egenskaper under: Titel) och ange en siffra.  
- ```Exempel: Huvudtitel: En arbetsdag i skriftsamhället, fileringsvärde: 3```  
+ ```Exempel: Huvudtitel: The best of Heavy metal, fileringsvärde: 4```  
  Se exempel i formathandboken för Libris/Voyager: 
 [Fileringsindikator]( http://www.kb.se/katalogisering/Formathandboken/Fileringsindikator/)
 
 ##### Övrig titelinformation (undertitel)
 * Har titel/Titel/Övrig titelinformation (= Undertitel) (hasTitle/Title/subtitle = 245 ‡b)  
   Skriv in uppgiften. Om det finns flera undertitlar, skriv in dessa efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.    
-```Exempel: ett etnografiskt perspektiv på skriftanvändning i vanliga yrken : småskrift utarbetad av Språkrådet```
+```Exempel: for nine musicians and live electronics```
+```Exempel: auf kabardinische Themen```
   
   För att ange originaltitel, se Verk/Har titel/Titel/Huvudtitel.  
 
@@ -208,7 +210,9 @@ Vid behov, klicka även på plustecknet vid Parallelltitel och lägg till Övrig
 #### Upphovsuppgift
 * Upphovsuppgift (responsibilityStatement = 245 ‡c)  
   Skriv in uppgiften.  
-  ```Exempel: Tom Marcus ; översättning: Svante Skoglund```
+  ```Exempel: Kaija Saariaho```
+  ```Exempel: Sergej Prokofjew```
+  ```Exempel: Ludwig van Beethoven ; herausgegeben von Rainer Cadenbach```
 
 #### Identifikator 
 * Identifikator (identifiedBy)  
@@ -222,6 +226,20 @@ Vid behov, klicka även på plustecknet vid Parallelltitel och lägg till Övrig
   ```Exempel: inbunden```
 <br/>För ogiltiga ISBN, använd Indirekt identifierad av, direkt under Instans. Använd inte Ogiltigt värde under Identifikator/ISBN (identifiedBy/marc:hiddenValue).  
   
+* Identifikator/ISMN/Värde (identifiedBy/ISMN/value = 024 2 _ ‡a)
+Skriv in uppgiften.
+```Exempel: 9790006466641```
+* Identifikator/Plåtnummer/Värde (identifiedBy/MusicPlate/value = 028 2 1 ‡a)
+Skriv in uppgiften.
+```Exempel: N.M.S. 1090```
+* Identifikator/Editionsnummer
+o Värde (identifiedBy/MusicPublisherNumber/value = 028 3 1 ‡a)
+Skriv in uppgiften.
+```Exempel: HN 6027```
+o Agent/organisation/namn (identifiedBy/MusicPublisherNumber/agent/Organization/name = 028 3 1 ‡b)
+Skriv in förlagets namn, om det anges i omedelbar anslutning till editionsnumret.
+```Exempel: Henle```
+
 #### Indirekt identifierad av  
 Ange ogiltiga ISBN här och inte under Identifikator/ISBN/Ogiltigt värde. 
 * Indirekt identifierad av/ISBN (indirectlyIdentifiedBy/ISBN = 020 ‡z)  
@@ -236,9 +254,15 @@ Ange ogiltiga ISBN här och inte under Identifikator/ISBN/Ogiltigt värde.
   
 #### Upplageuppgift
 * Upplageuppgift (editionStatement = 250 ‡a)  
-  Skriv in upplagebeteckning här.  
-  ```Exempel: Första upplagan```  
-  
+  Skriv in upplagebeteckning här. Om de anges i källan ange även uppgifter om musikalietyp (partitur, klaverutdrag) och sättning (låg/hög röst) här.
+  ```Exempel: New edition```  
+  ```Exempel: Urtext```  
+  ```Exempel: Voix élevée```  
+  ```Exempel: Vocal score```  
+* Påföljande upplageuppgift (editionStatementRemainder = 250 ‡b)
+Skriv in uppgifter som följer omedelbart efter upplagebeteckningen här. 
+  ```Exempel: prepared by Imogen Holst & Colin Matthews``` 
+
 #### Utgivning  
 * Utgivning (publication)  
   Välj typ från lista. För monografier, använd Primär utgivning.  
@@ -248,13 +272,14 @@ NB inväntar en maskinell ändring av dessa poster och ändrar inte manuellt.
  ##### Utgivningsplats
  * Plats/Plats/Benämning (= Utgivningsort) (place/label = 264 -/1 ‡a)  
   För att lägga till Plats, klicka på plustecknet vid Primär utgivning (lägg till egenskaper under Primär utgivning) och välj Plats. Sök inte efter Plats som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Plats och välj det.   
-  Skriv in uppgiften under Benämning.  
-  ```Exempel: [Göteborg]```  
+  Skriv in uppgiften under Benämning. Klamra vid behov.
+  ```Exempel: [Wiesbaden]```
+ 
  ##### Utgivarnamn
   * Agent/Agent/Benämning (= Utgivarnamn) (agent/label = 264 -/1 ‡b)  
   För att lägga till Agent, klicka på Lägg till egenskaper under Primär utgivning och välj Agent. Sök inte efter Agent som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Agent och välj det.       
   Skriv in uppgiften under Benämning.  
-  ```Exempel: NoNa```   
+  ```Exempel: Breitkopf & Härtel```   
   Om flera utgivare ska anges, lägg till Har del (hasPart) under Primär utgivning. Skapa Utgivning som lokal entitet (plustecknet vid Har del - Lägg till entitet). I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Utgivning och välj *** Utgivning. Upprepa Utgivning som lokal entitet genom att duplicera entiteten Utgivning.  
 Ange Plats/Plats/Benämning och Agent/Agent/Benämning och vid behov Datum inom respektive utgivningsavsnitt (angående Datum, se anvisningar nedan).  
 Land och År ska ligga inom Primär utgivning.  
@@ -308,15 +333,17 @@ Land och År ska ligga inom Primär utgivning.
   
 #### Copyrightar   
 * Copyright/Copyright/Datum (copyright/Copyright/date = 264 -/4 ‡c)  
-  Skriv in uppgiften. För att få fram copyrighttecknet, kopiera från exemplet nedan eller skriv Alt + 184.  
+  För musiktryck anges alltid copyrightår om det skiljer sig från utgivningstid (om de sammanfaller anges endast utgivningsår). Skriv in uppgiften. För att få fram copyrighttecknet, kopiera från exemplet nedan eller skriv Alt + 184.  
   Se också [Specialtecken](https://libris-dev.kb.se/katalogisering/help/search-04-special-chars). Du kan t ex söka på teckenuppsättning i “Sök i windows” och öppna programmet, markera och kopiera tecknet och sedan klistra in det.  
   ```Exempel: ©2017``` 
    
 #### Omfang   
 * Omfång/Omfång/Benämning (extent/Extent/label = 300 ‡a)  
   Skriv in uppgiften.  
-  ```Exempel: 319 sidor```  
-  
+  ```Exempel: 112 sidor```  
+  ```Exempel: 1 partitur (ix, 43 sidor)```  
+  ```Exempel: 1 klaverutdrag (18 sidor) + 2 stämmor```  
+    
 #### Illustrationer    
 * Övriga fysiska detaljer (other physical details = 300 ‡b)  
   Skriv in uppgiften.  
