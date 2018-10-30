@@ -227,17 +227,17 @@ Vid behov, klicka även på plustecknet vid Parallelltitel och lägg till Övrig
 <br/>För ogiltiga ISBN, använd Indirekt identifierad av, direkt under Instans. Använd inte Ogiltigt värde under Identifikator/ISBN (identifiedBy/marc:hiddenValue).  
   
 * Identifikator/ISMN/Värde (identifiedBy/ISMN/value = 024 2 _ ‡a)
-  Skriv in uppgiften.
+  Skriv in uppgiften.  
   ```Exempel: 9790006466641```
 * Identifikator/Plåtnummer/Värde (identifiedBy/MusicPlate/value = 028 2 1 ‡a)
-Skriv in uppgiften.
+Skriv in uppgiften.  
 ```Exempel: N.M.S. 1090```
 * Identifikator/Editionsnummer
   o Värde (identifiedBy/MusicPublisherNumber/value = 028 3 1 ‡a)
-  Skriv in uppgiften.
+  Skriv in uppgiften.  
   ```Exempel: HN 6027```
   o Agent/organisation/namn (identifiedBy/MusicPublisherNumber/agent/Organization/name = 028 3 1 ‡b)
-  Skriv in förlagets namn, om det anges i omedelbar anslutning till editionsnumret.
+  Skriv in förlagets namn, om det anges i omedelbar anslutning till editionsnumret.  
   ```Exempel: Henle```
 
 #### Indirekt identifierad av  
@@ -254,7 +254,7 @@ Ange ogiltiga ISBN här och inte under Identifikator/ISBN/Ogiltigt värde.
   
 #### Upplageuppgift
 * Upplageuppgift (editionStatement = 250 ‡a)  
-  Skriv in upplagebeteckning här. Om de anges i källan ange även uppgifter om musikalietyp (partitur, klaverutdrag) och sättning (låg/hög röst) här.
+  Skriv in upplagebeteckning här. Om de anges i källan ange även uppgifter om musikalietyp (partitur, klaverutdrag) och sättning (låg/hög röst) här.  
   ```Exempel: New edition```  
   ```Exempel: Urtext```  
   ```Exempel: Voix élevée```  
@@ -272,7 +272,7 @@ NB inväntar en maskinell ändring av dessa poster och ändrar inte manuellt.
  ##### Utgivningsplats
  * Plats/Plats/Benämning (= Utgivningsort) (place/label = 264 -/1 ‡a)  
   För att lägga till Plats, klicka på plustecknet vid Primär utgivning (lägg till egenskaper under Primär utgivning) och välj Plats. Sök inte efter Plats som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Plats och välj det.   
-  Skriv in uppgiften under Benämning. Klamra vid behov.
+  Skriv in uppgiften under Benämning. Klamra vid behov.  
   ```Exempel: [Wiesbaden]```
  
  ##### Utgivarnamn
@@ -427,7 +427,7 @@ Lägg till Medverkan och funktion under Verk (inom Seriemedlemskap) genom att kl
 
 #### Innehallsanmarkning  
 * Har innehållsförteckning/Innehållsförteckning/Benämning (tableofContents = 505 8/_)  
-  För en enkel innehållsanmärkning (505 ‡a), lägg till Har innehållsförteckning (från Lägg till egenskaper under: Instans). Lägg därefter till Innehållsförteckning (plustecknet under Har innehållsförteckning i vänstermenyn). Skriv in uppgiften under Benämning.     
+  För en enkel innehållsanmärkning (505 ‡a), lägg till Har innehållsförteckning (från Lägg till egenskaper under: Instans). Lägg därefter till Innehållsförteckning (plustecknet under Har innehållsförteckning i vänstermenyn). Skriv in uppgiften under Benämning. Musik- och teaterbiblioteket rekommenderar enkel innehållsanmärkning för musiktryck.
   ```Exempel: Concerto nach italienischem Gusto, BWV 971 ; Ouverture nach französischer Art, BWV 831 ; Appendix: Ouverture in c, BWV 831a```  
   ```Exempel: Chain of fools / Donald Covay -- A deeper love / David Cole, Robert Clivilles -- Do right woman, do right man / Chips Moman, Dan Penn -- I knew you were waiting (for me) / Dennis Morgan, Simon Climie```  
 
@@ -458,7 +458,7 @@ Om särskild anmärkningstext önskas, som ersätter frasen "Andra versioner", s
 
 #### Instans av Verk/Text  
 * Instans av Verk/Text (instanceOf/Work/Text)  
-  Skapa verket som lokal entitet (bryt inte ut verket till en länkbar entitet). Vi rekommenderar att tills vidare skapa verket som lokal entitet. Vi återkommer med anvisningar för att skapa verk som länkbara entiteter. Denna hjälptext beskriver exempel på verk som lokal entitet. Det betyder att du anger de uppgifter som listas här nedan, under Instans av Verk, utan att klicka på länksymbolen (Länka entitet) vid Instans av Verk/Text.  
+  Skapa verket som lokal entitet (bryt inte ut verket till en länkbar entitet). Vi rekommenderar att tills vidare skapa verket som lokal entitet. Vi återkommer med anvisningar för att skapa verk som länkbara entiteter. Denna hjälptext beskriver exempel på verk som lokal entitet. Det betyder att du anger de uppgifter som listas här nedan, under Instans av Verk, utan att klicka på länksymbolen (Länka entitet) vid Instans av Verk/Noterad musik.  
 Läs mer om [Verk och Instans](https://librisbloggen.kb.se/2018/05/30/verk-och-instans-i-startversionen/).  
 
 #### Verkets titel
@@ -468,12 +468,44 @@ För översättningar och för verk som har givits ut under olika titlar på sam
 
 ##### Verkets titel
 * Har titel/Titel/Huvudtitel (hasTitle/Title/mainTitle = 240 1/0 ‡a)  
-  "Originaltitel" för ett verk med primär medverkande anger du här.  
+  Pregnanta titlar för musik anges ofilerade enligt svensk musikbibliotekstradition.  
   Skriv in uppgiften.  
-  ```Exempel: Soldier spy```  
-  För en titel som börjar med bestämd eller obestämd artikel, ska artikeln fileras bort. Ange fileringsvärde genom att lägga till fileringsvärde och ange en siffra.  
-  ```Exempel: Huvudtitel: En arbetsdag i skriftsamhället, fileringsvärde: 3```  
+  ```Exempel: La traviata``` 
+  ```Exempel: Symfoni``` 
+  ```Exempel: Pianomusik``` 
  
+Ange besättning i Huvudtitel efter form/genre/pregnant titel.  
+  ```Exempel: Kvartett, stråkar``` 
+  ```Exempel: Fosterlandspsalm, röst, orkester``` 
+  
+Använd även Huvudtitel för hela den föredragna titeln då ordningen mellan uppgifterna i Har titel, Tonart, Version och språk för översättning blir felaktig i MARC-förhandsgranskningen, eller om den föredragna titeln är svår eller omöjlig att uttrycka med enbart dessa fält.  
+  ```Exempel: Sonater och partitor, violin, BWV 1001-1006. Partita, nr 1, h-moll``` 
+  ```Exempel: Kvartett, stråkar, nr 13, D. 804, op. 29:1, a-moll, "Rosamunde". Entr'acte``` 
+  
+* Delbeteckning (hasTitle/Title/mainTitle/partNumber = 240 1/0 ‡n)  
+Ange numreringar för verket här, vid behov. Skriv in uppgiften.  
+  ```Exempel: nr 96, Hob. I:96``` 
+  ```Exempel: nr 3, op. 90``` 
+  
+* Deltitel (hasTitle/Title/mainTitle/partName = 240 1/0 ‡p)       
+Lägg till eventuell deltitel genom att klicka på +-tecknet vid Titel (lägg till fält under: Titel), välj Deltitel.
+Skriv in uppgiften.
+  ```Exempel: Di Provenza il mar``` 
+  ```Exempel: Allegro``` 
+
+* Specificering i form av grupptitel (hasTitle/Title/mainTitle/marc:formSubheading = 240 1/0 ‡k)   
+Grupptitlar, exempelvis ”Pianomusik. Urval”, används då Instansen innehåller flera verk av samma tonsättare. Grupptiteln kompletteras med individuella sökingångar för dessa verk (i Relation/Verk). 
+Lägg till eventuell grupptitel genom att klicka på +-tecknet vid Titel (lägg till fält under: Titel), välj Specificering i form av grupptitel. Skriv in uppgiften.  
+  ```Exempel: Urval``` 
+
+* Tonart (240 1/0 ‡r)       
+Ange tonart. Skriv in uppgiften.  
+  ```Exempel: Fiss-moll``` 
+
+* Version (240 1/0 ‡o)        
+Ange eventuellt arrangemang. Skriv in uppgiften.  
+  ```Exempel: arr. röst, piano``` 
+         
 ##### Verkets titel - huvuduppslag
 *	Uttryck av/Verk/Har titel/Titel/Huvudtitel (expressionOf/Work/hasTitle/Title/mainTitle (= 130 ‡a)  
  "Originaltitel" för ett verk utan primär medverkande anger du här.  
@@ -502,11 +534,12 @@ Under Instans av Verk/Text, lägg till Relation genom att klicka på plustecknet
 
 #### Sprak 
 * Språk (language = 008/35-37)  
-  Ange det språk som den text du beskriver är skriven på. För en text på svenska, ange svenska. För att ange originalspråk för ett översatt verk, se Originalversion/Verk/Språk.  
+  För instrumentalmusik, ange Icke-språkligt medium (=language/zxx). För texter till musik, ange det språk som texten är skriven på. För en text på svenska, ange svenska. För att ange originalspråk för ett översatt verk, se Originalversion/Verk/Språk.  
   Länka till entitet.  
+  ```Exempel: language/zxx```    
   ```Exempel: svenska (swe)```  
   För att ange att texten är på flera språk, t ex parallelltext, ange ytterligare en språkkod genom att klicka på plustecknet vid Språk (Lägg till språk) och söka fram ytterligare en entitet för ett språk och länka till den.  
-  
+
 ##### Översättning  
 För en översättning, ange även:  
 * Språk/Språk/Benämning (Language/label = 240 ‡l)  
