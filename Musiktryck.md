@@ -535,7 +535,7 @@ Under Instans av Verk/Text, lägg till Relation genom att klicka på plustecknet
 
 #### Sprak 
 * Språk (language = 008/35-37)  
-  För instrumentalmusik, ange Icke-språkligt medium (=language/zxx). För texter till musik, ange det språk som texten är skriven på. För en text på svenska, ange svenska. För att ange originalspråk för ett översatt verk, se Originalversion/Verk/Språk.  
+  För instrumentalmusik, ange Icke-språkligt medium (=language/zxx). För texter till musik, ange textens språk. För en text på svenska, ange svenska. För att ange originalspråk för ett översatt verk, se Originalversion/Verk/Språk.  
   Länka till entitet.  
   ```Exempel: language/zxx```    
   ```Exempel: svenska (swe)```  
