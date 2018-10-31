@@ -143,7 +143,7 @@ För att lägga till Har titel, klicka på plustecknet Lägg till egenskaper und
 ```Exempel: for nine musicians and live electronics```
 ```Exempel: auf kabardinische Themen```
   
-  För att ange originaltitel, se Verk/Har titel/Titel/Huvudtitel.  
+  För att ange föredragen titel (=uniform titel), se Verk/Har titel/Titel/Huvudtitel.  
 
 ##### Varianttitel   
 Används till exempel för felaktigheter. Kan specificeras med Typanmärkning.  
@@ -333,7 +333,8 @@ Land och År ska ligga inom Primär utgivning.
   
 #### Copyrightar   
 * Copyright/Copyright/Datum (copyright/Copyright/date = 264 -/4 ‡c)  
-  För musiktryck anges alltid copyrightår om det skiljer sig från utgivningstid (om de sammanfaller anges endast utgivningsår). Skriv in uppgiften. För att få fram copyrighttecknet, kopiera från exemplet nedan eller skriv Alt + 184.  
+  För musiktryck anges alltid copyrightår om det skiljer sig från utgivningstid (om de sammanfaller anges endast utgivningsår). Ange endast senaste copyrightåret.  
+  Skriv in uppgiften. För att få fram copyrighttecknet, kopiera från exemplet nedan eller skriv Alt + 184.  
   Se också [Specialtecken](https://libris-dev.kb.se/katalogisering/help/search-04-special-chars). Du kan t ex söka på teckenuppsättning i “Sök i windows” och öppna programmet, markera och kopiera tecknet och sedan klistra in det.  
   ```Exempel: ©2017``` 
    
