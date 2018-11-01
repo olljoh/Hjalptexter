@@ -140,10 +140,10 @@ För att lägga till Har titel, klicka på plustecknet Lägg till egenskaper und
 ##### Övrig titelinformation (undertitel)
 * Har titel/Titel/Övrig titelinformation (= Undertitel) (hasTitle/Title/subtitle = 245 ‡b)  
   Skriv in uppgiften. Om det finns flera undertitlar, skriv in dessa efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.    
-```Exempel: for nine musicians and live electronics```
-```Exempel: auf kabardinische Themen```
+```Exempel: for nine musicians and live electronics```  
+```Exempel: auf kabardinische Themen```  
   
-  För att ange föredragen titel (=uniform titel), se Verk/Har titel/Titel/Huvudtitel.  
+För att ange föredragen titel (=uniform titel), se Verk/Har titel/Titel/Huvudtitel.  
 
 ##### Varianttitel   
 Används till exempel för felaktigheter. Kan specificeras med Typanmärkning.  
@@ -210,33 +210,33 @@ Vid behov, klicka även på plustecknet vid Parallelltitel och lägg till Övrig
 #### Upphovsuppgift
 * Upphovsuppgift (responsibilityStatement = 245 ‡c)  
   Skriv in uppgiften.  
-  ```Exempel: Kaija Saariaho```
-  ```Exempel: Sergej Prokofjew```
-  ```Exempel: Ludwig van Beethoven ; herausgegeben von Rainer Cadenbach```
+  ```Exempel: Kaija Saariaho```  
+  ```Exempel: Sergej Prokofjew```  
+  ```Exempel: Ludwig van Beethoven ; herausgegeben von Rainer Cadenbach```  
 
 #### Identifikator 
 * Identifikator (identifiedBy)  
   Välj typ från lista.  
-  ```Exempel: ISBN```
+  ```Exempel: ISBN```  
 * Identifikator/ISBN/Värde (identifiedBy/Isbn/value = 020 ‡a)  
   Skriv in uppgiften.  
-  ```Exempel: 9789188107213```
-* Identifikator/Särskiljande tillägg (= Bestämning) (identifiedBy/qualifier = 020 ‡q)  
+  ```Exempel: 9789188107213```  
+* Identifikator/Särskiljande tillägg (= Bestämning) (identifiedBy/qualifier = 020 ‡q)   
   Skriv in uppgiften.  
-  ```Exempel: inbunden```
+  ```Exempel: inbunden```  
 <br/>För ogiltiga ISBN, använd Indirekt identifierad av, direkt under Instans. Använd inte Ogiltigt värde under Identifikator/ISBN (identifiedBy/marc:hiddenValue).  
   
 * Identifikator/ISMN/Värde (identifiedBy/ISMN/value = 024 2 _ ‡a)
   Skriv in uppgiften.  
-  ```Exempel: 9790006466641```
+  ```Exempel: 9790006466641```  
 * Identifikator/ISMN/Ogiltigt värde (identifiedBy/ISMN/marc:hiddenValue = 024 ‡z)
 <br/>För ogiltigt ISMN, klicka på plustecknet till höger om Identifikator/ISMN och lägg till Ogiltigt värde (marc:hiddenValue ).
-Skriv in uppgiften.
-
-* Identifikator/Plåtnummer/Värde (identifiedBy/MusicPlate/value = 028 2 1 ‡a)
 Skriv in uppgiften.  
-```Exempel: N.M.S. 1090```
-* Identifikator/Editionsnummer
+
+* Identifikator/Plåtnummer/Värde (identifiedBy/MusicPlate/value = 028 2 1 ‡a)  
+  Skriv in uppgiften.  
+  ```Exempel: N.M.S. 1090```
+* Identifikator/Editionsnummer  
   o Värde (identifiedBy/MusicPublisherNumber/value = 028 3 1 ‡a)
   Skriv in uppgiften.  
   ```Exempel: HN 6027```
