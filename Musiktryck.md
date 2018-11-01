@@ -774,3 +774,12 @@ Klicka sedan på plustecknet vid DDK-klassifikation (sekundär) (Lägg till ddk-
   Lägg till anmärkning om akademisk avhandling (plustecknet vid Instans av Verk: Text - Lägg till egenskaper under: Text, välj Anmärkning om akademisk avhandling. Klicka på plustecknet vid Anmärkning om akademisk avhandling och välj Skapa lokal entitet (längst ner i sidorutan till höger).  
 Skriv in anmärkningen under Benämning.    
   ```Exempel: Diss. Umeå : Umeå universitet, 2018```  
+
+#### Relation
+* Relation (Relationship = 700 1/_) K0LLA DENNA PARENTES
+  Här anges ingående verk om instansen manifesterar fler än ett verk, med föredragna titlar och medverkande.
+  För att ange verk som ingår i det beskrivna verket, klicka på pilen vid Relation och skriv in uppgifterna enligt instruktionerna nedan. För att ange ytterligare verk klicka på ikonen med dubbla fyrkanter till höger om Relation (Duplicera entitet).  
+  
+  
+  
+
