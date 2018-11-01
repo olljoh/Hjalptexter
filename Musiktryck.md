@@ -478,11 +478,11 @@ För översättningar och för verk som har givits ut under olika titlar på sam
   ```Exempel: Symfoni```  
   ```Exempel: Pianomusik```  
  
-Ange besättning i Huvudtitel efter form/genre/pregnant titel.  
+  Ange besättning i Huvudtitel efter form/genre/pregnant titel.  
   ```Exempel: Kvartett, stråkar```  
   ```Exempel: Fosterlandspsalm, röst, orkester```  
   
-Använd även Huvudtitel för hela den föredragna titeln då ordningen mellan uppgifterna i Har titel, Tonart, Version och språk för översättning blir felaktig i MARC-förhandsgranskningen, eller om den föredragna titeln är svår eller omöjlig att uttrycka med enbart dessa fält.  
+  Använd även Huvudtitel för hela den föredragna titeln då ordningen mellan uppgifterna i Har titel, Tonart, Version och språk för översättning blir felaktig i MARC-förhandsgranskningen, eller om den föredragna titeln är svår eller omöjlig att uttrycka med enbart dessa fält.  
   ```Exempel: Sonater och partitor, violin, BWV 1001-1006. Partita, nr 1, h-moll```  
   ```Exempel: Kvartett, stråkar, nr 13, D. 804, op. 29:1, a-moll, "Rosamunde". Entr'acte```  
   
