@@ -229,6 +229,10 @@ Vid behov, klicka även på plustecknet vid Parallelltitel och lägg till Övrig
 * Identifikator/ISMN/Värde (identifiedBy/ISMN/value = 024 2 _ ‡a)
   Skriv in uppgiften.  
   ```Exempel: 9790006466641```
+* Identifikator/ISMN/Ogiltigt värde (identifiedBy/ISMN/marc:hiddenValue = 024 ‡z)
+<br/>För ogiltigt ISMN, klicka på plustecknet till höger om Identifikator/ISMN och lägg till Ogiltigt värde (marc:hiddenValue ).
+Skriv in uppgiften.
+
 * Identifikator/Plåtnummer/Värde (identifiedBy/MusicPlate/value = 028 2 1 ‡a)
 Skriv in uppgiften.  
 ```Exempel: N.M.S. 1090```
@@ -776,9 +780,53 @@ Skriv in anmärkningen under Benämning.
   ```Exempel: Diss. Umeå : Umeå universitet, 2018```  
 
 #### Relation
-* Relation (Relationship = 700 1/_) K0LLA DENNA PARENTES
-  Här anges ingående verk om instansen manifesterar fler än ett verk, med föredragna titlar och medverkande.
+* Relation (Relationship = 700 1/_) K0LLA DENNA PARENTES  
+  Här anges ingående verk om instansen manifesterar fler än ett verk, med föredragna titlar och medverkande.  
   För att ange verk som ingår i det beskrivna verket, klicka på pilen vid Relation och skriv in uppgifterna enligt instruktionerna nedan. För att ange ytterligare verk klicka på ikonen med dubbla fyrkanter till höger om Relation (Duplicera entitet).  
+  
+##### Verk/Har titel/Titel
+* Huvudtitel (hasTitle/Title/mainTitle = 700 1/_ ‡a)  
+  Ange den föredragna titeln för verket här, vid behov. Pregnanta titlar för musik anges ofilerade. Skriv in uppgiften.  
+  ```Exempel: La traviata``` 
+  ```Exempel: 23/swe``` 
+         
+* Delbeteckning (hasTitle/Title/mainTitle = 700 1/_  ‡n)  
+  Ange numreringar för verket här, vid behov. Skriv in uppgiften.  
+  ```Exempel: nr 96, Hob. I:96``` 
+  ```Exempel: nr 3, op. 90``` 
+         
+* Uttryck av/Verk/Har titel/Titel/Deltitel (expressionOf/Work/hasTitle/Title/partName = 700 1/_ ‡p)  
+  Lägg till eventuell deltitel genom att klicka på plustecknet vid Titel (lägg till fält under: Titel), välj Deltitel. Skriv in uppgiften.  
+  ```Exempel: Di Provenza il mar``` 
+  ```Exempel: Allegro```     
+
+  Använd Huvudtitel för hela den föredragna titeln då ordningen mellan uppgifterna i Har titel, Tonart, Version, Besättning och språk för översättning blir felaktig i MARC-förhandsgranskningen, eller om den föredragna titeln är svår eller omöjlig att uttrycka med enbart dessa fält.  
+  ```Exempel: Sonater och partitor, violin, BWV 1001-1006. Partita, nr 1, h-moll``` 
+  ```Exempel: Kvartett, stråkar, nr 13, D. 804, op. 29:1, a-moll, "Rosamunde". Entr'acte``` 
+        
+* Verk/Tonart (700 1/_ ‡r) 
+  Ange tonart. Skriv in uppgiften.  
+  ```Exempel: Fiss-moll``` 
+
+* Verk/Version (700 1/_ ‡o)  
+Ange eventuellt arrangemang.  
+Skriv in uppgiften.  
+  ```Exempel: arr. röst, piano```  
+
+* Verk/Primär medverkan/Agent/Person (contribution/PrimaryContribution/agent/Person = 700 1/_ ‡a)
+  Länka till entitet. Börja alltid med att söka efter om agenten redan finns. Vid behov, skapa ny entitet för agent (se Skapa ny agent i hjälpsektionen). I undantagsfall, skapa lokal entitet.   
+  ```Exempel: Maier-Röntgen, Amanda, 1853-1894```  
+
+* Verk/Besättning för framförande (700 1/_ ‡m)  
+  Ange besättning. Skriv in uppgiften.  
+  ```Exempel: orkester``` 
+  ```Exempel: klarinett, piano``` 
+  ```Exempel: blandad kör```  
+      
+* Verk/Språk/Språk/Benämning (Language/label = 700 1/_ ‡l)  
+  Språk för översättning. Lägg till en förekomst av Språk under Relation/Verk genom att klicka på plustecknet vid Verk. Sök fram Språk i sidorutan, klicka på termen och sedan på Skapa lokal entitet. Lägg till Benämning (klicka på Lägg till egenskaper under: Språk).  
+  Skriv in språket i klartext. Denna klartext - verkets (översättningens) språk - visas som ett tillägg till verkets titel i marcpostens 700 1/_ ‡l.
+  ```Exempel: Svenska```  
   
   
   
