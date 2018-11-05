@@ -21,7 +21,7 @@ I vissa fall fungerar det ännu inte fullt ut att lägga till alla uppgifter som
 | [Systemnummer](#systemnummer) | [Upplageuppgift](#upplageuppgift) | [Ämne](#amne) |
 | [Katalogiseringsspråk](#katalogiseringssprak) | [Utgivning](#utgivning) | [Genre](#genre) |
 | [Katalogiseringsregler](#katalogiseringsregler) | [Tillverkning](#tillverkning) | [Innehållstyp](#innehallstyp) |
-| [Beskrivningsnivå](#beskrivningsniva) | [Copyrightår](#copyrightar) | [Anmärkning om akademisk avhandling](#anmarkning-om-akademisk-avhandling) |
+| [Beskrivningsnivå](#beskrivningsniva) | [Copyrightår](#copyrightar) | |
 | [Bibliografikod](#bibliografikod) | [Omfång](#omfang) | |
 | [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | |
 | | [Mått](#matt) | |
@@ -497,15 +497,15 @@ Ange eventuellt arrangemang. Skriv in uppgiften.
          
 ##### Verkets titel - huvuduppslag
 För att ange "Originaltitel" för ett verk utan primär medverkande, t ex Bibeln, motsvarande fält 130  
-*Se* [Arbetsflöde Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#verkets-titel) 
+*Se* [Arbetsflöde Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#verkets-titel-huvuduppslag) 
 
 ##### Verkets titel - analytisk sökingång  
 För att ange verk som ingår i det beskrivna verket motsvarande fält 730 0/2 (analytisk sökingång)  
-*Se* [Arbetsflöde Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#verkets-titel)  
+*Se* [Arbetsflöde Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#verkets-titel-analytisk)  
 
 ##### Verkets titel - relaterade verk  
 För att ange verk som är relaterade, men inte ingår i det beskrivna verket, motsvarande fält 730 0/_ (icke-analytisk sökingång)  
-*Se* [Arbetsflöde Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#verkets-titel) 
+*Se* [Arbetsflöde Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#verkets-titel-relaterade-verk) 
 
 #### Sprak 
 * Språk (language = 008/35-37)  
