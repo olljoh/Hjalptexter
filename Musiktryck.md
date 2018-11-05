@@ -23,7 +23,7 @@ I vissa fall fungerar det ännu inte fullt ut att lägga till alla uppgifter som
 | [Katalogiseringsregler](#katalogiseringsregler) | [Tillverkning](#tillverkning) | [Innehållstyp](#innehallstyp) |
 | [Beskrivningsnivå](#beskrivningsniva) | [Copyrightår](#copyrightar) | [Anmärkning om akademisk avhandling](#anmarkning-om-akademisk-avhandling) |
 | [Bibliografikod](#bibliografikod) | [Omfång](#omfang) | |
-| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Illustrationer](#illustrationer) | |
+| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | |
 | | [Mått](#matt) | |
 | | [Bilagor](#bilagor) | |
 | | [Medietyp](#medietyp) | |
@@ -93,6 +93,7 @@ För ISBN, se [Identifikator](#identifikator) under Instans.
 * Beskrivningsnivå (encodingLevel = 000/17)  
 För att lägga till Beskrivningsnivå, klicka på plustecknet Lägg till egenskaper under: Post.   
 I samband med att du uppgraderar en Bokinfopost eller annan post med beskrivningsnivå: CIP-post eller Preliminär nivå, ändra beskrivningsnivå till annan nivå, annars kan ändringar skrivas över.  
+I mallar är Miniminivå förvalt. Ändra vid behov.   
   Välj från lista.    
   ```Exempel: Biblioteksnivå```
   
@@ -170,7 +171,7 @@ För att lägga till varianttitel, klicka på plustecknet vid Har titel (lägg t
   Skriv in uppgiften. Om det finns flera undertitlar, skriv in dessa efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.    
 ```Exempel: Djingis Khan – historiens störste erövrare```
 
-  För att ange att omslagstiteln endast står på skyddsomslag, lägg till Typanmärkning (= 246 ‡i). 
+  För att ange att omslagstiteln endast står på skyddsomslag, lägg till Typanmärkning (plustecknet vid Omslagstitel - lägg till egenskaper under: Omslagstitel, välj Typanmärkning).  
   Skriv in uppgiften.
   <br/>```Exempel:```
   * ```Typanmärkning (246 ‡i): Skyddsomslag:```
@@ -285,8 +286,8 @@ NB inväntar en maskinell ändring av dessa poster och ändrar inte manuellt.
   Skriv in uppgiften under Benämning.  
   ```Exempel: Breitkopf & Härtel```   
   Om flera utgivare ska anges, lägg till Har del (hasPart) under Primär utgivning. Skapa Utgivning som lokal entitet (plustecknet vid Har del - Lägg till entitet). I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Utgivning och välj *** Utgivning. Upprepa Utgivning som lokal entitet genom att duplicera entiteten Utgivning.  
-Ange Plats/Plats/Benämning och Agent/Agent/Benämning och vid behov Datum inom respektive utgivningsavsnitt (angående Datum, se anvisningar nedan).  
-Land och År ska ligga inom Primär utgivning.  
+Ange Plats/Plats/Benämning och Agent/Agent/Benämning och vid behov Datum inom respektive utgivningsavsnitt (angående Datum, se anvisningar nedan). Samtliga utgivare med Plats och Agent ska ligga inom Har del/Utgivning.
+Land, År och eventuellt Datum ska ligga inom Primär utgivning.  
   Se [exempel](https://libris.kb.se/katalogisering/w4rp4hlwtr5lctjr#it).
   
  ##### År och datum 
@@ -564,17 +565,20 @@ För översättningar i flera led, länka först till det mellanliggande språke
   
 ###### Texten delvis översatt  
 (041 0/- #a + 041 1/- #a #h)  
-* Har del/Verk/Språk (hasPart/Work/language) +  
-  Anmärkning: Språk: Objektet är/innehåller översättning (marc:languageNote) +  
-  Originalversion/Verk/Språk (originalVersion/Work/language)  
-  För att ange att texten delvis är översatt, till exempel när en publikation innehåller parallelltext på två språk och den ena texten är en översättning: ange först Språk under Instans av Verk/Text (se Språk ovan). Lägg sedan till Har del under Instans av Verk/Text. Välj Skapa lokal entitet (längst ner i sidorutan). Skriv Verk i rutan för Skapa lokal entitet och välj * Verk. Klicka på plustecknet vid Verk (Lägg till egenskaper under: Verk) och välj Språk. Sök fram och länka till entiteten för språket som texten är översatt till, till exempel engelska. Lägg till Anmärkning: Språk och ange att resursen är/innehåller en översättning. Lägg till Originalversion/Verk/Språk (se ovan under Översättning). Länka till entiteten för språket som resursen delvis är en översättning från.  
+* Språk (language = 008/35-37) +
+   Anmärkning: Språk: Objektet är/innehåller ej översättning (marc:languageNote = 041 0/- #a)   
+* Har del/Verk/Språk (hasPart/Work/language = 041 ‡a) +  
+  Anmärkning: Språk: Objektet är/innehåller översättning (marc:languageNote 041 1/-) +  
+  Originalversion/Verk/Språk (originalVersion/Work/language = 041 ‡h)  
+  För att ange att texten delvis är översatt, till exempel när en publikation innehåller parallelltext på två språk och den ena texten är en översättning: ange först Språk under Instans av Verk/Text (se Språk ovan). Sök fram och länka till entiteten för det språk som inte är en översättning. Klicka sedan på plustecknet vid Verk - Lägg till egenskap under: Text och välj Anmärkning: Språk. Välj Objektet är/innehåller ej översättning.   
+ Lägg sedan till Har del under Instans av Verk/Text. Skapa verk som lokal entitet (plustecknet vid Har del - Lägg till resurs. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Verk och välj ++++ Verk.) Klicka på plustecknet vid den lokala entiteten Verk (Lägg till egenskaper under: Verk) och välj Språk. Sök fram och länka till entiteten för språket som texten är översatt till. Under den lokala entiteten Verk, lägg till Anmärkning: Språk och ange att resursen är/innehåller en översättning. Under Har del, lägg till Originalversion/Verk/Språk (se ovan under Översättning). Länka till entiteten för språket som resursen delvis är en översättning från.  
   
 ##### Parallelltext    STRYK DENNA - ERSATT MED ANMÄRKNING OM NOTATIONSSYTEM OCH SPRÅK NEDAN
 * Anmärkning/Anmärkning om språk/Anmärkning: Språk/Benämning (hasNote/marc:LanguageNote/marc:LanguageNote/label = 546 ‡a)  
   ```Exempel: Parallelltext på svenska och engelska```  
   Anmärkningen är under arbete och fungerar tyvärr ännu inte.  
   
- #### Medverkan och funktion  
+#### Medverkan och funktion  
 * Medverkan och funktion  
   Läs mer:  
   [Auktoritetsgruppens rekommendationer](https://kundo.se/org/librisxl/d/kbs-auktoritetsgrupp-informerar-jraz/)   
@@ -747,7 +751,7 @@ Läs mer:
   ```Exempel: Sångtext på hebreiska```  
   ```Exempel: Kritiska kommentarer på svenska och engelska```  
  
-##### Målgrupp     
+#### Målgrupp     
  * Målgrupp (intendedAudience = 008/22)  
   Länka till entitet.  
   Trunkera genom att trycka på mellanslagstangenten eller med * i sökrutan. Välj rätt entitet genom att klicka på plustecknet vid entiteten eller på entiteten.    
