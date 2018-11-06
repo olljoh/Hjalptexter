@@ -498,7 +498,7 @@ Ange eventuellt arrangemang. Skriv in uppgiften.
          
 ##### Verkets titel - huvuduppslag
 För att ange "Originaltitel" för ett verk utan primär medverkande, t ex Bibeln, motsvarande fält 130  
-*Se* [Hjälptext Tryckt monografi]( ) 
+*Se* [Hjälptext Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#verkets-titel) 
 
 ##### Verkets titel - analytisk sökingång  
 För att ange verk som ingår i det beskrivna verket motsvarande fält 730 0/2 (analytisk sökingång)  
