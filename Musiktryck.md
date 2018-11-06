@@ -10,7 +10,7 @@ I de flesta fall ska informationen delas upp i olika egenskaper (jfr fält) och 
 I vissa fall fungerar det ännu inte fullt ut att lägga till alla uppgifter som beskrivs i denna hjälptext. Arbete pågår med förbättra gränssnittet. För att anmäla fel, använd detta formulär för [felrapportering](https://docs.google.com/forms/d/e/1FAIpQLSfOChJOGDoHUQguSF83F5XyTZiQL-yU47nvcqb6qwNT9GX7Aw/viewform). För att lämna synpunkter, använd detta formulär för  [ändringsförslag](https://docs.google.com/forms/d/e/1FAIpQLScgz_0enebhBn6uB8xvowkDBB4ax_dbvaobLSFfqFMoty6eQg/viewform).  
 
 
-### Innehåll  
+### Innehåll   
 
 | [Adminmetadata](#adminmetadata) | [Instans](#instans) | [Verk](#verk) | 
 | ------ | ----------- |  ----------- |
@@ -497,7 +497,7 @@ Ange eventuellt arrangemang. Skriv in uppgiften.
          
 ##### Verkets titel - huvuduppslag
 För att ange "Originaltitel" för ett verk utan primär medverkande, t ex Bibeln, motsvarande fält 130  
-*Se* [Hjälptext Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#verkets-titel) 
+*Se* [Hjälptext Tryckt monografi]( ) 
 
 ##### Verkets titel - analytisk sökingång  
 För att ange verk som ingår i det beskrivna verket motsvarande fält 730 0/2 (analytisk sökingång)  
