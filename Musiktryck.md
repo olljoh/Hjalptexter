@@ -647,8 +647,8 @@ För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funkt
   [Länka ämnesord](https://libris.kb.se/katalogisering/help/workflow-linked-entity-sh)   
   [Sammansatt, ej auktoriserat ämnesord](https://libris.kb.se/katalogisering/help/workflow-non-auth-sh)   
   [Kontrollerat, ej auktoriserat ämnesord](https://libris.kb.se/katalogisering/help/workflow-controlled-non-auth-sh)   
-  [Okontrollerat ämnesord](https://libris.kb.se/katalogisering/help/workflow-uncontrolled)
- 
+  [Okontrollerat ämnesord](https://libris.kb.se/katalogisering/help/workflow-uncontrolled-sh)  
+
 ##### Geografiskt ämnesord  
 * Geografiskt ämnesord (subject = 651 -/4 ‡a)  
   Sök fram och länka till entitet.  
