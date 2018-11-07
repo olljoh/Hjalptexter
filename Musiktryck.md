@@ -15,7 +15,7 @@ I vissa fall fungerar det ännu inte fullt ut att lägga till alla uppgifter som
 | [Adminmetadata](#adminmetadata) | [Instans](#instans) | [Verk](#verk) | 
 | ------ | ----------- |  ----------- |
 | [Skapad av](#skapad-av) | [Utgivningssätt](#utgivningssatt) | [Verkets titel](#verkets-titel) |
-| [Uppgraderad av](#uppgraderad-av) | [Titel](#titel) | [Språk](#sprak) |
+| [Uppgraderad eller importerad av](#uppgraderad-eller-importerad-av) | [Titel](#titel) | [Språk](#sprak) |
 | [Katalogiserande instans](#katalogiserande-instans) | [Upphovsuppgift](#upphovsuppgift) | [Medverkan och funktion](#medverkan-och-funktion) |
 | [Poststatus](#poststatus) | [Identifikator](#identifikator) | [Klassifikation](#klassifikation) |
 | [Systemnummer](#systemnummer) | [Upplageuppgift](#upplageuppgift) | [Ämne](#amne) |
