@@ -144,7 +144,7 @@ Följande anmärkningar är under arbete och fungerar ännu inte fullt ut:
   <br/>```Exempel:```
   * ```Lichtbogen```
   * ```Quartett Nr. 2 op. 92 für 2 Violinen, Viola und Violoncello```  
-  <br/>För en titel som börjar med bestämd eller obestämd artikel, ska artikeln fileras bort. Ange fileringsvärde genom att lägga till fileringsvärde (plustecknet vid Titel - Lägg till egenskaper under: Titel) och ange en siffra.  
+  För en titel som börjar med bestämd eller obestämd artikel, ska artikeln fileras bort. Ange fileringsvärde genom att lägga till fileringsvärde (plustecknet vid Titel - Lägg till egenskaper under: Titel) och ange en siffra.  
   ```Exempel: Huvudtitel: The best of Heavy metal, fileringsvärde: 4```  
   Se exempel i formathandboken för Libris/Voyager: 
 [Fileringsindikator]( http://www.kb.se/katalogisering/Formathandboken/Fileringsindikator/)
@@ -152,9 +152,9 @@ Följande anmärkningar är under arbete och fungerar ännu inte fullt ut:
 ##### Övrig titelinformation (undertitel)
 * Har titel/Titel/Övrig titelinformation (= Undertitel) (hasTitle/Title/subtitle = 245 ‡b)  
   Skriv in uppgiften. Om det finns flera undertitlar, skriv in dessa efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.
-  <br/>```Exempel:```  
+  <br/>```Exempel:```
   * ```for nine musicians and live electronics```
-  * ```auf kabardinische Themen```  
+  * ```auf kabardinische Themen```
   
 För att ange föredragen titel (=uniform titel), se Verk/Har titel/Titel/Huvudtitel.  
 
@@ -232,7 +232,7 @@ Vid behov, klicka även på plustecknet vid Parallelltitel och lägg till Övrig
   <br/>```Exempel:```
   * ```Kaija Saariaho```
   * ```Sergej Prokofjew```
-  * ```Ludwig van Beethoven ; herausgegeben von Rainer Cadenbach```  
+  * ```Ludwig van Beethoven ; herausgegeben von Rainer Cadenbach```
 
 #### Identifikator 
 * Identifikator (identifiedBy)  
@@ -259,7 +259,7 @@ För ogiltiga ISBN, använd Indirekt identifierad av, direkt under Instans. Anv�
   ```Exempel: HN 6027```  
   o Agent/organisation/namn (identifiedBy/MusicPublisherNumber/agent/Organization/name = 028 3 1 ‡b)  
   Skriv in förlagets namn, om det anges i omedelbar anslutning till editionsnumret.  
-  ```Exempel: Henle```  
+  ```Exempel: Henle```
 
 #### Indirekt identifierad av  
 Ange ogiltiga ISBN här och inte under Identifikator/ISBN/Ogiltigt värde.  
@@ -281,7 +281,7 @@ Lägg till genom att klicka på Lägg till egenskaper under: Instans, sök upp "
   * ```New edition```
   * ```Urtext```
   * ```Voix élevée```
-  * ```Vocal score```  
+  * ```Vocal score```    
 * Påföljande upplageuppgift (editionStatementRemainder = 250 ‡b)  
 Skriv in uppgifter som följer omedelbart efter upplagebeteckningen här.  
   ```Exempel: prepared by Imogen Holst & Colin Matthews```  
