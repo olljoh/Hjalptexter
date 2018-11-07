@@ -366,7 +366,7 @@ Land, År och eventuellt Datum ska ligga inom Primär utgivning.
   ```Exempel: 1 partitur (ix, 43 sidor)```  
   ```Exempel: 1 klaverutdrag (18 sidor) + 2 stämmor```  
     
-#### Övriga fysiska detaljer
+#### Ovriga fysiska detaljer
 * Övriga fysiska detaljer (other physical details = 300 ‡b)  
   Skriv in uppgiften.  
   ```Exempel: faksimil```  
