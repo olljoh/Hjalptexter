@@ -151,7 +151,7 @@ För att lägga till Har titel, klicka på plustecknet Lägg till egenskaper und
 
 ##### Övrig titelinformation (undertitel)
 * Har titel/Titel/Övrig titelinformation (= Undertitel) (hasTitle/Title/subtitle = 245 ‡b)  
-  Skriv in uppgiften. Om det finns flera undertitlar, skriv in dessa efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.  
+  Skriv in uppgiften. Om det finns flera undertitlar, skriv in dessa efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.
   <br/>```Exempel:```  
   * ```for nine musicians and live electronics```
   * ```auf kabardinische Themen```  
@@ -228,8 +228,8 @@ Vid behov, klicka även på plustecknet vid Parallelltitel och lägg till Övrig
 * Upphovsuppgift (responsibilityStatement = 245 ‡c)  
   För att lägga till upphovsuppgift, klicka på plustecknet Lägg till egenskaper under: Instans.  
   Vid postimport: i vissa importerade poster saknas upphovsuppgift. Lägg då till det.   
-  Skriv in uppgiften.  
-    <br/>```Exempel:```
+  Skriv in uppgiften.
+  <br/>```Exempel:```
   * ```Kaija Saariaho```
   * ```Sergej Prokofjew```
   * ```Ludwig van Beethoven ; herausgegeben von Rainer Cadenbach```  
@@ -276,11 +276,12 @@ Lägg till genom att klicka på Lägg till egenskaper under: Instans, sök upp "
   
 #### Upplageuppgift  
 * Upplageuppgift (editionStatement = 250 ‡a)  
-  Skriv in upplagebeteckning här. Om de anges i källan ange även uppgifter om musikalietyp (partitur, klaverutdrag) och sättning (låg/hög röst) här.  
-  ```Exempel: New edition```  
-  ```Exempel: Urtext```  
-  ```Exempel: Voix élevée```  
-  ```Exempel: Vocal score```  
+  Skriv in upplagebeteckning här. Om de anges i källan ange även uppgifter om musikalietyp (partitur, klaverutdrag) och sättning (låg/hög röst) här.
+  <br/>```Exempel:```
+  * ```New edition```
+  * ```Urtext```
+  * ```Voix élevée```
+  * ```Vocal score```  
 * Påföljande upplageuppgift (editionStatementRemainder = 250 ‡b)  
 Skriv in uppgifter som följer omedelbart efter upplagebeteckningen här.  
   ```Exempel: prepared by Imogen Holst & Colin Matthews```  
@@ -364,10 +365,11 @@ Land, År och eventuellt Datum ska ligga inom Primär utgivning.
    
 #### Omfang   
 * Omfång/Omfång/Benämning (extent/Extent/label = 300 ‡a)  
-  Skriv in uppgiften.  
-  ```Exempel: 112 sidor```  
-  ```Exempel: 1 partitur (ix, 43 sidor)```  
-  ```Exempel: 1 klaverutdrag (18 sidor) + 2 stämmor```  
+  Skriv in uppgiften. 
+  <br/>```Exempel:```
+  * ```112 sidor```
+  * ```1 partitur (ix, 43 sidor)```
+  * ```1 klaverutdrag (18 sidor) + 2 stämmor```
     
 #### Ovriga fysiska detaljer
 * Övriga fysiska detaljer (other physical details = 300 ‡b)  
@@ -434,16 +436,18 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
 #### Anmarkning
 * Anmärkning/Anmärkning/Benämning (hasNote/Note/label = 500 ‡a)   
   Skriv in allmänna anmärkningar här.    
-  Skriv in uppgiften.    
-  ```Exempel: Med realiserad, ej besiffrad, b.c.-stämma```  
-  ```Exempel: Noter med övnings-cd typ ”Music minus one”```  
-  ```Exempel: Speltid: 21 min.```  
+  Skriv in uppgiften.  
+  <br/>```Exempel:```
+  * ```Med realiserad, ej besiffrad, b.c.-stämma```
+  * ```Noter med övnings-cd typ ”Music minus one”```
+  * ```Speltid: 21 min.```
 
 #### Innehallsanmarkning  
 * Har innehållsförteckning/Innehållsförteckning/Benämning (tableofContents = 505 8/_)  
-  För en enkel innehållsanmärkning (505 ‡a), lägg till Har innehållsförteckning (från Lägg till egenskaper under: Instans). Lägg därefter till Innehållsförteckning (plustecknet under Har innehållsförteckning i vänstermenyn). Skriv in uppgiften under Benämning. Musik- och teaterbiblioteket rekommenderar enkel innehållsanmärkning för musiktryck.  
-  ```Exempel: Concerto nach italienischem Gusto, BWV 971 ; Ouverture nach französischer Art, BWV 831 ; Appendix: Ouverture in c, BWV 831a```  
-  ```Exempel: Chain of fools / Donald Covay -- A deeper love / David Cole, Robert Clivilles -- Do right woman, do right man / Chips Moman, Dan Penn -- I knew you were waiting (for me) / Dennis Morgan, Simon Climie```    
+  För en enkel innehållsanmärkning (505 ‡a), lägg till Har innehållsförteckning (från Lägg till egenskaper under: Instans). Lägg därefter till Innehållsförteckning (plustecknet under Har innehållsförteckning i vänstermenyn). Skriv in uppgiften under Benämning. Musik- och teaterbiblioteket rekommenderar enkel innehållsanmärkning för musiktryck.
+  <br/>```Exempel:```
+  * ```Concerto nach italienischem Gusto, BWV 971 ; Ouverture nach französischer Art, BWV 831 ; Appendix: Ouverture in c, BWV 831a```
+  * ```Chain of fools / Donald Covay -- A deeper love / David Cole, Robert Clivilles -- Do right woman, do right man / Chips Moman, Dan Penn -- I knew you were waiting (for me) / Dennis Morgan, Simon Climie```
 
 * Har innehållsförteckning/Innehållsförteckning/Har del/Utökad innehållsanmärkning/Benämning/Upphovsuppgift (tableofContents = 505 8/0 ‡t, ‡r)  
   Klicka på på pilen vid Innehållsförteckning: {Namnlös} för att fälla ut Utökad innehållsanmärkning med Benämning och Upphovsuppgift. Lägg in titel under Benämning och upphov under Upphovsuppgift.  
@@ -477,29 +481,34 @@ Ange den föredragna titeln för verket här, vid behov. Följ [Anvisningar för
 
 ##### Verkets titel
 * Har titel/Titel/Huvudtitel (hasTitle/Title/mainTitle = 240 1/0 ‡a)  
-  Skriv in uppgiften.  
-  ```Exempel: La traviata```  
-  ```Exempel: Symfoni```  
-  ```Exempel: Pianomusik```  
+  Skriv in uppgiften.
+  <br/>```Exempel:```
+  * ```La traviata```
+  * ```Symfoni```
+  * ```Pianomusik```
  
   Ange besättning i Huvudtitel efter form/genre/pregnant titel.  
-  ```Exempel: Kvartett, stråkar```  
-  ```Exempel: Fosterlandspsalm, röst, orkester```  
+  <br/>```Exempel:```
+  * ```Kvartett, stråkar```
+  * ```Fosterlandspsalm, röst, orkester```
   
   Använd även Huvudtitel för hela den föredragna titeln då ordningen mellan uppgifterna i Har titel, Tonart, Version och språk för översättning blir felaktig i MARC-förhandsgranskningen, eller om den föredragna titeln är svår eller omöjlig att uttrycka med enbart dessa fält.  
-  ```Exempel: Sonater och partitor, violin, BWV 1001-1006. Partita, nr 1, h-moll```  
-  ```Exempel: Kvartett, stråkar, nr 13, D. 804, op. 29:1, a-moll, "Rosamunde". Entr'acte```  
+  <br/>```Exempel:```
+  * ```Sonater och partitor, violin, BWV 1001-1006. Partita, nr 1, h-moll```
+  * ```Kvartett, stråkar, nr 13, D. 804, op. 29:1, a-moll, "Rosamunde". Entr'acte```
   
 * Delbeteckning (hasTitle/Title/mainTitle/partNumber = 240 1/0 ‡n)  
-Ange numreringar för verket här, vid behov. Skriv in uppgiften.  
-  ```Exempel: nr 96, Hob. I:96```  
-  ```Exempel: nr 3, op. 90```  
+Ange numreringar för verket här, vid behov. Skriv in uppgiften.
+  <br/>```Exempel:```
+  * ```nr 96, Hob. I:96```
+  * ```nr 3, op. 90```
   
 * Deltitel (hasTitle/Title/mainTitle/partName = 240 1/0 ‡p)       
 Lägg till eventuell deltitel genom att klicka på plustecknet vid Titel (lägg till fält under: Titel), välj Deltitel.
-Skriv in uppgiften.  
-  ```Exempel: Di Provenza il mar```  
-  ```Exempel: Allegro```  
+Skriv in uppgiften.
+  <br/>```Exempel:```
+  * ```Di Provenza il mar```
+  * ```Allegro```
 
 * Specificering i form av grupptitel (hasTitle/Title/mainTitle/marc:formSubheading = 240 1/0 ‡k)   
 Grupptitlar, exempelvis ”Pianomusik. Urval”, används då Instansen innehåller flera verk av samma tonsättare. Grupptiteln kompletteras med individuella sökingångar för dessa verk (i Relation/Verk).  
@@ -529,9 +538,10 @@ För att ange verk som är relaterade, men inte ingår i det beskrivna verket, m
 #### Sprak 
 * Språk (language = 008/35-37)  
   För instrumentalmusik, ange Icke-språkligt medium (=language/zxx). För texter till musik, ange textens språk. För en text på svenska, ange svenska. För att ange originalspråk för ett översatt verk, se Originalversion/Verk/Språk.  
-  Länka till entitet.  
-  ```Exempel: language/zxx```    
-  ```Exempel: svenska (swe)```  
+  Länka till entitet.
+  <br/>```Exempel:```
+  * ```language/zxx```
+  * ```svenska (swe)```  
   För att ange att texten är på flera språk, t ex parallelltext, ange ytterligare en språkkod genom att klicka på plustecknet vid Språk (Lägg till språk) och söka fram ytterligare en entitet för ett språk och länka till den.  
 
 ##### Översättning  
@@ -580,17 +590,19 @@ För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funkt
   ```Exempel: Boye, Karin, 1900-1941```  
 * Medverkan och funktion/Medverkan/Funktion (contribution/role = 700 ‡4)  
   Länka till entitet. Klicka på plustecknet vid Funktion (Lägg till funktion) och sök fram funktionskod. Skriv in kod eller utskriven form i sökrutan eller tryck på mellanslagstangenten för att se alla koder. Välj kod genom att klicka på plustecknet vid koden eller på koden.    
-För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funktions- och relationskoder](http://www.kb.se/katalogisering/Formathandboken/Funktionskoder/)    
-  ```Exempel: relator/lyr (= textförfattare)```  
-  ```Exempel: relator/editor (= redaktör/edt)```    
+För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funktions- och relationskoder](http://www.kb.se/katalogisering/Formathandboken/Funktionskoder/)
+  <br/>```Exempel:```
+  * ```relator/lyr (= textförfattare)```
+  * ```relator/editor (= redaktör/edt)```
 
 #### Genre  
 ##### Saogf-termer  
 * Genre/form – saogf-termer (genreForm = 655 -/7 ‡a, ‡2 saogf)  
   Här anges såväl besättning som genre/form. Länka till entitet.  
-  För att söka efter entiteter inom saogf-termer, välj Genre/form i listan över typer, under Genre/form. Trunkera genom att trycka på mellanslagstangenten eller med * i sökrutan. Välj rätt entitet genom att klicka på plustecknet vid entiteten eller på entiteten.    
-  ```Exempel: Blandad kör```  
-  ```Exempel: Menuetter```  
+  För att söka efter entiteter inom saogf-termer, välj Genre/form i listan över typer, under Genre/form. Trunkera genom att trycka på mellanslagstangenten eller med * i sökrutan. Välj rätt entitet genom att klicka på plustecknet vid entiteten eller på entiteten.
+  <br/>```Exempel:```
+  * ```Blandad kör```
+  * ```Menuetter```  
   Se [instruktionsfilm](https://www.youtube.com/watch?v=wrqs310Nt0M&list=PLZVkEICvA5-GRT2oJQmLgq_2Pksx6zYPy&index=7)  
   
 #### Klassifikation 
@@ -659,12 +671,14 @@ Länka till entitet. Om du inte får träff vid sökning på entiteter, pröva a
  ```Exempel: 1800-talet```  
   
 ##### Anmärkning om notationssystem och språk
-* Anmärkning: Språk/Anmärkning om språk/Notationssystem /Notation/Benämning (hasNote/marc:LanguageNote/hasNotation/Notation/label = 546 ‡b)  
-  ```Exempel: Traditionell västerländsk notskrift```  
-  ```Exempel: Grafisk notation```  
+* Anmärkning: Språk/Anmärkning om språk/Notationssystem /Notation/Benämning (hasNote/marc:LanguageNote/hasNotation/Notation/label = 546 ‡b)
+  <br/>```Exempel:```
+  * ```Traditionell västerländsk notskrift```
+  * ```Grafisk notation```  
 * Anmärkning/Anmärkning om språk/Anmärkning: Språk/Benämning (hasNote/marc:LanguageNote/marc:LanguageNote/label = 546 ‡a)  
-  ```Exempel: Sångtext på hebreiska```  
-  ```Exempel: Kritiska kommentarer på svenska och engelska```  
+  <br/>```Exempel:```
+  * ```Sångtext på hebreiska```
+  * ```Kritiska kommentarer på svenska och engelska```  
  
 #### Målgrupp     
  * Målgrupp (intendedAudience = 008/22)  
@@ -698,23 +712,27 @@ Klicka sedan på plustecknet vid DDK-klassifikation (sekundär) (Lägg till ddk-
   
 ##### Verk/Har titel/Titel
 * Huvudtitel (hasTitle/Title/mainTitle = 700 1/_ ‡a)  
-  Ange den föredragna titeln för verket här, vid behov. Pregnanta titlar för musik anges ofilerade. Skriv in uppgiften.  
-  ```Exempel: La traviata``` 
-  ```Exempel: 23/swe```  
+  Ange den föredragna titeln för verket här, vid behov. Pregnanta titlar för musik anges ofilerade. Skriv in uppgiften.
+  <br/>```Exempel:```
+  * ```La traviata```
+  * ```Symfoni```
          
 * Delbeteckning (hasTitle/Title/mainTitle = 700 1/_  ‡n)  
-  Ange numreringar för verket här, vid behov. Skriv in uppgiften.  
-  ```Exempel: nr 96, Hob. I:96```  
-  ```Exempel: nr 3, op. 90```  
+  Ange numreringar för verket här, vid behov. Skriv in uppgiften.
+  <br/>```Exempel:```
+  * ```nr 96, Hob. I:96```
+  * ```nr 3, op. 90```
          
 * Uttryck av/Verk/Har titel/Titel/Deltitel (expressionOf/Work/hasTitle/Title/partName = 700 1/_ ‡p)  
-  Lägg till eventuell deltitel genom att klicka på plustecknet vid Titel (lägg till fält under: Titel), välj Deltitel. Skriv in uppgiften.  
-  ```Exempel: Di Provenza il mar```  
-  ```Exempel: Allegro```  
+  Lägg till eventuell deltitel genom att klicka på plustecknet vid Titel (lägg till fält under: Titel), välj Deltitel. Skriv in uppgiften.
+  <br/>```Exempel:```
+  * ```Di Provenza il mar```
+  * ```Allegro```
 
-  Använd Huvudtitel för hela den föredragna titeln då ordningen mellan uppgifterna i Har titel, Tonart, Version, Besättning och språk för översättning blir felaktig i MARC-förhandsgranskningen, eller om den föredragna titeln är svår eller omöjlig att uttrycka med enbart dessa fält.  
-  ```Exempel: Sonater och partitor, violin, BWV 1001-1006. Partita, nr 1, h-moll```  
-  ```Exempel: Kvartett, stråkar, nr 13, D. 804, op. 29:1, a-moll, "Rosamunde". Entr'acte```  
+  Använd Huvudtitel för hela den föredragna titeln då ordningen mellan uppgifterna i Har titel, Tonart, Version, Besättning och språk för översättning blir felaktig i MARC-förhandsgranskningen, eller om den föredragna titeln är svår eller omöjlig att uttrycka med enbart dessa fält.
+  <br/>```Exempel:```
+  * ```Sonater och partitor, violin, BWV 1001-1006. Partita, nr 1, h-moll```
+  * ```Kvartett, stråkar, nr 13, D. 804, op. 29:1, a-moll, "Rosamunde". Entr'acte```
         
 * Verk/Tonart (700 1/_ ‡r) 
   Ange tonart. Skriv in uppgiften.  
@@ -730,10 +748,11 @@ Skriv in uppgiften.
   ```Exempel: Maier-Röntgen, Amanda, 1853-1894```  
 
 * Verk/Besättning för framförande (700 1/_ ‡m)  
-  Ange besättning. Skriv in uppgiften.  
-  ```Exempel: orkester```  
-  ```Exempel: klarinett, piano```  
-  ```Exempel: blandad kör```  
+  Ange besättning. Skriv in uppgiften.
+  <br/>```Exempel:```
+  * ```orkester```
+  * ```klarinett, piano```
+  * ```blandad kör```
       
 * Verk/Språk/Språk/Benämning (Language/label = 700 1/_ ‡l)  
   Språk för översättning. Lägg till en förekomst av Språk under Relation/Verk genom att klicka på plustecknet vid Verk. Sök fram Språk i sidorutan, klicka på termen och sedan på Skapa lokal entitet. Lägg till Benämning (klicka på Lägg till egenskaper under: Språk).  
