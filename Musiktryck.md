@@ -141,18 +141,20 @@ Följande anmärkningar är under arbete och fungerar ännu inte fullt ut:
 För att lägga till Har titel, klicka på plustecknet Lägg till egenskaper under: Post.  
   Återge huvudtiteln från titelsidan eller annan föredragen källa så som den förekommer i källan. se [Anvisningar för katalogisering - RDA](http://www.kb.se/rdakatalogisering/Anvisningar/Arbetsfloden/Tryckta-monografier/#huvudtitel "Anvisningar för katalogisering - RDA").  
   Skriv in uppgiften.    
- ```Exempel: Lichtbogen```  
- ```Exempel: Quartett Nr. 2 op. 92 für 2 Violinen, Viola und Violoncello```  
-    För en titel som börjar med bestämd eller obestämd artikel, ska artikeln fileras bort. Ange fileringsvärde genom att lägga till fileringsvärde (plustecknet vid Titel - Lägg till egenskaper under: Titel) och ange en siffra.  
- ```Exempel: Huvudtitel: The best of Heavy metal, fileringsvärde: 4```  
- Se exempel i formathandboken för Libris/Voyager: 
+  <br/>```Exempel:```  
+  * ```Lichtbogen```
+  * ```Quartett Nr. 2 op. 92 für 2 Violinen, Viola und Violoncello```  
+  För en titel som börjar med bestämd eller obestämd artikel, ska artikeln fileras bort. Ange fileringsvärde genom att lägga till fileringsvärde (plustecknet vid Titel - Lägg till egenskaper under: Titel) och ange en siffra.  
+  ```Exempel: Huvudtitel: The best of Heavy metal, fileringsvärde: 4```  
+  Se exempel i formathandboken för Libris/Voyager: 
 [Fileringsindikator]( http://www.kb.se/katalogisering/Formathandboken/Fileringsindikator/)
 
 ##### Övrig titelinformation (undertitel)
 * Har titel/Titel/Övrig titelinformation (= Undertitel) (hasTitle/Title/subtitle = 245 ‡b)  
-  Skriv in uppgiften. Om det finns flera undertitlar, skriv in dessa efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.    
-```Exempel: for nine musicians and live electronics```  
-```Exempel: auf kabardinische Themen```  
+  Skriv in uppgiften. Om det finns flera undertitlar, skriv in dessa efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.  
+  <br/>```Exempel:```  
+  * ```for nine musicians and live electronics```
+  * ```auf kabardinische Themen```  
   
 För att ange föredragen titel (=uniform titel), se Verk/Har titel/Titel/Huvudtitel.  
 
@@ -227,9 +229,10 @@ Vid behov, klicka även på plustecknet vid Parallelltitel och lägg till Övrig
   För att lägga till upphovsuppgift, klicka på plustecknet Lägg till egenskaper under: Instans.  
   Vid postimport: i vissa importerade poster saknas upphovsuppgift. Lägg då till det.   
   Skriv in uppgiften.  
-  ```Exempel: Kaija Saariaho```  
-  ```Exempel: Sergej Prokofjew```  
-  ```Exempel: Ludwig van Beethoven ; herausgegeben von Rainer Cadenbach```  
+    <br/>```Exempel:```
+  * ```Kaija Saariaho```
+  * ```Sergej Prokofjew```
+  * ```Ludwig van Beethoven ; herausgegeben von Rainer Cadenbach```  
 
 #### Identifikator 
 * Identifikator (identifiedBy)  
