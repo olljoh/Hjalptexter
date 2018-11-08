@@ -466,13 +466,13 @@ Ange eventuellt arrangemang. Skriv in uppgiften.
   ```Exempel: arr. röst, piano```  
          
 ##### Verkets titel - huvuduppslag
-För att ange "Originaltitel" för ett verk utan primär medverkande, t ex Bibeln, motsvarande fält 130 se [Hjälptext Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#verkets-titel) 
+För att ange "Originaltitel" för ett verk utan primär medverkande, t ex Bibeln, motsvarande fält 130, se [Hjälptext Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#verkets-titel) 
 
 ##### Verkets titel - analytisk sökingång  
-För att ange verk som ingår i det beskrivna verket motsvarande fält 730 0/2 (analytisk sökingång) se [Hjälptext Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#verkets-titel)  
+För att ange verk som ingår i det beskrivna verket motsvarande fält 730 0/2 (analytisk sökingång), se [Hjälptext Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#verkets-titel)  
 
 ##### Verkets titel - relaterade verk  
-För att ange verk som är relaterade, men inte ingår i det beskrivna verket, motsvarande fält 730 0/_ (icke-analytisk sökingång) se [Hjälptext Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#verkets-titel) 
+För att ange verk som är relaterade, men inte ingår i det beskrivna verket, motsvarande fält 730 0/_ (icke-analytisk sökingång), se [Hjälptext Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#verkets-titel) 
 
 #### Medverkan och funktion  
 * Medverkan och funktion  
@@ -615,7 +615,7 @@ Länka till entitet. Om du inte får träff vid sökning på entiteter, pröva a
   <br/>```Exempel:```
   * ```Traditionell västerländsk notskrift```
   * ```Grafisk notation```  
-* Anmärkning/Anmärkning om språk/Anmärkning: Språk/Benämning (hasNote/marc:LanguageNote/marc:LanguageNote/label = 546 ‡a)  
+* Anmärkning/Anmärkning om språk/Anmärkning: Språk/Benämning (hasNote/marc:LanguageNote/marc:LanguageNote/label = 546 ‡a)
   <br/>```Exempel:```
   * ```Sångtext på hebreiska```
   * ```Kritiska kommentarer på svenska och engelska```  
