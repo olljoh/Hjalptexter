@@ -159,7 +159,7 @@ Följande anmärkningar är under arbete och fungerar ännu inte fullt ut:
 För att ange föredragen titel (=uniform titel), se Verk/Har titel/Titel/Huvudtitel.  
 
 För Varianttitel och andra titelvarianter, se hjälptexten för Tryckt monografi:
-[Varianttitel](https://libris.kb.se/katalogisering/help/workflow-print-monograph-titel-varianttitel)
+[Varianttitel](https://libris.kb.se/katalogisering/help/workflow-print-monograph#titel-varianttitel)
   
 #### Upphovsuppgift
 * Upphovsuppgift (responsibilityStatement = 245 ‡c)  
