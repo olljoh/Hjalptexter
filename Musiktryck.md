@@ -376,7 +376,7 @@ OBS! Om ISSN finns i både 490 och 830 och om volymbeteckningen är angiven på 
 #### Anmarkning
 * Anmärkning/Anmärkning/Benämning (hasNote/Note/label = 500 ‡a)   
   Skriv in allmänna anmärkningar här.    
-  Skriv in uppgiften.  
+  Skriv in uppgiften.
   <br/>```Exempel:```
   * ```Med realiserad, ej besiffrad, b.c.-stämma```
   * ```Noter med övnings-cd typ ”Music minus one”```
