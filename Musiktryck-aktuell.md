@@ -463,19 +463,19 @@ Ange den föredragna titeln för verket här, vid behov. Följ [Anvisningar för
 
 ##### Verkets titel
   * Har titel/Titel/Huvudtitel (hasTitle/Title/mainTitle = 240 1/0 ‡a)  
-    Ange den föredragna titeln för verket här, vid behov. Pregnanta titlar för musik anges ofilerade. Skriv in uppgiften.
+    Ange den föredragna titeln för verket här, vid behov. Pregnanta titlar för musik anges ofilerade. Skriv in uppgiften. 
   <br/>```Exempel:```
     * ```La traviata```
     * ```Symfoni```
     * ```Pianomusik```
  
-  Ange besättning i Huvudtitel efter form/genre/pregnant titel.
-  <br/>```Exempel:```
+    Ange besättning i Huvudtitel efter form/genre/pregnant titel.
+  <br/>```Exempel:```  
     * ```Kvartett, stråkar```
-    * ```Fosterlandspsalm, röst, orkester```
+    * ```Fosterlandspsalm, röst, orkester```  
   
-  Använd även Huvudtitel för *hela* den föredragna titeln då ordningen mellan uppgifterna i Har titel, Tonart, Version och språk för översättning blir felaktig i MARC-förhandsgranskningen, eller om den föredragna titeln är svår eller omöjlig att uttrycka med enbart dessa fält.  
-  <br/>```Exempel:```
+    Använd även Huvudtitel för *hela* den föredragna titeln då ordningen mellan uppgifterna i Har titel, Tonart, Version och språk för översättning blir felaktig i MARC-förhandsgranskningen, eller om den föredragna titeln är svår eller omöjlig att uttrycka med enbart dessa fält.  
+  <br/>```Exempel:```  
     * ```Sonater och partitor, violin, BWV 1001-1006. Partita, nr 1, h-moll```
     * ```Kvartett, stråkar, nr 13, D. 804, op. 29:1, a-moll, "Rosamunde". Entr'acte```
   
