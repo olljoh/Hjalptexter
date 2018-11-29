@@ -60,7 +60,7 @@ Unikt alfanumeriskt ID i Libris, minimum 14 tecken, maximum 17 tecken. ID:n skap
   
 #### Uppgraderad eller importerad av  
 * Uppgraderad eller importerad av/Bibliotek/Sigel (descriptionUpgrader/Library/sigel = 040 ‡d)  
-  Om beskrivningsnivån uppgraderas, lägg till denna uppgift. Vid postimport, lägg till uppgiften. Lägg inte till uppgiften när posten endast ändras utan att beskrivningsnivån uppgraderas.  
+  Om beskrivningsnivån uppgraderas, lägg till denna uppgift. Lägg inte till uppgiften när posten endast ändras utan att beskrivningsnivån uppgraderas. Vid postimport, lägg till uppgiften.  
   För att lägga till Uppgraderad eller importerad av, klicka på plustecknet Lägg till egenskaper under: Post. Klicka på plustecknet till vänster vid Uppgraderad eller importerad av (Lägg till agent). Välj Skapa lokal entitet (längst ner i sidorutan till höger). Välj Bibliotek.  
   Lägg till Sigel (plustecknet Lägg till egenskap under: Bibliotek). Skriv in uppgiften.     
   ```Exempel: S```  
@@ -120,7 +120,7 @@ För ISBN, se [Identifikator](#identifikator) under Instans.
 * Beskrivningsnivå (encodingLevel = 000/17)  
   För att lägga till Beskrivningsnivå, klicka på plustecknet Lägg till egenskaper under: Post.   
   I samband med att du uppgraderar en Bokinfopost eller annan post med beskrivningsnivå: CIP-post (000/17: 8) eller Preliminär nivå (000/17: 5), ändra beskrivningsnivå till någon annan nivå (vanligen Miniminivå, Biblioteksnivå eller Nationalbibliografisk nivå), annars kan ändringar skrivas över.  
-  
+  I mallar är standardvärdet Biblioteksnivå. Ändra vid behov.
   Vid postimport kan beskrivningsnivå ibland saknas eller sakna värde. Lägg då dit beskrivningsnivå och välj värde. I mallar är Miniminivå förvalt. Ändra vid behov.  
   Välj från lista.    
   ```Exempel: Biblioteksnivå```  
@@ -295,7 +295,7 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Tryckt monogra
   * Copyright/Copyright/Datum (copyright/Copyright/date = 264 -/4 ‡c)  
     För musiktryck anges alltid copyrightår om det skiljer sig från utgivningstid (om de sammanfaller anges endast utgivningsår). Ange endast senaste copyrightåret.  
     Skriv in uppgiften. 
-    För att få fram copyrighttecknet, kopiera från exemplet nedan eller skriv Alt + 184. Se också [Specialtecken](https://libris-dev.kb.se/katalogisering/help/search-04-special-chars). Du kan t ex söka på teckenuppsättning i “Sök i windows” och öppna programmet, markera och kopiera tecknet och sedan klistra in det.  
+    För att få fram copyrighttecknet, kopiera från exemplet nedan eller skriv Alt + 184. Se också [Specialtecken](https://libris.kb.se/katalogisering/help/search-04-special-chars). Du kan t ex söka på teckenuppsättning i “Sök i windows” och öppna programmet, markera och kopiera tecknet och sedan klistra in det.  
     ```Exempel: ©2017```  
 
 #### Identifikator 
@@ -547,7 +547,7 @@ För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funkt
     <br/>```Exempel:```
     * ```language/zxx```
     * ```svenska (swe)```  
-  För att ange att texten är på flera språk, t ex parallelltext, ange ytterligare en språkkod genom att klicka på plustecknet vid Språk (Lägg till språk) och söka fram ytterligare en entitet för ett språk och länka till den.  
+  För att ange att texten är på flera språk, ange ytterligare en språkkod genom att klicka på plustecknet vid Språk (Lägg till språk) och söka fram ytterligare en entitet för ett språk och länka till den.  
 
   ##### Översättning  
   För en översättning, ange även:  
