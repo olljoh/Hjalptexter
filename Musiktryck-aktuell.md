@@ -654,6 +654,12 @@ Skriv in uppgiften under Kod.
    Länka till entitet. Om du inte får träff vid sökning på entiteter, pröva att söka på första ledet i ett sammansatt ord, t ex "1800" istället för "1800-talet".   
   ```Exempel: 1800-talet```  
   
+#### Besattning for framforande
+   * Besättning för framförande (musicMedium = 240 ‡m)  
+   <br/>```Exempel:```
+     * ```abc```
+     * ```xyz```  
+   
 #### Anmärkning om notationssystem och språk
   * Anmärkning: Språk/Anmärkning om språk/Notationssystem /Notation/Benämning (hasNote/marc:LanguageNote/hasNotation/Notation/label = 546 ‡b)
   <br/>```Exempel:```
