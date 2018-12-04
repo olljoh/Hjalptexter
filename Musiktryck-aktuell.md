@@ -241,7 +241,7 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Tryckt monogra
     Om flera utgivare ska anges, lägg till Har del (hasPart) under Primär utgivning. Skapa Utgivning som lokal entitet (plustecknet vid Har del - Lägg till entitet). I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Utgivning och välj *** Utgivning. Upprepa Utgivning som lokal entitet genom att duplicera entiteten Utgivning. Ange Plats/Plats/Benämning och Agent/Agent/Benämning och vid behov Datum inom respektive utgivningsavsnitt (angående Datum, se anvisningar nedan). Samtliga utgivare med Plats och Agent ska ligga inom Har del/Utgivning. Land, År och eventuellt Datum ska ligga inom Primär utgivning.  
     Se [exempel](https://libris.kb.se/katalogisering/w4rp4hlwtr5lctjr#it).
   
- ##### År och datum 
+##### År och datum 
   * År (= Utgivningstid) (date = 008/07-10, 264 -/1 ‡c)  
     År får endast innehålla siffror (0-9) och bokstaven u. År ska endast förekomma inom Primär utgivning.  
     Ange utgivningsår, utan klamrar eller andra tecken, endast fyra positioner. Skriv in uppgiften.  
@@ -259,11 +259,11 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Tryckt monogra
   
   * Flera år (flerbandsverk)  
     Använd Startår och Slutår (inte År). För att lägga till Startår och Slutår, klicka på plustecknet vid Primär utgivning (Lägg till egenskaper under: Primär utgivning) och välj Startår respektive Slutår. Egenskaperna ska ligga i avsnittet Primär utgivning. Om årtalen anges utan klammer eller andra tecken utöver fyra positioner, räcker det att ange årtalen här. De exporteras då både som 008 och 264 ‡c. Bindestreck sätts automatiskt. För att få rätt kod i 008/06 (Typ av utgivningsdatum/Utgivningsstatus) vid MARC-export: lägg till Typ av utgivningsdatum (marc:publicationStatus) (klicka på plustecknet vid Primär utgivning) och välj ”Flera årtal (monografisk resurs)".
- <br/>```Exempel:```
-  * ```Startår: 1753```
-  * ```Slutår: 1756```
-  * ```Datum: [1732?]-1756```
-  * ```Typ av utgivningsdatum: Flera årtal (monografisk resurs)``` 
+    <br/>```Exempel:```
+    * ```Startår: 1753```
+    * ```Slutår: 1756```
+    * ```Datum: [1732?]-1756```
+    * ```Typ av utgivningsdatum: Flera årtal (monografisk resurs)``` 
 
  Läs mer om [År och Datum](https://kundo.se/org/librisxl/d/falt-for-utgivningsar/)  
  
@@ -341,11 +341,11 @@ Lägg till genom att klicka på Lägg till egenskaper under: Instans, sök upp "
 
 #### Omfang   
   * Omfång/Omfång/Benämning (extent/Extent/label = 300 ‡a)  
-  Skriv in uppgiften under Benämning.  
-  <br/>```Exempel:```
-  * ```112 sidor```
-  * ```1 partitur (ix, 43 sidor)```
-  * ```1 klaverutdrag (18 sidor) + 2 stämmor```
+    Skriv in uppgiften under Benämning.
+    <br/>```Exempel:```
+    * ```112 sidor```
+    * ```1 partitur (ix, 43 sidor)```
+    * ```1 klaverutdrag (18 sidor) + 2 stämmor```
     
 #### Ovriga fysiska detaljer
   * Övriga fysiska detaljer (other physical details = 300 ‡b)  
@@ -677,7 +677,8 @@ Skriv in uppgiften under Kod.
     * ```blandad kör```
       
 #### Anmärkning om notationssystem och språk
-  * Anmärkning: Språk/Anmärkning om språk/Notationssystem /Notation/Benämning (hasNote/marc:LanguageNote/hasNotation/Notation/label = 546 ‡b)
+  * Anmärkning: Språk/Anmärkning om språk/Notationssystem /Notation/Benämning (hasNote/marc:LanguageNote/hasNotation/Notation/label = 546 ‡b)  
+  Ange notationssystem enligt [KBSP för RDA 7.13.3.3 Ange typ av musiknotation](http://access.rdatoolkit.org/kbspchp7_kbsp7-120.html) 
   <br/>```Exempel:```
     * ```Traditionell västerländsk notskrift```
     * ```Grafisk notation```  
