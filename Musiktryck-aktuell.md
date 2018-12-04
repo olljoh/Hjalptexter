@@ -422,8 +422,8 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
 
 #### Format for noterad musik
   * Format för noterad musik/Format för noterad musik/Benämning (musicFormat/MusicFormat/label = 348 ‡a)   
-  Ange musikalietyp enligt [KBSP för RDA 7.20.1.3](http://access.rdatollkit.org/rdachp7_rda7-1524.html)  
-  Partitur anges som i svensk praxis, dvs. utelämnas för noter för soloinstrument och röst med piano.  
+  Ange musikalietyp enligt [KBSP för RDA 7.20.1.3](http://access.rdatoolkit.org/kbspchp7_kbsp7-251.html)  
+  Partitur anges enligt svensk praxis, dvs. utelämnas för noter för soloinstrument och röst med piano.  
   Skriv in uppgiften.
   <br/>```Exempel:```
     * ```partitur```
