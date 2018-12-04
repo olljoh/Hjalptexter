@@ -420,6 +420,20 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
     * ```Noter med övnings-cd typ ”Music minus one”```
     * ```Speltid: 21 min.```
 
+#### Format for noterad musik
+  * Format för noterad musik/Format för noterad musik/Benämning (musicFormat/MusicFormat/label = 348 ‡a)   
+  Ange musikalietyp enligt [KBSP för RDA 7.20.1.3](http://access.rdatollkit.org/rdachp7_rda7-1524.html)  
+  Partitur anges som i svensk praxis, dvs. utelämnas för noter för soloinstrument och röst med piano.  
+  Skriv in uppgiften.
+  <br/>```Exempel:```
+    * ```partitur```
+    * ```stämma```
+    * ```klaverutdrag```  
+  * Format för noterad musik/Källa/Källa/Kod (musicFormat/MusicFormat/source/Source/code = 348 ‡2)  
+  Ange att termen är hämtad från RDA.  
+  Skriv in uppgiften.  
+  ```Exempel: rda```  
+
 #### Innehallsanmarkning  
   * Har innehållsförteckning/Innehållsförteckning/Benämning (tableofContents = 505 8/_)  
     Musik- och teaterbiblioteket rekommenderar enkel innehållsanmärkning för musiktryck.  
@@ -649,17 +663,19 @@ Skriv in uppgiften under Kod.
     Under Termkomponenter, skapa Underindelning för geografisk term som lokal entitet. (Plustecknet vid Termkomponenter - Lägg till entitet.   I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Underindelning för geografisk term och välj det). Skriv in termen för den geografiska underindelningen under Föredragen benämning.  
   ```Exempel: Bonn``` 
    
-  ##### Kronologiskt ämnesord
+##### Kronologiskt ämnesord
    * Ämne/Kronologiskt ämnesord (subject = 648 7/- ‡a, ‡2 sao)  
    Länka till entitet. Om du inte får träff vid sökning på entiteter, pröva att söka på första ledet i ett sammansatt ord, t ex "1800" istället för "1800-talet".   
   ```Exempel: 1800-talet```  
   
 #### Besattning for framforande
-   * Besättning för framförande (musicMedium = 240 ‡m)  
-   <br/>```Exempel:```
-     * ```abc```
-     * ```xyz```  
-   
+  * Besättning för framförande (musicMedium = 240 ‡m)  
+  Ange besättning. Skriv in uppgiften.
+  <br/>```Exempel:```
+    * ```orkester```
+    * ```klarinett, piano```
+    * ```blandad kör```
+      
 #### Anmärkning om notationssystem och språk
   * Anmärkning: Språk/Anmärkning om språk/Notationssystem /Notation/Benämning (hasNote/marc:LanguageNote/hasNotation/Notation/label = 546 ‡b)
   <br/>```Exempel:```
