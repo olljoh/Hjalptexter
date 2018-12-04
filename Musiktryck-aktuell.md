@@ -535,8 +535,8 @@ Ange numreringar för verket här, vid behov. Skriv in uppgiften.
     [Lägga till Agent - Organisation](https://libris.kb.se/katalogisering/help/workflow-agent-org-instance)  
   
   * Medverkan och funktion/Primär medverkan/Agent/Person (contribution/PrimaryContribution/agent/Person = 100 1/- ‡a)  
-    Länka till entitet. Börja alltid med att söka efter om agenten redan finns. Vid behov, skapa ny entitet för agent (se Skapa ny agent i hjälpsektionen). I undantagsfall, skapa lokal entitet.   
-    <br/>```Exempel:```
+    Länka till entitet. Börja alltid med att söka efter om agenten redan finns. Vid behov, skapa ny entitet för agent (se Skapa ny agent i hjälpsektionen). I undantagsfall, skapa lokal entitet.
+  <br/>```Exempel:```
     * ```Maier-Röntgen, Amanda, 1853-1894```
     * ```Binchois, Gilles, ca 1400-1460```
 
@@ -550,7 +550,7 @@ För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funkt
   * Medverkan och funktion/Medverkan/Funktion (contribution/role = 700 ‡4)  
     Länka till entitet. Klicka på plustecknet vid Funktion (Lägg till funktion) och sök fram funktionskod. Skriv in kod eller utskriven form i sökrutan eller tryck på mellanslagstangenten för att se alla koder. Välj kod genom att klicka på plustecknet vid koden eller på koden.    
     För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funktions- och relationskoder](http://www.kb.se/katalogisering/Formathandboken/Funktionskoder/)
-    <br/>```Exempel:```
+  <br/>```Exempel:```
     * ```Sångtext/lyr```
     * ```Redaktör/edt```
   
