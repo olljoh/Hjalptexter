@@ -25,21 +25,22 @@ I vissa fall fungerar det ännu inte fullt ut att lägga till alla uppgifter som
 | [Adminmetadata](#adminmetadata) | [Instans](#instans) | [Verk](#verk) | 
 | ------ | ----------- |  ----------- |
 | [Kontrollnummer](#kontrollnummer) | [Utgivningssätt](#utgivningssatt) | [Verkets titel](#verkets-titel) |
-| [Skapad av](#skapad-av) | [Titel](#titel) | [Språk](#sprak) |
-| [Uppgraderad eller importerad av](#uppgraderad-eller-importerad-av) | [Upphovsuppgift](#upphovsuppgift) | [Medverkan och funktion](#medverkan-och-funktion) |
-| [Katalogiserande instans](#katalogiserande-instans) | [Identifikator](#identifikator) | [Klassifikation](#klassifikation) |
-| [Poststatus](#poststatus) | [Upplageuppgift](#upplageuppgift) | [Ämne](#amne) |
-| [Systemnummer](#systemnummer) | [Utgivning](#utgivning) | [Genre](#genre) |
-| [Katalogiseringsspråk](#katalogiseringssprak) | [Tillverkning](#tillverkning) | [Innehållstyp](#innehallstyp) |
-| [Katalogiseringsregler](#katalogiseringsregler) | [Copyrightår](#copyrightar) | [Relation](#relation) |
-| [Beskrivningsnivå](#beskrivningsniva) | [Omfång](#omfang) | |
-| [Bibliografikod](#bibliografikod) | [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | |
-| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Mått](#matt) | |
-| | [Bilagor](#bilagor) | |
+| [Skapad av](#skapad-av) | [Titel](#titel) | [Medverkan och funktion](#medverkan-och-funktion) |
+| [Uppgraderad eller importerad av](#uppgraderad-eller-importerad-av) | [Upphovsuppgift](#upphovsuppgift) | [Språk](#sprak) |
+| [Katalogiserande instans](#katalogiserande-instans) | [Identifikator](#identifikator) | [Genre](#genre) |
+| [Poststatus](#poststatus) | [Upplageuppgift](#upplageuppgift) | [Klassifikation](#klassifikation) |
+| [Systemnummer](#systemnummer) | [Utgivning](#utgivning) | [Ämne](#amne) |
+| [Katalogiseringsspråk](#katalogiseringssprak) | [Tillverkning](#tillverkning) | [Besättning](#besattning-for-framforande) |
+| [Katalogiseringsregler](#katalogiseringsregler) | [Copyrightår](#copyrightar) | [Notationssystem och språk](#notationssystem-och-sprak) |
+| [Beskrivningsnivå](#beskrivningsniva) | [Omfång](#omfang) | [Målgrupp](#malgrupp) |
+| [Bibliografikod](#bibliografikod) | [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | [Sekundär DDK-klassifikation](#sekundar-ddk-klassifikation) |
+| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Mått](#matt) | [Innehållstyp](#innehallstyp) |                                                                     
+| | [Bilagor](#bilagor) | | [Relation](#relation) |
 | | [Medietyp](#medietyp) | |
 | | [Bärartyp](#barartyp) | |
 |  | [Seriemedlemskap](#seriemedlemskap) | |
 | | [Anmärkning](#anmarkning) | |
+| | [Musikalietyp](#musikalietyp) | |
 |  | [Innehållsanmärkning](#innehallsanmarkning) | |
 | | [Målgruppsanmärkning](#malgruppsanmarkning) | |
 | | [Annat bärarformat](#annat-bararformat) | | 
@@ -676,7 +677,7 @@ Skriv in uppgiften under Kod.
     * ```klarinett, piano```
     * ```blandad kör```
       
-#### Anmärkning om notationssystem och språk
+#### Notationssystem och språk
   * Anmärkning: Språk/Anmärkning om språk/Notationssystem /Notation/Benämning (hasNote/marc:LanguageNote/hasNotation/Notation/label = 546 ‡b)  
   Ange notationssystem enligt [KBSP för RDA 7.13.3.3 Ange typ av musiknotation](http://access.rdatoolkit.org/kbspchp7_kbsp7-120.html) 
   <br/>```Exempel:```
@@ -744,7 +745,7 @@ Klicka sedan på plustecknet vid DDK-klassifikation (sekundär) (Lägg till ddk-
         
    * Verk/Tonart (700 1/_ ‡r) 
    Ange tonart. Skriv in uppgiften.  
-   ```Exempel: Fiss-moll```  
+   ```Exempel: fiss-moll```  
 
    * Verk/Version (700 1/_ ‡o)  
     Ange eventuellt arrangemang.  
