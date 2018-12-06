@@ -514,7 +514,7 @@ Ange numreringar för verket här, vid behov. Skriv in uppgiften.
 
   * Tonart (240 1/0 ‡r)       
     Ange tonart. Skriv in uppgiften.  
-    ```Exempel: Fiss-moll```  
+    ```Exempel: fiss-moll```  
 
   * Version (240 1/0 ‡o)        
     Ange eventuellt arrangemang. Skriv in uppgiften.  
@@ -606,6 +606,7 @@ För att söka efter entiteter inom Genre/form, klicka på plustecknet vid Genre
       * ```Piano```
       * ```Blandad kör```
       * ```Menuetter```  
+      
       Se [instruktionsfilm](https://www.youtube.com/watch?v=wrqs310Nt0M&list=PLZVkEICvA5-GRT2oJQmLgq_2Pksx6zYPy&index=7)  
 
 #### Klassifikation 
