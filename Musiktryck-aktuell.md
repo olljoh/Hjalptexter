@@ -25,19 +25,19 @@ I vissa fall fungerar det ännu inte fullt ut att lägga till alla uppgifter som
 | [Adminmetadata](#adminmetadata) | [Instans](#instans) | [Verk](#verk) | 
 | ------ | ----------- |  ----------- |
 | [Kontrollnummer](#kontrollnummer) | [Utgivningssätt](#utgivningssatt) | [Verkets titel](#verkets-titel) |
-| [Skapad av](#skapad-av) | [Titel](#titel) | [Medverkan och funktion](#medverkan-och-funktion) |
-| [Uppgraderad eller importerad av](#uppgraderad-eller-importerad-av) | [Upphovsuppgift](#upphovsuppgift) | [Språk](#sprak) |
-| [Katalogiserande instans](#katalogiserande-instans) | [Identifikator](#identifikator) | [Genre](#genre) |
-| [Poststatus](#poststatus) | [Upplageuppgift](#upplageuppgift) | [Klassifikation](#klassifikation) |
-| [Systemnummer](#systemnummer) | [Utgivning](#utgivning) | [Ämne](#amne) |
-| [Katalogiseringsspråk](#katalogiseringssprak) | [Tillverkning](#tillverkning) | [Besättning](#besattning-for-framforande) |
-| [Katalogiseringsregler](#katalogiseringsregler) | [Copyrightår](#copyrightar) | [Notationssystem och språk](#notationssystem-och-sprak) |
-| [Beskrivningsnivå](#beskrivningsniva) | [Omfång](#omfang) | [Målgrupp](#malgrupp) |
-| [Bibliografikod](#bibliografikod) | [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | [Sekundär DDK-klassifikation](#sekundar-ddk-klassifikation) |
-| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Mått](#matt) | [Innehållstyp](#innehallstyp) |                                                                     
-| | [Bilagor](#bilagor) | [Relation](#relation) | 
-| | [Medietyp](#medietyp) | |
-| | [Bärartyp](#barartyp) | |
+| [Skapad av](#skapad-av) | [Medietyp](#medietyp) | [Medverkan och funktion](#medverkan-och-funktion) |
+| [Uppgraderad eller importerad av](#uppgraderad-eller-importerad-av) | [Bärartyp](#barartyp) | [Språk](#sprak) |
+| [Entry map](#entry-map) | [Titel](#titel) | [Genre](#genre) |
+| [Katalogiserande instans](#katalogiserande-instans) | [Upphovsuppgift](#upphovsuppgift) | [Klassifikation](#klassifikation) |
+| [Poststatus](#poststatus) | [Upplageuppgift](#upplageuppgift) | [Ämne](#amne) |
+| [Translitterering](#translitterering) | [Utgivning](#utgivning) | [Besättning](#besattning-for-framforande) |
+| [Systemnummer](#systemnummer) | [Tillverkning](#tillverkning) | [Notationssystem och språk](#notationssystem-och-sprak) |
+| [Katalogiseringsspråk](#katalogiseringssprak) | [Copyrightår](#copyrightar) | [Målgrupp](#malgrupp) |
+| [Katalogiseringsregler](#katalogiseringsregler) | [Identifikator](#identifikator) | [Sekundär DDK-klassifikation](#sekundar-ddk-klassifikation) |
+| [Beskrivningsnivå](#beskrivningsniva) | [Omfång](#omfang) | [Innehållstyp](#innehallstyp) |   
+| [Bibliografikod](#bibliografikod) | [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | [Relation](#relation) | 
+| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Mått](#matt) | |                                                                  
+| | [Bilagor](#bilagor) | |  
 | | [Seriemedlemskap](#seriemedlemskap) | |
 | | [Anmärkning](#anmarkning) | |
 | | [Musikalietyp](#musikalietyp) | |
