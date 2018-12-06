@@ -35,7 +35,7 @@ I vissa fall fungerar det ännu inte fullt ut att lägga till alla uppgifter som
 | [Beskrivningsnivå](#beskrivningsniva) | [Omfång](#omfang) | [Målgrupp](#malgrupp) |
 | [Bibliografikod](#bibliografikod) | [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | [Sekundär DDK-klassifikation](#sekundar-ddk-klassifikation) |
 | [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Mått](#matt) | [Innehållstyp](#innehallstyp) |                                                                     
-| | [Bilagor](#bilagor) | | [Relation](#relation) |
+| | [Bilagor](#bilagor) | | [Relation](#relation) | |
 | | [Medietyp](#medietyp) | |
 | | [Bärartyp](#barartyp) | |
 |  | [Seriemedlemskap](#seriemedlemskap) | |
@@ -677,7 +677,7 @@ Skriv in uppgiften under Kod.
     * ```klarinett, piano```
     * ```blandad kör```
       
-#### Notationssystem och språk
+#### Notationssystem och sprak
   * Anmärkning: Språk/Anmärkning om språk/Notationssystem /Notation/Benämning (hasNote/marc:LanguageNote/hasNotation/Notation/label = 546 ‡b)  
   Ange notationssystem enligt [KBSP för RDA 7.13.3.3 Ange typ av musiknotation](http://access.rdatoolkit.org/kbspchp7_kbsp7-120.html) 
   <br/>```Exempel:```
