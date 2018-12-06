@@ -688,7 +688,7 @@ Skriv in uppgiften under Kod.
     * ```Sångtext på hebreiska```
     * ```Kritiska kommentarer på svenska och engelska```  
  
-#### Målgrupp     
+#### Malgrupp     
   * Målgrupp (intendedAudience = 008/22)  
   Länka till entitet.  
   Trunkera genom att trycka på mellanslagstangenten eller med * i sökrutan. Välj rätt entitet genom att klicka på plustecknet vid entiteten eller på entiteten.    
