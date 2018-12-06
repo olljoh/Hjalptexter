@@ -414,7 +414,7 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
   
 #### Anmarkning
   * Anmärkning/Anmärkning/Benämning (hasNote/Note/label = 500 ‡a)   
-  Skriv in allmänna anmärkningar här.    
+  Gör allmänna anmärkningar här.    
   Skriv in uppgiften.
   <br/>```Exempel:```
     * ```Med realiserad, ej besiffrad, b.c.-stämma```
