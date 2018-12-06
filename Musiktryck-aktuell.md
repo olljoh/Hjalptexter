@@ -35,13 +35,13 @@ I vissa fall fungerar det ännu inte fullt ut att lägga till alla uppgifter som
 | [Beskrivningsnivå](#beskrivningsniva) | [Omfång](#omfang) | [Målgrupp](#malgrupp) |
 | [Bibliografikod](#bibliografikod) | [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | [Sekundär DDK-klassifikation](#sekundar-ddk-klassifikation) |
 | [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Mått](#matt) | [Innehållstyp](#innehallstyp) |                                                                     
-| | [Bilagor](#bilagor) | | [Relation](#relation) | |
+| | [Bilagor](#bilagor) | [Relation](#relation) | 
 | | [Medietyp](#medietyp) | |
 | | [Bärartyp](#barartyp) | |
-|  | [Seriemedlemskap](#seriemedlemskap) | |
+| | [Seriemedlemskap](#seriemedlemskap) | |
 | | [Anmärkning](#anmarkning) | |
 | | [Musikalietyp](#musikalietyp) | |
-|  | [Innehållsanmärkning](#innehallsanmarkning) | |
+| | [Innehållsanmärkning](#innehallsanmarkning) | |
 | | [Målgruppsanmärkning](#malgruppsanmarkning) | |
 | | [Annat bärarformat](#annat-bararformat) | | 
 
