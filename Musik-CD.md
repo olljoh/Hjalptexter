@@ -154,7 +154,7 @@ Om posten är katalogiserad enligt RDA kan även Copyright/Copyright/Datum (copy
 * Plats/Plats/Benämning (= Utgivningsort) (place/label = 264 -/1 ‡a)  
   För att lägga till Plats, klicka på plustecknet vid Primär utgivning (lägg till egenskaper under Primär utgivning) och välj Plats. Sök inte efter Plats som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Plats och välj det.   
   Skriv in uppgiften under Benämning. Klamra vid behov.</br>
-  ```Exempel: [Malmö]```  
+  ```Exempel: Malmö```  
   
 ##### Utgivningsland  
 * Land (country = 008/15-17)  
@@ -165,7 +165,8 @@ Om posten är katalogiserad enligt RDA kan även Copyright/Copyright/Datum (copy
 * Agent/Agent/Benämning (= Utgivarnamn) (agent/label = 264 -/1 ‡b)  
   För att lägga till Agent, klicka på Lägg till egenskaper under Primär utgivning och välj Agent. Sök inte efter Agent som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Agent och välj det.       
   Skriv in uppgiften under Benämning.  
-  ```Exempel: Bokfabriken```   
+  ```Exempel: Dead End Exit Records```  
+  
   Om flera utgivare ska anges, lägg till Har del (hasPart) under Primär utgivning. Skapa Utgivning som lokal entitet (plustecknet vid Har del - Lägg till entitet). I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Utgivning och välj *** Utgivning. Upprepa Utgivning som lokal entitet genom att duplicera entiteten Utgivning.  
 Ange Plats/Plats/Benämning och Agent/Agent/Benämning och vid behov Datum inom respektive utgivningsavsnitt (angående Datum, se anvisningar nedan). Samtliga utgivare med Plats och Agent ska ligga inom Har del/Utgivning.
 Land, År och eventuellt Datum  ska ligga inom Primär utgivning.  
@@ -197,49 +198,34 @@ För fonogram anges alltid copyright- eller p-år, även om det sammanfaller med
   Skriv in uppgiften. För att få fram copyrighttecknet eller tecknet för p-år, kopiera från exemplet nedan.  
   Se också [Specialtecken](https://libris.kb.se/katalogisering/help/search-04-special-chars). Du kan t ex söka på teckenuppsättning i “Sök i windows” och öppna programmet, markera och kopiera tecknet och sedan klistra in det.
   Skriv in uppgiften.
-  <br/>```Exempel:``` 
-    
+  <br/>```Exempel:```
     * ```©2017```
     * ```℗2017```
      
 #### Identifikator 
-Flera typer av identifikatorer kan finnas på ljudinspelningar. I mallen för ljudböcker är Utgivningsnummer (ljudinspelning) och ISBN förvalda.
+Flera typer av identifikatorer kan finnas på ljudinspelningar. I mallen för musik-CD är Utgivningsnummer (ljudinspelning) och EAN förvalda.
+
 ##### Utgivningsnummer (ljudinspelning)
 * Identifikator (identifiedBy)<br/>
   Välj typ från lista.
   <br/>```Exempel: Utgivningsnummer (ljudinspelning)```
 * Identifikator/Utgivningsnummer (ljudinspelning)/Värde (identifiedBy/AudioIssueNumber/value = 028 ‡a)<br/>
   Ange identifikator.
-  <br/>```Exempel: NA242512```
+  <br/>```Exempel: DEERCD016``` DEERCD016
 * Identifikator/Agent/Organisation/Namn (= Utgivare) (identifiedBy/agent/Organization/name = 028 #b)<br/>
   Ange utgivarens namn.
-  <br/>```Exempel: Naxos AudioBooks```<br/>
+  <br/>```Exempel: Dead End Exit Records```<br/>
 * Identifikator/Särskiljande tillägg (= Bestämning) (identifiedBy/qualifier = 020 ‡q)  
   Ange eventuell bestämning.    
   
-##### ISBN
+##### EAN
 * Identifikator (identifiedBy)  
   Välj typ från lista.  
-  ```Exempel: ISBN```
-* Identifikator/ISBN/Värde (identifiedBy/Isbn/value = 020 ‡a)  
-  Ange identifikator.  
-  ```Exempel: 9789188107213```
-* Identifikator/Särskiljande tillägg (= Bestämning) (identifiedBy/qualifier = 020 ‡q)  
-  Ange eventuell bestämning.  
-
-För ogiltiga ISBN, använd Indirekt identifierad av, direkt under Instans. Använd inte Ogiltigt värde under Identifikator/ISBN (identifiedBy/marc:hiddenValue).  
-  
-#### Indirekt identifierad av  
-Ange ogiltiga ISBN här och inte under Identifikator/ISBN/Ogiltigt värde. 
-* Indirekt identifierad av/ISBN (indirectlyIdentifiedBy/ISBN = 020 ‡z)  
-  Välj typ från lista.  
-  ```Exempel: ISBN```
-* Indirekt identifierad av/ISBN/Värde (indirectlyIdentifiedBy/Isbn/value = 020 ‡a)  
-  Skriv in uppgiften.  
-  ```Exempel: 97891881072```
-* Indirekt identifierad av/Särskiljande tillägg (= Bestämning) (indirectlyIdentifiedBy/qualifier = 020 ‡q)  
-  Ange eventuell bestämning.  
-    
+  ```Exempel: EAN```
+* Identifikator/EAN/Värde (identifiedBy/EAN/value = 024 ‡a)<br/>
+  Ange identifikator.<br/>
+  ```Exempel: 7320470195826```  
+   
 #### Omfang
 Ange antal enheter samt typ av enhet, se [RDA 3.4.1.3](http://access.rdatoolkit.org/rdachp3_rda3-2098.html) samt [Librispraxis för Alternativ](http://access.rdatoolkit.org/kbspchp3_kbsp3-95.html). Ange speltid (inom parentes) efter omfång när uppgiften är lätt åtkomlig. 
 * Omfång/Omfång/Benämning (extent/Extent/label = 300 ‡a)   
