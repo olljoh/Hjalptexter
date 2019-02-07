@@ -408,7 +408,7 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
   
   När man redigerar importerade poster med två Seriemedlemskap får man, om man bedömer det nödvändigt, slå ihop dem till ett genom att lägga till Serieuppgift och Indikator för seriebiuppslag i det Seriemedlemskap som innehåller Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel.  
   
-  Om man försöker göra tvärt om och lägga till Instans av Verk i ett Seriemedlemskap så orsakar en bugg att detta kopplas till Instans av Verk/Text (överst i beskrivningen) och det går sedan inte att ändra. I dessa fall måste Seriemedlemskapet tas bort i sin helhet och ett nytt läggas till och fyllas i. 
+  Om man försöker göra tvärt om och lägga till Instans av Verk i ett Seriemedlemskap så orsakar en bugg att detta kopplas till Instans av Verk/Noterad musik (överst i beskrivningen) och det går sedan inte att ändra. I dessa fall måste Seriemedlemskapet tas bort i sin helhet och ett nytt läggas till och fyllas i. 
   
   OBS! Om ISSN finns i både 490 och 830 och om volymbeteckningen är angiven på olika sätt i 490 och 830, dubbleras dessa inom Seriemedlemskapet. Radera en av de dubblerade ISSN- och/eller voIymbeteckningarna.  
   
@@ -466,7 +466,7 @@ Observera att kodning av målgrupp, motsvarande 008/22, ska registreras under In
 ### Verk   
 
 #### Instans av Verk/Musiktryck  
-  * Instans av Verk/Text (instanceOf/Work/NotatedMusic)  
+  * Instans av Verk/Noterad musik (instanceOf/Work/NotatedMusic)  
   Skapa verket som lokal entitet (bryt inte ut verket till en länkbar entitet). Vi rekommenderar att tills vidare skapa verket som lokal entitet. Vi återkommer med anvisningar för att skapa verk som länkbara entiteter. Denna hjälptext beskriver exempel på verk som lokal entitet. Det betyder att du anger de uppgifter som listas här nedan, under Instans av Verk, utan att klicka på länksymbolen (Länka entitet) vid Instans av Verk/Noterad musik.  
 Läs mer om [Verk och Instans](https://librisbloggen.kb.se/2018/05/30/verk-och-instans-i-startversionen/).  
 
@@ -564,34 +564,33 @@ För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funkt
     * ```svenska (swe)```  
   För att ange att texten är på flera språk, ange ytterligare en språkkod genom att klicka på plustecknet vid Språk (Lägg till språk) och söka fram ytterligare en entitet för ett språk och länka till den.  
 
-  ##### Översättning  
-  För en översättning, ange även:  
-    * Språk/Språk/Benämning (Language/label = 240 ‡l)  
-    Lägg till ytterligare en förekomst av Språk, under Språk (klicka på plustecknet vid Språk), skapa lokal entitet (klicka på Skapa lokal entitet längst ner i sidorutan till höger och lägg till Benämning (klicka på Lägg till egenskaper under: Språk).   
-    Skriv in språket i klartext. Denna klartext - verkets (översättningens) språk - visas som ett tillägg till verkets titel i marcpostens 240 ‡l.  
+##### Översättning  
+För en översättning, ange även:  
+   * Språk/Språk/Benämning (Language/label = 240 ‡l)  
+   Lägg till ytterligare en förekomst av Språk, under Språk (klicka på plustecknet vid Språk), skapa lokal entitet (klicka på Skapa lokal entitet längst ner i sidorutan till höger och lägg till Benämning (klicka på Lägg till egenskaper under: Språk).   
+   Skriv in språket i klartext. Denna klartext - verkets (översättningens) språk - visas som ett tillägg till verkets titel i marcpostens 240 ‡l.  
   ```Exempel: Svenska```  
 
   * Anmärkning: Språk (marc:LanguageNote = 041 i1: 1)  
     Ange om resursen är/innehåller en översättning.  
-    För att lägga till uppgiften, klicka på plustecknet vid Instans av verk/Text och välj Anmärkning: Språk. Välj fras från lista.    
+    För att lägga till uppgiften, klicka på plustecknet vid Instans av verk/Noterad musik och välj Anmärkning: Språk. Välj fras från lista.    
     ```Exempel: objektet är/innehåller översättning```  
   
   * Originalversion/Verk/Språk (originalversion/Work/language = 041 ‡h)  
     Ange det språk som en översatt text är översatt från. För en text som är översatt från engelska till svenska, ange engelska här.   
-    Klicka på Lägg till egenskaper under: Text, välj Originalversion, klicka på plustecknet vid Originalversion, välj Skapa lokal entitet (längst ner i sidorutan). Skriv Verk i rutan för Skapa lokal entitet och välj * Verk. Klicka på plustecknet vid Verk (Lägg till egenskaper under: Verk) och välj Språk. Klicka på plustecknet vid Språk. Sök fram språkentiteten och länka.  
+    Klicka på Lägg till egenskaper under: Noterad musik, välj Originalversion, klicka på plustecknet vid Originalversion, välj Skapa lokal entitet (längst ner i sidorutan). Skriv Verk i rutan för Skapa lokal entitet och välj * Verk. Klicka på plustecknet vid Verk (Lägg till egenskaper under: Verk) och välj Språk. Klicka på plustecknet vid Språk. Sök fram språkentiteten och länka.  
     ```Exempel: engelska (eng)```  
     För översättningar i flera led, länka först till det mellanliggande språket och därefter till originalspråket.  
-  
-    ###### Texten delvis översatt  
-    (041 0/- #a + 041 1/- #a #h)  
-    * Språk (language = 008/35-37) +
+    
+###### Texten delvis översatt (041 0/- #a + 041 1/- #a #h)  
+  * Språk (language = 008/35-37) +
     Anmärkning: Språk: Objektet är/innehåller ej översättning (marc:languageNote = 041 0/- #a)   
-    * Har del/Verk/Språk (hasPart/Work/language = 041 ‡a) +  
+  * Har del/Verk/Språk (hasPart/Work/language = 041 ‡a) +  
     Anmärkning: Språk: Objektet är/innehåller översättning (marc:languageNote 041 1/-) +  
     Originalversion/Verk/Språk (originalVersion/Work/language = 041 ‡h)
-    För att ange att texten delvis är översatt, till exempel när en publikation innehåller parallelltext på två språk och den ena texten är en översättning: ange först Språk under Instans av Verk/Text (se Språk ovan). Sök fram och länka till entiteten för det språk som inte är en översättning. Klicka sedan på plustecknet vid Verk - Lägg till egenskap under: Text och välj Anmärkning: Språk. Välj Objektet är/innehåller ej översättning.   
+    För att ange att texten delvis är översatt, till exempel när en publikation innehåller parallelltext på två språk och den ena texten är en översättning: ange först Språk under Instans av Verk/Noterad musik (se Språk ovan). Sök fram och länka till entiteten för det språk som inte är en översättning. Klicka sedan på plustecknet vid Verk - Lägg till egenskap under: Noterad musik och välj Anmärkning: Språk. Välj Objektet är/innehåller ej översättning.   
   
-   Lägg sedan till Har del under Instans av Verk/Text. Skapa verk som lokal entitet (plustecknet vid Har del - Lägg till resurs. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Verk och välj ++++ Verk.) Klicka på plustecknet vid den lokala entiteten Verk (Lägg till egenskaper under: Verk) och välj Språk. Sök fram och länka till entiteten för språket som texten är översatt till. Under den lokala entiteten Verk, lägg till Anmärkning: Språk och ange att resursen är/innehåller en översättning. Under Har del, lägg till Originalversion/Verk/Språk (se ovan under Översättning). Länka till entiteten för språket som resursen delvis är en översättning från.  
+   Lägg sedan till Har del under Instans av Verk/Noterad musik. Skapa verk som lokal entitet (plustecknet vid Har del - Lägg till resurs. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Verk och välj ++++ Verk.) Klicka på plustecknet vid den lokala entiteten Verk (Lägg till egenskaper under: Verk) och välj Språk. Sök fram och länka till entiteten för språket som texten är översatt till. Under den lokala entiteten Verk, lägg till Anmärkning: Språk och ange att resursen är/innehåller en översättning. Under Har del, lägg till Originalversion/Verk/Språk (se ovan under Översättning). Länka till entiteten för språket som resursen delvis är en översättning från.  
 
 #### Genre  
   Länka till entitet.  
@@ -613,7 +612,7 @@ För att söka efter entiteter inom Genre/form, klicka på plustecknet vid Genre
    * DDK-klassifikation  
     För att lägga till DDK-klassifikation:  
       * Om posten har Klassifikation/Klassifikation (till exempel SAB-klassifikation) men saknar Klassifikation/DDK-klassifikation, lägg till ytterligare en förekomst av Klassifikation (plustecknet vid Klassifikation - lägg till egenskaper under: KLassifikation). Välj Skapa lokal entitet (längst ner i sidorutan till höger) och välj DDK-klassifikation. Skriv in uppgiften under Kod.  
-      * Om posten helt saknar Klassifikation, lägg till Klassifikation genom att klicka på plustecknet vid Instans av Verk/Text (Lägg till egenskaper under: Text). Välj Klassifikation. Klicka på plustecknet under Klassifikation (Lägg till Klassifikation). Välj Skapa lokal entitet (längst ner i sidorutan till höger) och välj DDK-klassifikation. Skriv in uppgiften under Kod.  
+      * Om posten helt saknar Klassifikation, lägg till Klassifikation genom att klicka på plustecknet vid Instans av Verk/Noterad musik (Lägg till egenskaper under: Noterad musik). Välj Klassifikation. Klicka på plustecknet under Klassifikation (Lägg till Klassifikation). Välj Skapa lokal entitet (längst ner i sidorutan till höger) och välj DDK-klassifikation. Skriv in uppgiften under Kod.  
     * Klassifikation/DDK-klassifikation/Kod (classification/ClassificationDdc/code = 082 0/4 ‡a)  
     Skriv in uppgiften.  
     ```Exempel: 782.5```  
@@ -696,7 +695,7 @@ Skriv in uppgiften under Kod.
   ```Exempel: j (= barn- och ungdom, 0-16 år)```  
   
 #### Sekundar DDK-klassifikation  
-Lägg till DDK-klassifikation (sekundär) genom att klicka på plusikonen vid Instans av Verk/Text (Lägg till egenskaper under: Text) och välja DDK-klassifikation (sekundär).  
+Lägg till DDK-klassifikation (sekundär) genom att klicka på plusikonen vid Instans av Verk/Noterad musik (Lägg till egenskaper under: Noterad musik) och välja DDK-klassifikation (sekundär).  
 Klicka sedan på plustecknet vid DDK-klassifikation (sekundär) (Lägg till ddk-klassifikation) och välj Skapa lokal entitet (längst ner i sidorutan till höger). Skriv in uppgiften under Kod.  
   * Klassifikation/DDK-klassifikation/Kod (additionalClassificationDdc/ClassificationDdc/code = 083 0/- ‡a)  
   Skriv in uppgiften.  
@@ -713,7 +712,7 @@ Klicka sedan på plustecknet vid DDK-klassifikation (sekundär) (Lägg till ddk-
   Länka till entitet.  
   ```Exempel: term/rda/NotatedMusic```  
   
-  För att lägga till ytterligare innehållstyp, till exempel "sti" = stillbild för en bilderbok med både text och bild, lägg till Har del under Instans av Verk, från plustecknet vid Text (Lägg till egenskaper under: Noterad musik). Skapa därefter Verk som lokal entitet genom att klicka på plustecknet vid Har del (Lägg till resurs). Välj Skapa lokal entitet och välj därefter ++ Verk i listan. Lägg därefter till Innehållstyp från plustecknet vid Verk (Lägg till egenskaper under: Verk). Sök fram och länka till entitet.  
+  För att lägga till ytterligare innehållstyp, lägg till Har del under Instans av Verk, från plustecknet vid Noterad musik (Lägg till egenskaper under: Noterad musik). Skapa därefter Verk som lokal entitet genom att klicka på plustecknet vid Har del (Lägg till resurs). Välj Skapa lokal entitet och välj därefter ++ Verk i listan. Lägg därefter till Innehållstyp från plustecknet vid Verk (Lägg till egenskaper under: Verk). Sök fram och länka till entitet.  
 
 #### Relation
   * Relation (Relationship = 700 1/_ )
