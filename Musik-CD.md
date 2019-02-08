@@ -269,13 +269,13 @@ För anvisningar om hur man anger Seriemedlemskap, se hjälptexten [Tryckt monog
   Skriv in allmänna anmärkningar här.  
   För att lägga till Anmärkning, klicka på plustecknet i redigeringsvyn (den stora runda ikonen under Verktygsikonen - Lägg till egenskaper under: Ljudinspelning) och välj Anmärkning (hasNote). Tryck Enter för att lägga till Anmärkning.  
   Skriv in uppgiften under Benämning.</BR> 
-  ```Exempel: ???``` HITTAR INGEN ANM HIT
+  ```Titel från Discogs```  
   
 ### Verk   
 
-#### Instans av Verk/Ljudmaterial  
-* Instans av Verk/Ljudmaterial (instanceOf/Work/Audio)  
-  Skapa verket som lokal entitet (bryt inte ut verket till en länkbar entitet). Vi rekommenderar att tills vidare skapa verket som lokal entitet. Vi återkommer med anvisningar för att skapa verk som länkbara entiteter. Denna hjälptext beskriver exempel på verk som lokal entitet. Det betyder att du anger de uppgifter som listas här nedan, under Instans av Verk, utan att klicka på länksymbolen (Länka entitet) vid Instans av Verk/Ljudmaterial.  
+#### Instans av Verk/Musik
+* Instans av Verk/Musik (instanceOf/Work/Audio)  
+  Skapa verket som lokal entitet (bryt inte ut verket till en länkbar entitet). Vi rekommenderar att tills vidare skapa verket som lokal entitet. Vi återkommer med anvisningar för att skapa verk som länkbara entiteter. Denna hjälptext beskriver exempel på verk som lokal entitet. Det betyder att du anger de uppgifter som listas här nedan, under Instans av Verk, utan att klicka på länksymbolen (Länka entitet) vid Instans av Verk/Musik.  
 Läs mer om [Verk och Instans](https://librisbloggen.kb.se/2018/05/30/verk-och-instans-i-startversionen/).  
 
 För att lägga till egenskaper under Instans av Verk/Ljudmaterial, klicka på plustecknet vid Instans av Verk/Ljudmaterial - Lägg till egenskaper under: Ljudmaterial. Sök fram egenskapen och välj den genom att klicka på plustecknet vid egenskapens namn.  
@@ -357,11 +357,11 @@ För ingående verk med primär medverkande, lägg till Medverkan och funktion/P
 ##### Primär medverkan
 * Medverkan och funktion/Primär medverkan/Agent/Person (contribution/PrimaryContribution/agent/Person = 100 1/- ‡a)  
   Länka till entitet. Börja alltid med att söka efter om agenten redan finns. Vid behov, skapa ny entitet för agent (se Skapa ny agent i hjälpsektionen). I undantagsfall, skapa lokal entitet.
-<br/>```Exempel: Persson, Peps, 1946-```  Persson, Peps, 1946- 
+<br/>```Exempel: Persson, Peps, 1946-```  
   
 * Medverkan och funktion/Primär medverkan/Funktion (contribution/PrimaryContribution/role = 100 ‡4)  
   Länka till entitet. Klicka på plustecknet vid Funktion (Lägg till funktion) och sök fram funktionskod. Skriv in kod eller utskriven form i sökrutan eller tryck på mellanslagstangenten för att se alla koder. Välj kod genom att klicka på plustecknet vid koden eller på koden.    
-För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funktions- och relationskoder](http://www.kb.se/katalogisering/Formathandboken/Funktionskoder/)  
+  För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funktions- och relationskoder](http://www.kb.se/katalogisering/Formathandboken/Funktionskoder/)  
   ```Exempel: Framförande, prf (=Exekutör)```
 
 ##### Medverkan
@@ -380,7 +380,7 @@ För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funkt
   ```Exempel: svenska (swe)```  
   För att ange att texten är på flera språk, ange ytterligare en språkkod genom att klicka på plustecknet vid Språk (Lägg till språk) och söka fram ytterligare en entitet för ett språk och länka till den.  
   
-##### Översättning TA BORT HELA BLOCKET
+##### Översättning TA BORT HELA BLOCKET?
 
 * Anmärkning: Språk (marc:LanguageNote = 041 i1: 1)  
   Ange om resursen är/innehåller en översättning.  
@@ -410,7 +410,7 @@ Se [instruktionsfilm](https://www.youtube.com/watch?v=wrqs310Nt0M&list=PLZVkEICv
 ##### Litterär genre  FÖR RADIOPJÄS?
 * Genre/form – litterär genre (genreForm = 008/33)  
   Välj Litterär genre i listan över typer. Länka till entitet.  
-  ```Exempel: 0 ( = ej skönlitterärt verk)```
+  ```Exempel: Upptagning av en talpjäs som dramatiskt verk, Dramatiskt verk```
   
 ##### Biografiskt material  FÖR TALSKIVOR?
 * Genre/form – biografiskt material (genreForm = 008/34)  
