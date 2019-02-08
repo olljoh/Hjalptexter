@@ -10,6 +10,7 @@ I vissa fall fungerar det ännu inte fullt ut att lägga till alla uppgifter som
 
 För anvisningar om Adminmetadata, se hjälptexten [Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph).
 
+NOTERA att för utgivna fysiska fonogram är hela resursen godkänd källa, utan prioritetsordning, se [Librispraxis 2.2.2.4.1](http://access.rdatoolkit.org/kbspchp2_kbsp2-51.html).
 
 ### Innehåll  
 
@@ -130,7 +131,7 @@ Vid behov, klicka även på plustecknet vid Parallelltitel och lägg till Övrig
 #### Upphovsuppgift
 * Upphovsuppgift (responsibilityStatement = 245 ‡c)  
   För att lägga till upphovsuppgift, klicka på plustecknet Lägg till egenskaper under: Instans.  
-  Vid postimport: i vissa importerade poster saknas upphovsuppgift. Lägg då till det.   
+  Vid postimport: i vissa importerade poster saknas upphovsuppgift. Lägg då till det om det är relevant.    
   Skriv in uppgiften.
     <br/>```Exempel:```
     * ```Pray for Locust```
@@ -139,7 +140,7 @@ Vid behov, klicka även på plustecknet vid Parallelltitel och lägg till Övrig
 #### Upplageuppgift
 * Upplageuppgift (editionStatement = 250 ‡a)</BR>
   För att lägga till upplageuppgift, klicka på plustecknet Lägg till egenskaper under: Elektronisk.
-  Skriv in upplagebeteckning här.  
+  Skriv in upplagebeteckning här. Följ resursens formulering.
   ```Exempel: Limiterad upplaga```  
   
 #### Utgivning  
@@ -175,17 +176,20 @@ Land, År och eventuellt Datum  ska ligga inom Primär utgivning.
 ##### År och datum 
   * År (= Utgivningstid) (date = 008/07-10, 264 -/1 ‡c)  
   År får endast innehålla siffror (0-9) och bokstaven u. År ska endast förekomma inom Primär utgivning.  
-  Ange utgivningsår, utan klamrar eller andra tecken, endast fyra positioner. Skriv in uppgiften.  
-  För att ange ett år utan klamrar eller andra tecken, ange det endast här. Det kommer då att exporteras till både marcpostens 08/07-10 och 264 -/1 ‡c. För att ange årtal med klamrar eller andra tecken utöver fyra positioner, använd Datum.  
+  Utgivningsår anges här, utan klamrar eller andra tecken - endast fyra positioner. Det kommer då att exporteras till både marcpostens 08/07-10 och 264 -/1 ‡c.  
+  Skriv in uppgiften.  
   ```Exempel: 2017```  
+  
+För att ange årtal med klamrar eller andra tecken utöver fyra positioner, använd Datum.  
   * Datum (= Utgivningstid) (date = 264 -/1 ‡c)  
   Datum får innehålla text och interpunktionstecken.  
-  För att ange ett utgivningsdatum med fler än fyra positioner, till exempel ett klamrat årtal, skriv in det här. Det kommer att exporteras till marcpostens  264 -/1 ‡c. Skriv in uppgiften.  
-  För att ange ett år utan klamrar eller andra tecken, använd endast År.  
+  Utgivningsdatum med fler än fyra positioner, till exempel ett klamrat årtal, anges här. Det kommer att exporteras till marcpostens  264 -/1 ‡c.
   Skriv in uppgiften.
   <br/>```Exempel:```
     * ```[2017]```
     * ```[mellan 2003 och 2005?]```
+
+För att ange ett år utan klamrar eller andra tecken, använd År.  
   
 * Flera år (flerbandsverk)  
  För anvisningar om hur man anger flera år (flerbandsverk), se hjälptexten [Tryckt monografi](https://libris-qa.kb.se/katalogisering/help/workflow-print-monograph#utgivning): Utgivning. 
@@ -193,16 +197,17 @@ Land, År och eventuellt Datum  ska ligga inom Primär utgivning.
  Läs mer om [År och Datum](https://kundo.se/org/librisxl/d/falt-for-utgivningsar/)  
   
 #### Copyright- eller p-ar
-För fonogram anges alltid copyright- eller p-år, även om det sammanfaller med med utgivningsår/distributionsår, se [Librispraxis 2.11](http://access.rdatoolkit.org/kbspchp2_kbsp2-1030.html).</BR>
+För fonogram anges alltid copyright- eller p-år, även om det sammanfaller med utgivningsår, se [Librispraxis 2.11](http://access.rdatoolkit.org/kbspchp2_kbsp2-1030.html).</BR>
 * Copyright/Copyright/Datum (copyright/Copyright/date = 264 -/4 ‡c)  
-  Skriv in uppgiften. För att få fram copyrighttecknet eller tecknet för p-år, kopiera från exemplet nedan.  
+  Skriv in uppgiften. Det går bara att ange ett år här, så om både copyright- och p-år förekommer på resursenn ange det senaste p-året.
+  För att få fram copyrighttecknet eller tecknet för p-år, kopiera från exemplet nedan. 
   Se också [Specialtecken](https://libris.kb.se/katalogisering/help/search-04-special-chars). Du kan t ex söka på teckenuppsättning i “Sök i windows” och öppna programmet, markera och kopiera tecknet och sedan klistra in det.
   Skriv in uppgiften.
   <br/>```Exempel:```
     * ```©2017```
-    * ```℗2017```
+    * ```℗2017```  
      
-#### Identifikator 
+#### Identifikator
 Flera typer av identifikatorer kan finnas på ljudinspelningar. I mallen för musik-CD är Utgivningsnummer (ljudinspelning) och EAN förvalda.
 
 ##### Utgivningsnummer (ljudinspelning)
@@ -210,7 +215,7 @@ Flera typer av identifikatorer kan finnas på ljudinspelningar. I mallen för mu
   Välj typ från lista.
   <br/>```Exempel: Utgivningsnummer (ljudinspelning)```
 * Identifikator/Utgivningsnummer (ljudinspelning)/Värde (identifiedBy/AudioIssueNumber/value = 028 ‡a)<br/>
-  Ange identifikator.
+  Ange identifikator på samma sätt som den är angiven i resursen.
   <br/>```Exempel: DEERCD016``` DEERCD016
 * Identifikator/Agent/Organisation/Namn (= Utgivare) (identifiedBy/agent/Organization/name = 028 #b)<br/>
   Ange utgivarens namn.
@@ -241,7 +246,7 @@ Ange antal enheter samt typ av enhet, se [RDA 3.4.1.3](http://access.rdatoolkit.
 * Tillsammans med/Instans/Benämning (Bilagor) (accompaniedBy/Instance/label = 300 ‡e)   
 För att lägga till Tillsammans med, klicka på plustecknet Lägg till egenskaper under: Ljudinspelning och välj Tillsammans med. Skapa Instans som lokal entitet. (Plustecknet vid Tillsammans med, välj Skapa lokal entitet, längst ner i sidorutan till höger, skriv Instans och välj ** Instans.) Lägg till Benämning (plustecknet vid Instans - Lägg till egenskaper under: Instans).    
 Skriv in uppgiften under Benämning.  
- ```Exempel: Sångtexter och kommentarer i bilaga```  
+   ```Exempel: Sångtexter och kommentarer i bilaga```  
     
 #### Seriemedlemskap
 För anvisningar om hur man anger Seriemedlemskap, se hjälptexten [Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#seriemedlemskap): Seriemedlemskap.
@@ -255,7 +260,7 @@ För anvisningar om hur man anger Seriemedlemskap, se hjälptexten [Tryckt monog
     * ```Don't Deceive Me (Fats Domino) -- Cheatin' Woman (Frankie Ford) -- Honey Hush (Joe Turner) -- Diddy-Y-Diddy-O (Roy Brown) -- Whirlaway (Allen Toussaint) -- Cha Dooky Doo (Art Neville) -- Real Gone Party (Ruth & Al) -- Chickee Wah Wah (Bobby Marchan) --There'll Be No Backin' Out (Mickey & Sylvia) -- That's All I Need To Know (Sam Cooke) -- Carry On (Jerry Byrne)```
 
   * Har innehållsförteckning/Innehållsförteckning/Har del/Utökad innehållsanmärkning/Benämning/Upphovsuppgift (tableofContents = 505 8/0 ‡t, ‡r)  
-  För en utökad innehållsanmärkning med titlar och upphovsuppgifter. Musik- och teaterbiblioteket rekommenderar dock enkel innehållsanmärkning för musiktryck.  
+  För en utökad innehållsanmärkning med titlar och upphovsuppgifter.  
   Klicka på på pilen vid Innehållsförteckning: {Namnlös} för att fälla ut Utökad innehållsanmärkning med Benämning och Upphovsuppgift. Lägg in titel under Benämning och upphov under Upphovsuppgift. Vid behov, lägg in Kommentar.  
   För att lägga till ytterligare en Utökad innehållsanmärkning med titel (Benämning) och Upphovsuppgift som lokal entitet, klicka på Duplicera entitet.
   
