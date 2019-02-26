@@ -198,7 +198,7 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Tryckt monogra
 #### Upphovsuppgift
 * Upphovsuppgift (responsibilityStatement = 245 ‡c)  
   För att lägga till upphovsuppgift, klicka på plustecknet Lägg till egenskaper under: Instans.  
-  Vid postimport: i vissa importerade poster saknas upphovsuppgift. Lägg då till det.   
+  Vid postimport: i vissa importerade poster saknas upphovsuppgift. Lägg till det om relevant.   
   Skriv in uppgiften.
   <br/>```Exempel:```
   * ```Kaija Saariaho```
@@ -221,7 +221,7 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Tryckt monogra
 #### Utgivning  
  * Utgivning (publication)  
    Välj typ från lista. För monografier, använd Primär utgivning.     
-   I konverterade och maskininlästa poster finns det ibland två avsnitt: ett Primär utgivning med År och Land, och ett Utgivning med Plats,     Agent och Datum. När man redigerar maskininlästa poster med två utgivningsavsnitt får man, om man bedömer det nödvändigt, flytta uppgifterna om Plats, Agent och Datum till avsnittet Primär utgivning och ta bort avsnittet Utgivning.   
+   I konverterade och maskininlästa poster finns det ibland två avsnitt: ett Primär utgivning med År och Land, och ett Utgivning med Plats, Agent och Datum. När man redigerar maskininlästa poster med två utgivningsavsnitt får man, om man bedömer det nödvändigt, flytta uppgifterna om Plats, Agent och Datum till avsnittet Primär utgivning och ta bort avsnittet Utgivning.   
    
    NB inväntar en maskinell ändring av dessa poster och ändrar inte manuellt.    
    
@@ -246,17 +246,19 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Tryckt monogra
   * År (= Utgivningstid) (date = 008/07-10, 264 -/1 ‡c)  
     År får endast innehålla siffror (0-9) och bokstaven u. År ska endast förekomma inom Primär utgivning.  
     Ange utgivningsår, utan klamrar eller andra tecken, endast fyra positioner. Skriv in uppgiften.  
-    För att ange ett år utan klamrar eller andra tecken, ange det endast här. Det kommer då att exporteras till både marcpostens 08/07-10 och 264 -/1 ‡c. För att ange årtal med klamrar eller andra tecken utöver fyra positioner, använd Datum.  
+    För att ange ett år utan klamrar eller andra tecken, ange det endast här. Det kommer då att exporteras till både marcpostens 08/07-10 och 264 -/1 ‡c.  
     ```Exempel: 2017```  
+
+  För att ange årtal med klamrar eller andra tecken utöver fyra positioner, använd Datum.
 
   * Datum (= Utgivningstid) (date = 264 -/1 ‡c)  
     Datum får innehålla text och interpunktionstecken.  
     För att ange ett utgivningsdatum med fler än fyra positioner, till exempel ett klamrat årtal, skriv in det här. Det kommer att exporteras till marcpostens 264 -/1 ‡c. Skriv in uppgiften.  
-    För att ange ett år utan klamrar eller andra tecken, använd endast År.  
-    Skriv in uppgiften.
     <br/>```Exempel:```
     * ```[2017]```
     * ```[mellan 1863 och 1866?]```
+  
+  För att ange ett år utan klamrar eller andra tecken, använd endast År.  
   
   * Flera år (flerbandsverk)  
     Använd Startår och Slutår (inte År). För att lägga till Startår och Slutår, klicka på plustecknet vid Primär utgivning (Lägg till egenskaper under: Primär utgivning) och välj Startår respektive Slutår. Egenskaperna ska ligga i avsnittet Primär utgivning. Om årtalen anges utan klammer eller andra tecken utöver fyra positioner, räcker det att ange årtalen här. De exporteras då både som 008 och 264 ‡c. Bindestreck sätts automatiskt. För att få rätt kod i 008/06 (Typ av utgivningsdatum/Utgivningsstatus) vid MARC-export: lägg till Typ av utgivningsdatum (marc:publicationStatus) (klicka på plustecknet vid Primär utgivning) och välj ”Flera årtal (monografisk resurs)".
@@ -282,7 +284,7 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Tryckt monogra
 
   ##### Tillverkningsnamn  
    * Agent/Agent/Benämning (agent/label = 264 -/3 ‡b)  
-     Skriv in uppgiften.   
+     Skriv in uppgiften.  
      ```Exempel: Scandbook```   
 
   ##### Tillverkningstid   
@@ -312,14 +314,14 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Tryckt monogra
 
 För ogiltiga ISBN, använd Indirekt identifierad av, direkt under Instans. Använd inte Ogiltigt värde under Identifikator/ISBN (identifiedBy/marc:hiddenValue).  
   
-  * Identifikator/ISMN/Värde (identifiedBy/ISMN/value = 024 2 _ ‡a)
+  * Identifikator/ISMN/Värde (identifiedBy/ISMN/value = 024 2 _ ‡a)  
   Skriv in uppgiften.  
   ```Exempel: 9790006466641```  
   * Identifikator/Plåtnummer/Värde (identifiedBy/MusicPlate/value = 028 2 1 ‡a)  
   Skriv in uppgiften.  
   ```Exempel: N.M.S. 1090```
   * Identifikator/Editionsnummer  
-  * Värde (identifiedBy/MusicPublisherNumber/value = 028 3 1 ‡a)
+  * Värde (identifiedBy/MusicPublisherNumber/value = 028 3 1 ‡a)  
   Skriv in uppgiften.  
   ```Exempel: HN 6027```  
   * Agent/organisation/namn (identifiedBy/MusicPublisherNumber/agent/Organization/name = 028 3 1 ‡b)  
@@ -369,7 +371,7 @@ Skriv in uppgiften.
   Avvakta med att skapa verk som länkade entiteter. Beskriv serien som lokal entitet, enligt följande instruktion.  
   *Nytt 2018-10-04:*   
   * Man måste inte längre fylla i två Seriemedlemskap för att vid export till MARC få ut både 490 och 830.  
-  * Vid export till marc21 skapas både 490 och 830 (800/810) från Seriemedlemskap som saknar Serieuppgift (t ex gamla 440-fält). OBS.       Hanteringen klarar de flesta fall bra, men det finns serier med deltitlar/delserier som kommer att exporteras fel (fel ordning mellan Delbeteckning och Deltitel, fel interpunktion). Om man stöter på sådana, och anser felet besvärande, får man gå in i posten och lägga till en korrekt Serieuppgift i rätt Seriemedlemskap. Då kommer 490 att skapas från det. (Finns det flera Seriemedlemskap behöver man komplettera alla, annars skapas bara 490 för den serien som har en ifylld Serieuppgift).  
+  * Vid export till marc21 skapas både 490 och 830 (800/810) från Seriemedlemskap som saknar Serieuppgift (t ex gamla 440-fält). OBS! Hanteringen klarar de flesta fall bra, men det finns serier med deltitlar/delserier som kommer att exporteras fel (fel ordning mellan Delbeteckning och Deltitel, fel interpunktion). Om man stöter på sådana, och anser felet besvärande, får man gå in i posten och lägga till en korrekt Serieuppgift i rätt Seriemedlemskap. Då kommer 490 att skapas från det. (Finns det flera Seriemedlemskap behöver man komplettera alla, annars skapas bara 490 för den serien som har en ifylld Serieuppgift).  
 
 Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-seriemedlemskap-saknas-i-marc-export/)  
      
@@ -438,7 +440,7 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
 #### Innehallsanmarkning  
   * Har innehållsförteckning/Innehållsförteckning/Benämning (tableofContents = 505 8/_)  
     Musik- och teaterbiblioteket rekommenderar enkel innehållsanmärkning för musiktryck.  
-    För en enkel innehållsanmärkning (505 ‡a), lägg till Har innehållsförteckning (från Lägg till egenskaper under: Instans). Lägg därefter till Innehållsförteckning (plustecknet under Har innehållsförteckning i vänstermenyn). Skriv in uppgiften under Benämning. 
+    För en enkel innehållsanmärkning (505 ‡a), lägg till Har innehållsförteckning (från Lägg till egenskaper under: Instans). Lägg därefter till Innehållsförteckning (plustecknet under Har innehållsförteckning i vänstermenyn). Skriv in uppgiften under Benämning.
    <br/>```Exempel:```
     * ```Concerto nach italienischem Gusto, BWV 971 ; Ouverture nach französischer Art, BWV 831 ; Appendix: Ouverture in c, BWV 831a```
     * ```Chain of fools / Donald Covay -- A deeper love / David Cole, Robert Clivilles -- Do right woman, do right man / Chips Moman, Dan Penn -- I knew you were waiting (for me) / Dennis Morgan, Simon Climie```
@@ -451,7 +453,7 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
 #### Malgruppsanmarkning
   * Målgrupp/Målgrupp/Benämning (intendedAudience/IntendedAudience/label = 521 ‡a)   
   För att lägga till målgruppsanmärkning, klicka på plustecknet Lägg till egenskaper under: Instans och välj Målgrupp.  
-Skapa Målgrupp som lokal entitet (plustecknet vid Målgrupp - Lägg till målgrupp. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Målgrupp och välj det). Skriv in uppgiften under Benämning.      
+Skapa Målgrupp som lokal entitet (plustecknet vid Målgrupp - Lägg till målgrupp. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Målgrupp och välj det). Skriv in uppgiften under Benämning.  
   ```Exempel: För årskurs 1```  
 Observera att kodning av målgrupp, motsvarande 008/22, ska registreras under Instans av Verk/Genre.  
 
@@ -549,7 +551,7 @@ För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funkt
   Länka till entitet. Börja alltid med att söka efter om agenten redan finns. Vid behov, skapa ny entitet för agent (se Skapa ny agent i hjälpsektionen). I undantagsfall, skapa lokal entitet.   
   ```Exempel: Boye, Karin, 1900-1941```  
   * Medverkan och funktion/Medverkan/Funktion (contribution/role = 700 ‡4)  
-    Länka till entitet. Klicka på plustecknet vid Funktion (Lägg till funktion) och sök fram funktionskod. Skriv in kod eller utskriven form i sökrutan eller tryck på mellanslagstangenten för att se alla koder. Välj kod genom att klicka på plustecknet vid koden eller på koden.    
+    Länka till entitet. Klicka på plustecknet vid Funktion (Lägg till funktion) och sök fram funktionskod. Skriv in kod eller utskriven form i sökrutan eller tryck på mellanslagstangenten för att se alla koder. Välj kod genom att klicka på plustecknet vid koden eller på koden.  
     För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funktions- och relationskoder](http://www.kb.se/katalogisering/Formathandboken/Funktionskoder/)
   <br/>```Exempel:```
     * ```Sångtext/lyr```
@@ -573,7 +575,7 @@ För en översättning, ange även:
 
   * Anmärkning: Språk (marc:LanguageNote = 041 i1: 1)  
     Ange om resursen är/innehåller en översättning.  
-    För att lägga till uppgiften, klicka på plustecknet vid Instans av verk/Noterad musik och välj Anmärkning: Språk. Välj fras från lista.    
+    För att lägga till uppgiften, klicka på plustecknet vid Instans av verk/Noterad musik och välj Anmärkning: Språk. Välj fras från lista.  
     ```Exempel: objektet är/innehåller översättning```  
   
   * Originalversion/Verk/Språk (originalversion/Work/language = 041 ‡h)  
@@ -587,7 +589,7 @@ För en översättning, ange även:
     Anmärkning: Språk: Objektet är/innehåller ej översättning (marc:languageNote = 041 0/- #a)   
   * Har del/Verk/Språk (hasPart/Work/language = 041 ‡a) +  
     Anmärkning: Språk: Objektet är/innehåller översättning (marc:languageNote 041 1/-) +  
-    Originalversion/Verk/Språk (originalVersion/Work/language = 041 ‡h)
+    Originalversion/Verk/Språk (originalVersion/Work/language = 041 ‡h)  
     För att ange att texten delvis är översatt, till exempel när en publikation innehåller parallelltext på två språk och den ena texten är en översättning: ange först Språk under Instans av Verk/Noterad musik (se Språk ovan). Sök fram och länka till entiteten för det språk som inte är en översättning. Klicka sedan på plustecknet vid Verk - Lägg till egenskap under: Noterad musik och välj Anmärkning: Språk. Välj Objektet är/innehåller ej översättning.   
   
    Lägg sedan till Har del under Instans av Verk/Noterad musik. Skapa verk som lokal entitet (plustecknet vid Har del - Lägg till resurs. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Verk och välj ++++ Verk.) Klicka på plustecknet vid den lokala entiteten Verk (Lägg till egenskaper under: Verk) och välj Språk. Sök fram och länka till entiteten för språket som texten är översatt till. Under den lokala entiteten Verk, lägg till Anmärkning: Språk och ange att resursen är/innehåller en översättning. Under Har del, lägg till Originalversion/Verk/Språk (se ovan under Översättning). Länka till entiteten för språket som resursen delvis är en översättning från.  
@@ -640,7 +642,7 @@ Skriv in uppgiften under Kod.
 #### Amne  
    * Ämne  
    För samlingar där den geografiska eller kronologiska aspekten är framhävd får genre/form/besättning kompletteras med geografiska eller kronologiska ämnesord (i separata fält). Titel "French piano music" kan alltså indexeras med Piano och Frankrike.  
-   Lägg till Ämne genom att klicka på plustecknet vid Noterad musik, sök upp Ämne och klicka på plustecknet vid termen. Klicka sedan på plustecknet vid Ämne och välj typ i listan Alla typer: Geografiskt ämnesord eller kronologiskt ämnesord. Sök upp ämnesordet, t ex Frankrike, och länka till entitet genom att klicka på plustecknet vid termen.
+   Lägg till Ämne genom att klicka på plustecknet vid Noterad musik, sök upp Ämne och klicka på plustecknet vid termen. Klicka sedan på plustecknet vid Ämne och välj typ i listan Alla typer: Geografiskt ämnesord eller kronologiskt ämnesord. Sök upp ämnesordet, t ex Frankrike, och länka till entitet genom att klicka på plustecknet vid termen.  
    Läs mer:  
    [Länka ämnesord](https://libris.kb.se/katalogisering/help/workflow-linked-entity-sh)   
    [Sammansatt, ej auktoriserat ämnesord](https://libris.kb.se/katalogisering/help/workflow-non-auth-sh)   
@@ -658,15 +660,15 @@ Skriv in uppgiften under Kod.
     Under Termlista, sök fram och länka till entiteten "sao". (Plustecknet vid Termlista - Lägg till termlista, skriv sao i sökrutan Lägg till entitet, välj sao genom att klicka på plustecknet vid Svenska ämnesord (SAO), sao).  
   ```Exempel: sao```  
     * Ämne/Sammansatt term/Termkomponenter/Geografiskt ämnesord/Föredragen benämning (subject/ComplexSubject/termComponentList/Geographic/prefLabel)  
-    Under Termkomponenter, skapa Geografiskt ämnesord som lokal entitet. (Plustecknet vid Termkomponenter - Lägg till entitet. I  rutan      Skapa lokal entitet, längst ner i sidorutan till höger, skriv Geografiskt ämnesord och välj det). Skriv in det geografiska ämnesordet under Föredragen benämning.    
+    Under Termkomponenter, skapa Geografiskt ämnesord som lokal entitet. (Plustecknet vid Termkomponenter - Lägg till entitet. I  rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Geografiskt ämnesord och välj det). Skriv in det geografiska ämnesordet under Föredragen benämning.  
     ```Exempel: Tyskland```  
     * Ämne/Sammansatt term/Termkomponenter/Underindelning för geografisk term/Föredragen benämning (subject/ComplexSubject/termComponentList/GeographicSubdivision/prefLabel)  
-    Under Termkomponenter, skapa Underindelning för geografisk term som lokal entitet. (Plustecknet vid Termkomponenter - Lägg till entitet.   I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Underindelning för geografisk term och välj det). Skriv in termen för den geografiska underindelningen under Föredragen benämning.  
+    Under Termkomponenter, skapa Underindelning för geografisk term som lokal entitet. (Plustecknet vid Termkomponenter - Lägg till entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Underindelning för geografisk term och välj det). Skriv in termen för den geografiska underindelningen under Föredragen benämning.  
   ```Exempel: Bonn``` 
    
 ##### Kronologiskt ämnesord
    * Ämne/Kronologiskt ämnesord (subject = 648 7/- ‡a, ‡2 sao)  
-   Länka till entitet. Om du inte får träff vid sökning på entiteter, pröva att söka på första ledet i ett sammansatt ord, t ex "1800" istället för "1800-talet".   
+   Länka till entitet. Om du inte får träff vid sökning på entiteter, pröva att söka på första ledet i ett sammansatt ord, t ex "1800" istället för "1800-talet".  
   ```Exempel: 1800-talet```  
   
 #### Besattning for framforande
@@ -691,7 +693,7 @@ Skriv in uppgiften under Kod.
 #### Malgrupp     
   * Målgrupp (intendedAudience = 008/22)  
   Länka till entitet.  
-  Trunkera genom att trycka på mellanslagstangenten eller med * i sökrutan. Välj rätt entitet genom att klicka på plustecknet vid entiteten eller på entiteten.    
+  Trunkera genom att trycka på mellanslagstangenten eller med * i sökrutan. Välj rätt entitet genom att klicka på plustecknet vid entiteten eller på entiteten.  
   ```Exempel: j (= barn- och ungdom, 0-16 år)```  
   
 #### Sekundar DDK-klassifikation  
@@ -715,7 +717,7 @@ Klicka sedan på plustecknet vid DDK-klassifikation (sekundär) (Lägg till ddk-
   För att lägga till ytterligare innehållstyp, lägg till Har del under Instans av Verk, från plustecknet vid Noterad musik (Lägg till egenskaper under: Noterad musik). Skapa därefter Verk som lokal entitet genom att klicka på plustecknet vid Har del (Lägg till resurs). Välj Skapa lokal entitet och välj därefter ++ Verk i listan. Lägg därefter till Innehållstyp från plustecknet vid Verk (Lägg till egenskaper under: Verk). Sök fram och länka till entitet.  
 
 #### Relation
-  * Relation (Relationship = 700 1/_ )
+  * Relation (Relationship = 700 1/_ )  
   Här anges ingående verk om instansen manifesterar fler än ett verk, med föredragna titlar och medverkande.  
   För att ange verk som ingår i det beskrivna verket, klicka på pilen vid Relation och skriv in uppgifterna enligt instruktionerna nedan. För att ange ytterligare verk klicka på ikonen med dubbla fyrkanter till höger om Relation (Duplicera entitet).  
   
@@ -744,16 +746,15 @@ Klicka sedan på plustecknet vid DDK-klassifikation (sekundär) (Lägg till ddk-
       * ```Kvartett, stråkar, nr 13, D. 804, op. 29:1, a-moll, "Rosamunde". Entr'acte```
         
    * Verk/Tonart (700 1/_ ‡r) 
-   Ange tonart. Skriv in uppgiften.  
+    Ange tonart. Skriv in uppgiften.  
    ```Exempel: fiss-moll```  
 
    * Verk/Version (700 1/_ ‡o)  
-    Ange eventuellt arrangemang.  
-    Skriv in uppgiften.  
+    Ange eventuellt arrangemang. Skriv in uppgiften.  
     ```Exempel: arr. röst, piano```  
 
    * Verk/Primär medverkan/Agent/Person (contribution/PrimaryContribution/agent/Person = 700 1/_ ‡a)
-    Länka till entitet. Börja alltid med att söka efter om agenten redan finns. Vid behov, skapa ny entitet för agent (se Skapa ny agent i hjälpsektionen). I undantagsfall, skapa lokal entitet.   
+    Länka till entitet. Börja alltid med att söka efter om agenten redan finns. Vid behov, skapa ny entitet för agent (se Skapa ny agent i hjälpsektionen). I undantagsfall, skapa lokal entitet.  
     ```Exempel: Maier-Röntgen, Amanda, 1853-1894```  
 
    * Verk/Besättning för framförande (700 1/_ ‡m)  
