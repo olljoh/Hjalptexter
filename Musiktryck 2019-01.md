@@ -253,7 +253,7 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Tryckt monogra
 
   * Datum (= Utgivningstid) (date = 264 -/1 ‡c)  
     Datum får innehålla text och interpunktionstecken.  
-    För att ange ett utgivningsdatum med fler än fyra positioner, till exempel ett klamrat årtal, skriv in det här. Det kommer att exporteras till marcpostens 264 -/1 ‡c. Skriv in uppgiften.  
+    För att ange ett utgivningsdatum med fler än fyra positioner, till exempel ett klamrat årtal, skriv in det här. Det kommer att exporteras till marcpostens 264 -/1 ‡c. Skriv in uppgiften.
     <br/>```Exempel:```
     * ```[2017]```
     * ```[mellan 1863 och 1866?]```
