@@ -68,23 +68,23 @@ För en titel som börjar med bestämd eller obestämd artikel, ska artikeln fil
   ```Exempel: original motion picture soundtrack```
 
   Om det finns flera undertitlar, skriv in dem efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.  
+  ```Exempel: fler progglåtar : rariteter för den inbitne samlaren```
   
 För att ange Föredragen titel, se Verk/Har titel/Titel/Huvudtitel.  
 
 ##### Varianttitel   
 En varianttitel är en titel förknippad med resursen som skiljer sig från den titel som angivits som huvudtitel, se [RDA 2.3.6](http://access.rdatoolkit.org/rdachp2_rda2-4004.html).</BR>
 För att lägga till varianttitel, klicka på plusteknet vid Har titel (lägg till titel) och välj typ Varanttitel.
-* Har titel/Varianttitel/Huvudtitel (hasTitle/VariantTitle/mainTitle = 246 ‡a)   
-  Skriv in uppgiften under Huvudtitel.    
-  ```Exempel: Live at M.```  
+  * Har titel/Varianttitel/Huvudtitel (hasTitle/VariantTitle/mainTitle = 246 ‡a)   
+    Skriv in uppgiften under Huvudtitel.    
+    ```Exempel: Live at M.```  
 
 För en parallell huvudtitel på ett annat språk eller i en annan skriftart, se [Parallelltitel](#parallelltitel).
 
 Om huvudtiteln är felstavad i källan anges en korrekt form av titeln som en varianttitel. Notera dock att för utgivna fysiska fonogram är hela resursen godkänd källa, utan prioritetsordning, se [Librispraxis 2.2.2.4.1](http://access.rdatoolkit.org/kbspchp2_kbsp2-51.html). Det innebär att man vanligen kan hitta en korrekt form av titeln och ange den som huvudtitel.
 
 En varianttitel kan specificeras med en Typanmärkning, en anmärkningstext som i ett sökgränssnitt ska föregå varanttiteln. För att lägga till en Typanmärkning, klicka på plustecknet vid Varianttitel (Lägg till egenskaper under: Varianttitel) och välj Typanmärkning.
-
-* Har titel/Varianttitel/Typanmärkning (hasTitle/VariantTitle/typeNote = 246 1/_ ‡i)  
+  * Har titel/Varianttitel/Typanmärkning (hasTitle/VariantTitle/typeNote = 246 1/_ ‡i)  
   ```Exempel: Titeln felstavad, korrekt titel:```   
     
 ##### Delbeteckning
@@ -97,7 +97,7 @@ Skriv in uppgiften under Delbeteckning.
 
 ##### Deltitel  
 * Har titel/Titel/Har del/Titeldel/Deltitel (hasTitle/Title/hasPart/TitlePart/partName = 245 ‡p)  
-Lägg till Har del (hasPart) under Har titel/Titel (plustecknet vid Titel - Lägg till egenskaper under: Titel, välj Har del).   Under Har del, skapa Titeldel (TitlePart) som lokal entitet (plustecknet vid Har del - Lägg till resurs, välj Skapa lokal entitet, längst ner i sidorutan till höger. Skriv "titeldel" i rutan Skapa lokal entitet och välj * Titeldel. Titeldel läggs till under Har del. Klicka på Titeldel och det fälls ut.)   
+Lägg till Har del (hasPart) under Har titel/Titel. Under Har del, skapa Titeldel (TitlePart) som lokal entitet (skriv "titeldel" i rutan Skapa lokal entitet och välj * Titeldel). Titeldel läggs till under Har del. Klicka på Titeldel och det fälls ut.</BR>
 Om Har del/Titeldel/Delbeteckning redan finns, lägg till Deltitel under Titeldel (plustecknet vid Titeldel - Lägg till egenskaper under: Titeldel, välj Deltitel (partName)).   
 Skriv in uppgiften under Deltitel.  
   ```Exempel: Jazz som är som balsam för själen...```  
@@ -105,34 +105,29 @@ Skriv in uppgiften under Deltitel.
 För att ange Delbeteckning och Deltitel i en annan ordning, till exempel en deltitel som har efterföljande delbeteckningar, upprepa Titeldel och ange Delbeteckning och Deltitel som det passar i det aktuella fallet.  
 
 ##### Titel - alternativ stavning
-* Relation/Relation/Entitet/Verk/Har titel/Titel/Huvudtitel   
-(relationship/Relationship/entity/Work/hasTitle/Title/mainTitle = 740)  
+* Relation/Relation/Entitet/Verk/Har titel/Titel/Huvudtitel (relationship/Relationship/entity/Work/hasTitle/Title/mainTitle = 740)  
 Ange titlar med alternativ stavning här för att öka sökbarheten för titlar som innehåller exempelvis specialtecken, siffror eller oväntade stavningar av ord.  
 
-  För att lägga till en alternativ sökingång för titeln, klicka på plustecknet Lägg till egenskaper under: Ljudinspelning och välj Relation. Välj typ Relation. Lägg till Entitet (plustecknet vid Relation - lägg till egenskaper under: Relation). Skapa verk som lokal entitet (plustecknet vid Entitet - lägg till verk). Klicka i rutan Skapa lokal entitet, längst ner i sidorutan till höger, och välj Verk. Lägg till Har titel (plustecknet vid Verk - lägg till egenskaper under: Verk). 
-Skriv in uppgiften under Huvudtitel.   
-
+  För att lägga till en alternativ sökingång för titeln, lägg till Relation. Lägg till Entitet. Skapa verk som lokal entitet. Klicka i rutan Skapa lokal entitet, längst ner i sidorutan till höger, och välj Verk. Lägg till Har titel (plustecknet vid Verk - lägg till egenskaper under: Verk). Skriv in uppgiften under Huvudtitel.
+ 
   För en titel som börjar med bestämd eller obestämd artikel, ska artikeln fileras bort. Ange fileringsvärde genom att lägga till fileringsvärde (plustecknet vid Titel - Lägg till egenskaper under: Titel) och ange en siffra.  
   ```Exempel: Huvudtitel: En schlager i Sverige, fileringsvärde: 3```  
- 
- Se exempel i formathandboken för Libris/Voyager: 
+   Se fler exempel i formathandboken för Libris/Voyager: 
 [Fileringsindikator]( http://www.kb.se/katalogisering/Formathandboken/Fileringsindikator/)
   
 ##### Parallelltitel  
 Ange parallelltitel här. Upprepa inte parallelltitel efter Har titel/Titel/Huvudtitel (245 ‡a) med interpunktion.   
 * Har titel/Parallelltitel/Huvudtitel (hasTitle/ParallelTitle/mainTitle = 246 1/1 ‡a)   
-Välj först Har titel, välj sedan typ Parallelltitel.      
+Välj först Har titel, välj sedan typ Parallelltitel.  
 Skriv in uppgiften under Huvudtitel.     
   ```Exempel: The doors of death, fileringsvärde: 4```  
+  
 * Har titel/Parallelltitel/Övrig titelinformation (hasTitle/ParallelTitle/subTitle = 246 1/1 ‡b)   
-Vid behov, klicka även på plustecknet vid Parallelltitel och lägg till Övrig titelinformation (subtitle).  
+Vid behov, lägg till Övrig titelinformation (subtitle) under Parallelltitel.   
   ```Exempel: for computer and soprano```  
   
 #### Upphovsuppgift
 * Upphovsuppgift (responsibilityStatement = 245 ‡c)  
-  För att lägga till upphovsuppgift, klicka på plustecknet Lägg till egenskaper under: Instans.  
-  Vid postimport: i vissa importerade poster saknas upphovsuppgift. Lägg då till det om det är relevant.    
-  Skriv in uppgiften.
     <br/>```Exempel:```
     * ```Pray for Locust```
     * ```Steve Dobrogosz, Anna Christoffersson```
@@ -153,7 +148,7 @@ Om posten är katalogiserad enligt RDA kan även Copyright/Copyright/Datum (copy
  
 ##### Utgivningsplats
 * Plats/Plats/Benämning (= Utgivningsort) (place/label = 264 -/1 ‡a)  
-  För att lägga till Plats, klicka på plustecknet vid Primär utgivning (lägg till egenskaper under Primär utgivning) och välj Plats. Sök inte efter Plats som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Plats och välj det.   
+  Sök inte efter Plats som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Plats och välj det.   
   Skriv in uppgiften under Benämning. Klamra vid behov.</br>
   ```Exempel: Malmö```  
   
@@ -164,12 +159,12 @@ Om posten är katalogiserad enligt RDA kan även Copyright/Copyright/Datum (copy
   
 ##### Utgivarnamn
 * Agent/Agent/Benämning (= Utgivarnamn) (agent/label = 264 -/1 ‡b)  
-  För att lägga till Agent, klicka på Lägg till egenskaper under Primär utgivning och välj Agent. Sök inte efter Agent som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Agent och välj det.       
+  Sök inte efter Agent som entitet. I rutan Skapa lokal entitet.  
   Skriv in uppgiften under Benämning.  
   ```Exempel: Dead End Exit Records```  
   
-  Om flera utgivare ska anges, lägg till Har del (hasPart) under Primär utgivning. Skapa Utgivning som lokal entitet (plustecknet vid Har del - Lägg till entitet). I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Utgivning och välj *** Utgivning. Upprepa Utgivning som lokal entitet genom att duplicera entiteten Utgivning.  
-Ange Plats/Plats/Benämning och Agent/Agent/Benämning och vid behov Datum inom respektive utgivningsavsnitt (angående Datum, se anvisningar nedan). Samtliga utgivare med Plats och Agent ska ligga inom Har del/Utgivning.
+  Om flera utgivare ska anges, lägg till Har del (hasPart) under Primär utgivning. Skapa Utgivning som lokal entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Utgivning och välj *** Utgivning. Upprepa Utgivning som lokal entitet genom att duplicera entiteten Utgivning.  
+Ange Plats/Plats/Benämning och Agent/Agent/Benämning inom respektive utgivningsavsnitt. Samtliga utgivare med Plats och Agent ska ligga inom Har del/Utgivning.
 Land, År och eventuellt Datum  ska ligga inom Primär utgivning.  
   Se [exempel](https://libris.kb.se/katalogisering/w4rp4hlwtr5lctjr#it).
   
@@ -180,7 +175,9 @@ Land, År och eventuellt Datum  ska ligga inom Primär utgivning.
   Skriv in uppgiften.  
   ```Exempel: 2017```  
   
-För att ange årtal med klamrar eller andra tecken utöver fyra positioner, använd Datum.  
+  Observera att År måste finnas med i beskrivningen, även om datum finns med.</br>
+  
+  För att ange årtal med klamrar eller andra tecken utöver fyra positioner, använd Datum.  
   * Datum (= Utgivningstid) (date = 264 -/1 ‡c)  
   Datum får innehålla text och interpunktionstecken.  
   Utgivningsdatum med fler än fyra positioner, till exempel ett klamrat årtal, anges här. Det kommer att exporteras till marcpostens  264 -/1 ‡c.
@@ -189,19 +186,21 @@ För att ange årtal med klamrar eller andra tecken utöver fyra positioner, anv
     * ```[2017]```
     * ```[mellan 2003 och 2005?]```
 
-För att ange ett år utan klamrar eller andra tecken, använd År.  
+  För att ange ett år utan klamrar eller andra tecken, använd År.  
+
+  För att ange ett osäkert utgivningsdatum där endast tidigaste och senaste årtal kan anges, följ exempel i hjälptexten [Instans](https://libris.kb.se/katalogisering/help/workflow-instance#produktion): Produktion. Lägg in egenskaper under Utgivning/Utgivning och Huvudsakligt tillgängliggörande/Primär utgivning). Ange Land, År, Kompletterande datum och Typ av utgivningsdatum under Huvudsakligt tillgängliggörande.  
   
 * Flera år (flerbandsverk)  
- För anvisningar om hur man anger flera år (flerbandsverk), se hjälptexten [Tryckt monografi](https://libris-qa.kb.se/katalogisering/help/workflow-print-monograph#utgivning): Utgivning. 
+ För anvisningar om hur man anger flera år (flerbandsverk), se hjälptexten [Instans](https://libris.kb.se/katalogisering/help/workflow-instance#utgivning): Utgivning. 
 
  Läs mer om [År och Datum](https://kundo.se/org/librisxl/d/falt-for-utgivningsar/)  
   
 #### Copyright- eller p-ar
-För fonogram anges alltid copyright- eller p-år, även om det sammanfaller med utgivningsår, se [Librispraxis 2.11](http://access.rdatoolkit.org/kbspchp2_kbsp2-1030.html).</BR>
+För utgivna ljudinspelningar anges alltid copyright- eller p-år, även om det sammanfaller med utgivningsår, se [Librispraxis 2.11](http://access.rdatoolkit.org/kbspchp2_kbsp2-1030.html).</BR>
 * Copyright/Copyright/Datum (copyright/Copyright/date = 264 -/4 ‡c)  
-  Skriv in uppgiften. Det går bara att ange ett år här, så om både copyright- och p-år förekommer på resursenn ange det senaste p-året.
-  För att få fram copyrighttecknet eller tecknet för p-år, kopiera från exemplet nedan. 
-  Se också [Specialtecken](https://libris.kb.se/katalogisering/help/search-04-special-chars). Du kan t ex söka på teckenuppsättning i “Sök i windows” och öppna programmet, markera och kopiera tecknet och sedan klistra in det.
+  Det går bara att ange ett år här, så om både copyright- och p-år förekommer på resursenn ange det senaste p-året.
+  För att få fram copyrighttecknet eller tecknet för p-år, kopiera härifrån eller sök på teckenuppsättning i “Sök i windows” och öppna programmet, markera och kopiera tecknet och sedan klistra in det.  
+  Se också [Specialtecken](https://libris-dev.kb.se/katalogisering/help/search-04-special-chars). 
   Skriv in uppgiften.
   <br/>```Exempel:```
     * ```©2017```
@@ -215,8 +214,8 @@ Flera typer av identifikatorer kan finnas på ljudinspelningar. I mallen för mu
   Välj typ från lista.
   <br/>```Exempel: Utgivningsnummer (ljudinspelning)```
 * Identifikator/Utgivningsnummer (ljudinspelning)/Värde (identifiedBy/AudioIssueNumber/value = 028 ‡a)<br/>
-  Ange identifikator på samma sätt som den är angiven i resursen.
-  <br/>```Exempel: DEERCD016``` DEERCD016
+  Ange identifikator som det förekommer i resursen.
+  <br/>```Exempel: DEERCD016``` DEERCD016  
 * Identifikator/Agent/Organisation/Namn (= Utgivare) (identifiedBy/agent/Organization/name = 028 #b)<br/>
   Ange utgivarens namn.
   <br/>```Exempel: Dead End Exit Records```<br/>
@@ -240,20 +239,20 @@ Ange antal enheter samt typ av enhet, se [RDA 3.4.1.3](http://access.rdatoolkit.
 #### Ovriga fysiska detaljer   
 * Övriga fysiska detaljer (other physical details = 300 ‡b)     
   Skriv in uppgiften.  
-  ```Exempel: stereo```
+  ```Exempel: mono```
   
 #### Bilagor
 * Tillsammans med/Instans/Benämning (Bilagor) (accompaniedBy/Instance/label = 300 ‡e)   
-För att lägga till Tillsammans med, klicka på plustecknet Lägg till egenskaper under: Ljudinspelning och välj Tillsammans med. Skapa Instans som lokal entitet. (Plustecknet vid Tillsammans med, välj Skapa lokal entitet, längst ner i sidorutan till höger, skriv Instans och välj ** Instans.) Lägg till Benämning (plustecknet vid Instans - Lägg till egenskaper under: Instans).    
-Skriv in uppgiften under Benämning.  
+Lägg till Tillsammans med. Skapa Instans som lokal entitet (skriv Instans i rutan Skapa lokal entitet och välj ** Instans.)</br> 
+Lägg till Benämning. Skriv in uppgiften.  
    ```Exempel: Sångtexter och kommentarer i bilaga```  
     
 #### Seriemedlemskap
-För anvisningar om hur man anger Seriemedlemskap, se hjälptexten [Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#seriemedlemskap): Seriemedlemskap.
+För anvisningar om hur man anger Seriemedlemskap, se hjälptexten [Instans](https://libris.kb.se/katalogisering/help/workflow-instance#seriemedlemskap): Seriemedlemskap. 
    
 #### Innehallsanmarkning  
   * Har innehållsförteckning/Innehållsförteckning/Benämning (tableofContents = 505 8/_)  
-    För en enkel innehållsanmärkning (505 ‡a), lägg till Har innehållsförteckning (från Lägg till egenskaper under: Instans). Lägg därefter till Innehållsförteckning (plustecknet under Har innehållsförteckning i vänstermenyn). Skriv in uppgiften under Benämning. 
+  För en enkel innehållsanmärkning (505 ‡a), lägg till Har innehållsförteckning. Läggg därefter till Innehållsförteckning. Skriv in uppgiften under Benämning.    
    <br/>```Exempel:```
     * ```Concerto nach italienischem Gusto, BWV 971 ; Ouverture nach französischer Art, BWV 831 ; Appendix: Ouverture in c, BWV 831a```
     * ```Chain of fools / Donald Covay -- A deeper love / David Cole, Robert Clivilles -- Do right woman, do right man / Chips Moman, Dan Penn -- I knew you were waiting (for me) / Dennis Morgan, Simon Climie```
@@ -270,6 +269,11 @@ För anvisningar om hur man anger Seriemedlemskap, se hjälptexten [Tryckt monog
   För att lägga till Anmärkning, klicka på plustecknet i redigeringsvyn (den stora runda ikonen under Verktygsikonen - Lägg till egenskaper under: Ljudinspelning) och välj Anmärkning (hasNote). Tryck Enter för att lägga till Anmärkning.  
   Skriv in uppgiften under Benämning.</BR> 
   ```Titel från Discogs```  
+  
+#### Relaterad beskrivning eller innehall
+* Relaterad beskrivning eller innehåll/Dokument/URI (isPrimaryTopicOf/Dokument/uri = 856 4/2 ‡u)</BR>
+  Länka till delar, sammanfattningar, innehållsförteckningar eller andra resurser som på något sätt hör samman med den resurs som beskrivs.</BR>
+  Lägg till Relaterad beskrivning eller innehåll. Skapa Dokument som lokal entitet. Lägg till egenskapen URI. Klistra in aktuell länk.
   
 ### Verk   
 
