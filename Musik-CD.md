@@ -372,18 +372,22 @@ För ingående verk med primär medverkande, lägg till Medverkan och funktion/P
 * Medverkan och funktion/Medverkan/Funktion (contribution/role = 700 ‡4)  
   Länka till entitet. Klicka på plustecknet vid Funktion (Lägg till funktion) och sök fram funktionskod. Skriv in kod eller utskriven form i sökrutan eller tryck på mellanslagstangenten för att se alla koder. Välj kod genom att klicka på plustecknet vid koden eller på koden.    
 För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funktions- och relationskoder](http://www.kb.se/katalogisering/Formathandboken/Funktionskoder/)    
-  ```Exempel: Filmproducent, pro (=producent, skall ändras till Producent, pro)```  
+  ```Exempel: Filmproducent, pro (=producent, kommer att ändras till Producent, pro)```  
 
 #### Sprak 
 * Språk (language = 008/35-37)  
-  Ange det talade språket här eller sjunga språket här.  
+  Ange det talade språket eller sjungna språket här.  
   Länka till entitet.  
   ```Exempel: svenska (swe)```  
   Ange flera språk genom att klicka på plustecknet vid Språk (Lägg till språk) och sök fram rätt entitet för språket. Länka till entitet. 
   
 #### Genre  
- Länka till entitet. 
-För att söka efter entiteter inom Genre/form, klicka på plustecknet vid Genre/form (lägg till entitet). I Lägg till entitet (längst upp i sidorutan till höger), välj typ i listan över typer. Skriv in sökbegrepp. Trunkera genom att trycka på mellanslagstangenten eller med * i sökrutan. Välj entitet genom att klicka på plustecknet vid entiteten (Lägg till). Vid behov, välj ytterligare entiteter i listan. Om sidorutan är stängd, klicka på plustecknet vid Genre/form (lägg till entitet) för att söka fram och välja fler entiteter.  
+Länka till entitet. 
+För att söka efter entiteter inom Genre/form, klicka på plustecknet vid Genre/form (lägg till entitet). I Lägg till entitet, välj typ i listan över typer. Skriv in sökbegrepp. Trunkera genom att trycka på mellanslagstangenten eller med * i sökrutan. Välj entitet genom att klicka på plustecknet vid entiteten (Lägg till). Vid behov, välj ytterligare entiteter i listan. 
+
+Under Genre/form, ange dels saogf-termer (genre/form-termer enligt Svenska ämnesord), dels termer som motsvarar marc-koder i 008.
+För att länka till saogf-termer, välj Genre/form i listan (det första alternativet under Alla).
+För att länka till termer som motsvarar marc-koder i 008, se övriga rubriker. 
 
 ##### Saogf-termer  
 * Genre/form – saogf-termer (genreForm = 655 -/7 ‡a, ‡2 saogf)  
@@ -395,28 +399,16 @@ För att söka efter entiteter inom Genre/form, klicka på plustecknet vid Genre
 
 Se [instruktionsfilm](https://www.youtube.com/watch?v=wrqs310Nt0M&list=PLZVkEICvA5-GRT2oJQmLgq_2Pksx6zYPy&index=7)  
 
-##### Litterär genre  FÖR RADIOPJÄS?
-* Genre/form – litterär genre (genreForm = 008/33)  
-  Välj Litterär genre i listan över typer. Länka till entitet.  
-  ```Exempel: Upptagning av en talpjäs som dramatiskt verk, Dramatiskt verk```
-  
-##### Biografiskt material  FÖR TALSKIVOR?
-* Genre/form – biografiskt material (genreForm = 008/34)  
-  Välj Biografiskt material i listan över typer. Länka till entitet.  
-  ```Exempel: a (= självbiografi)```  
-
 #### Klassifikation  
-För anvisningar om hur man anger Klassifikation, se hjälptexten [Tryckt monografi:](https://libris.kb.se/katalogisering/help/workflow-print-monograph#klassifikation) Klassifikation.
+För anvisningar om hur man anger Klassifikation, se hjälptexten [Verk](https://libris.kb.se/katalogisering/help/workflow-work#klassifikation): Klassifikation.
    
-#### Amne  FÖR EX VIS FÅGELSÅNG?
-För anvisningar om hur man anger Ämne, se hjälptexten [Tryckt monografi:](https://libris.kb.se/katalogisering/help/workflow-print-monograph#amne) Ämne.
-
 #### Malgrupp     
  * Målgrupp (intendedAudience = 008/22)  
   Länka till entitet.  
-  Trunkera genom att trycka på mellanslagstangenten eller med * i sökrutan. Välj rätt entitet genom att klicka på plustecknet vid entiteten eller på entiteten.    
   ```Exempel: j (= barn- och ungdom, 0-16 år)```  
-  
+
+För att lägga till Målgruppsanmärkning (Målgrupp/Målgrupp/Benämning), se [Målgruppsanmärkning](#Malgruppsanmarkning) under Instans.
+
 #### Innehallstyp
 * Innehållstyp/Innehållstyp (contentType/ContentType = 336 ‡b)   
   Länka till entitet.  
@@ -428,13 +420,18 @@ För anvisningar om hur man anger Ämne, se hjälptexten [Tryckt monografi:](htt
   
 #### Sammanfattning av innehall    
  * Sammanfattning av innehåll/Sammanfattning/Benämning (summary/Summary/label = 520 ‡a)  
-För att lägga till Sammanfattning av innehåll, klicka på plustecknet vid Instans av Verk/Ljudmaterial - Lägg till egenskaper under: Ljudmaterial. Välj Sammanfattning av innehåll. Tryck Enter för att lägga till Samanfattning. Tryck Enter för att söka fram och lägga till Benämning (Lägg till egenskaper under: Sammanfattning).  
- Skriv in uppgiften under Benämning.  
+ Lägg till Sammanfattning av innehåll. Välj Sammanfattning av innehåll. Lägg till Sammanfattning. Skriv in uppgiften under Benämning.
  ```60 trallar från Dalarna```
      
  * Typ av innehållsbeskrivning/sammanfattning (marc:summaryType = 520 ind1)  
  Sök fram och lägg till Typ av innehållsbeskrivning/sammanfattning (plustecknet vid Sammanfattning - lägg till egenskaper under: Sammanfattning). Välj typ från lista.  
  ```Exempel: Ej preciserad```  
-    
+
+ #### Inspelning
+ * Inspelning/Inspelning/Benämning (capture/Capture/label = 518 ‡a)</br>
+ Här kan uppgift om inspelningstid anges.
+ Lägg till Inspelning. Skapa lokal entitet, välj Inspelning och lägg till egenskapen Benämning.
+ Skriv in uppgiften under Benämning.</br>
+ ```Exempel: Inspelad 2010``` 
 
 
