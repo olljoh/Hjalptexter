@@ -331,24 +331,20 @@ Ange numreringar för verket här, vid behov. Skriv in uppgiften.
     Ange eventuellt arrangemang. Skriv in uppgiften.  
      ```Exempel: arr. röst, piano```  
          
-##### Verkets titel - huvuduppslag
-För att ange "Originaltitel" för ett verk utan primär medverkande, t ex Bibeln, motsvarande fält 130, se hjälptexten [Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph): Verkets titel - huvuduppslag
+#### Relationer till ingående verk och andra verk
+##### Verk som ingår i det beskrivna verket
+För att ange verk som ingår i det beskrivna verket motsvarande fält 700 0/2 ‡a ‡d + ‡t (analytisk sökingingång för verk med primär medverkande) eller 730 0/2 ‡a (analytisk sökingång för verk utan primär medverkande) i marc:  
+Under Instans av Verk/Musik, lägg till Har del. Skapa verk som lokal entitet. Lägg till Har titel och välj Titel. Ange föredragen titel i Huvudtitel.</br>
+Lägg till eventuell deltitel, delbeteckning och benämning på språk (lägg till Språk under Verk, skapa lokal entitet och lägg till Benämning. Skriv in språket). 
+För ingående verk med primär medverkande, lägg till Medverkan och funktion/Primär medverkan enligt anvisningarna nedan under [Medverkan och funktion](#medverkan-och-funktion): Primär medverkan.
+För utförligare instruktioner, se även hjälptexten [Relationer till delar och verk](https://libris.kb.se/katalogisering/help/workflow-agent-relation).
 
-##### Verkets titel - analytisk sökingång  
-För att ange verk som ingår i det beskrivna verket motsvarande fält 730 0/2 (analytisk sökingång), se hjälptexten [Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph): Verkets titel - analytisk sökingång    
-
-##### Verkets titel - verk som ingår i det beskrivna verket 
-För att ange verk som ingår i det beskrivna verket, motsvarande fält 700 0/2 ‡a ‡d + ‡t (analytisk sökingingång för verk med primär medverkande) eller 730 0/2 ‡a (analytisk sökingång för verk utan primär medverkande) i marc:  
-Under Instans av Verk/Ljudmaterial, klicka på plustecknet vid Verk (lägg till egenskaper under: Verk) och välj Har del.
-Skapa verk som lokal entitet (plustecknet vid Har del - Lägg till verk, välj Skapa lokal entitet, längst ner i sidorutan till höger), skriv "verk" i rutan Skapa lokal entitet. Klicka på Verk. Det läggs till under Har del. Klicka på plustecknet vid Verk (Lägg till egenskaper under: Verk) och välj Har titel. Välj Titel. Ta bort Övrig titelinformation. Ange föredragen titel i Huvudtitel. 
-Lägg till eventuell deltitel, delbeteckning och benämning på språk.
-För ingående verk med primär medverkande, lägg till Medverkan och funktion/Primär medverkan enligt anvisningarna nedan under [Medverkan och funktion](#medverkan-och-funktion). 
-
-##### Verkets titel - relaterade verk  
-För att ange verk som är relaterade, men inte ingår i det beskrivna verket, motsvarande fält 700 0/- ‡a ‡d + ‡t (icke-analytisk sökingingång för verk med primär medverkande) eller 730 0/- ‡a (icke-analytisk sökingång för verk utan primär medverkande) i marc: 
-Under Instans av Verk/Ljudmaterial, lägg till Relation genom att klicka på plustecknet vid Instans av Verk/Ljudmaterial (Lägg till egenskaper under: Ljudmaterial) och välj Relation. Välj typ Relation. Lägg till Entitet genom att klicka på plustecknet vid Relation (Lägg till egenskaper under: Relation), välj Entitet. Skapa verk som lokal entitet (plustecknet vid Entitet - Lägg till verk). Klicka på plustecknet vid Verk (Lägg till egenskaper under: Verk) och välj Har titel. Välj Titel. Ta bort Övrig titelinformation. Ange föredragen titel i Huvudtitel. 
-Lägg till eventuell deltitel, delbeteckning och benämning på språk.
-För ingående verk med primär medverkande, lägg till Medverkan och funktion/Primär medverkan enligt anvisningarna nedan under [Medverkan och funktion](#medverkan-och-funktion). 
+##### Relationer till andra verk  
+För att ange verk som är relaterade, men inte ingår i det beskrivna verket, motsvarande fält 700 0/_ ‡a ‡d + ‡t (icke-analytisk sökingingång för verk med primär medverkande) eller 730 0/_ ‡a (icke-analytisk sökingång för verk utan primär medverkande) i marc: 
+Under Instans av Verk/Musik, lägg till Relation. Välj typ Relation. Lägg till Entitet och välj Entitet. Skapa verk som lokal entitet. Lägg till Har titel och välj Titel. Ange föredragen titel i Huvudtitel.</br> 
+Lägg till eventuell deltitel, delbeteckning och benämning på språk (lägg till Språk under Verk, skapa lokal entitet och lägg till Benämning. Skriv in språket).</br>
+För ingående verk med primär medverkande, lägg till Medverkan och funktion/Primär medverkan enligt anvisningarna nedan under [Medverkan och funktion](#medverkan-och-funktion): Primär medverkan. 
+För utförligare instruktioner, se även hjälptexten [Relationer till delar och verk](https://libris.kb.se/katalogisering/help/workflow-agent-relation).
 
 #### Medverkan och funktion  
 * Medverkan och funktion  
