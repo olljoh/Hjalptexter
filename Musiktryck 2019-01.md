@@ -138,7 +138,6 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Instans](https
     Sök inte efter Agent som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Agent och välj det.       
     Skriv in uppgiften under Benämning.  
     ```Exempel: Breitkopf & Härtel```   
-    
     Om flera utgivare ska anges, lägg till Har del (hasPart) under Primär utgivning. Skapa Utgivning som lokal entitet (plustecknet vid Har del - Lägg till entitet). I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Utgivning och välj *** Utgivning. Upprepa Utgivning som lokal entitet genom att duplicera entiteten Utgivning.  
     Ange Plats/Plats/Benämning och Agent/Agent/Benämning och vid behov Datum inom respektive utgivningsavsnitt (angående Datum, se anvisningar nedan). Samtliga utgivare med Plats och Agent ska ligga inom Har del/Utgivning.  
     Land, År och eventuellt Datum ska ligga inom Primär utgivning.  
@@ -148,19 +147,20 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Instans](https
   * År (= Utgivningstid) (date = 008/07-10, 264 -/1 ‡c)  
     År får endast innehålla siffror (0-9) och bokstaven u. År ska endast förekomma inom Primär utgivning.  
     Ange utgivningsår, utan klamrar eller andra tecken, endast fyra positioner. Skriv in uppgiften.  
-    För att ange ett år utan klamrar eller andra tecken, ange det endast här. Det kommer då att exporteras till både marcpostens 08/07-10 och 264 -/1 ‡c.  
+    Utgivningsår anges här, utan klamrar eller andra tecken - endast fyra positioner. Det kommer då att exporteras till både marcpostens 08/07-10 och 264 -/1 ‡c.  
     ```Exempel: 2017```  
 
+  Observera att År måste finnas med i beskrivningen, även om datum finns med.</br>
+  
   För att ange årtal med klamrar eller andra tecken utöver fyra positioner, använd Datum.
-
   * Datum (= Utgivningstid) (date = 264 -/1 ‡c)  
     Datum får innehålla text och interpunktionstecken.  
-    För att ange ett utgivningsdatum med fler än fyra positioner, till exempel ett klamrat årtal, skriv in det här. Det kommer att exporteras till marcpostens 264 -/1 ‡c. Skriv in uppgiften.
+    Utgivningsdatum med fler än fyra positioner, till exempel ett klamrat årtal, anges här. Det kommer att exporteras till marcpostens 264 -/1 ‡c.
     <br/>```Exempel:```
     * ```[2017]```
     * ```[mellan 1863 och 1866?]```
   
-  För att ange ett år utan klamrar eller andra tecken, använd endast År.  
+  För att ange ett år utan klamrar eller andra tecken, använd År.  
   
   * Flera år (flerbandsverk)  
     Använd Startår och Slutår (inte År). För att lägga till Startår och Slutår, klicka på plustecknet vid Primär utgivning (Lägg till egenskaper under: Primär utgivning) och välj Startår respektive Slutår. Egenskaperna ska ligga i avsnittet Primär utgivning. Om årtalen anges utan klammer eller andra tecken utöver fyra positioner, räcker det att ange årtalen här. De exporteras då både som 008 och 264 ‡c. Bindestreck sätts automatiskt. För att få rätt kod i 008/06 (Typ av utgivningsdatum/Utgivningsstatus) vid MARC-export: lägg till Typ av utgivningsdatum (marc:publicationStatus) (klicka på plustecknet vid Primär utgivning) och välj ”Flera årtal (monografisk resurs)".
@@ -171,18 +171,14 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Instans](https
     * ```Typ av utgivningsdatum: Flera årtal (monografisk resurs)``` 
 
  Läs mer om [År och Datum](https://kundo.se/org/librisxl/d/falt-for-utgivningsar/)  
- 
-  ##### Utgivningsland  
-   * Land (country = 008/15-17)  
-     Länka till entitet.  
-     ```Exempel: Sverige (sw)```  
-  
+
 #### Tillverkning 
    * Tillverkning (manufacture)  
 
   ##### Tillverkningsplats (Tillverkningsort) 
    * Plats/Plats/Benämning (place/label = 264 -/3 ‡a)  
-    ```Exempel: Falun```  
+     Skriv in uppgiften.  
+     ```Exempel: Falun```  
 
   ##### Tillverkningsnamn  
    * Agent/Agent/Benämning (agent/label = 264 -/3 ‡b)  
@@ -199,8 +195,8 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Instans](https
 #### Copyrightar   
   * Copyright/Copyright/Datum (copyright/Copyright/date = 264 -/4 ‡c)  
     För musiktryck anges alltid copyrightår om det skiljer sig från utgivningstid (om de sammanfaller anges endast utgivningsår). Ange endast senaste copyrightåret.  
-    Skriv in uppgiften. 
     För att få fram copyrighttecknet, kopiera från exemplet nedan eller skriv Alt + 184. Se också [Specialtecken](https://libris.kb.se/katalogisering/help/search-04-special-chars). Du kan t ex söka på teckenuppsättning i “Sök i windows” och öppna programmet, markera och kopiera tecknet och sedan klistra in det.  
+    Skriv in uppgiften.  
     ```Exempel: ©2017```  
 
 #### Identifikator 
@@ -264,12 +260,12 @@ Lägg till genom att klicka på Lägg till egenskaper under: Instans, sök upp "
   
 #### Bilagor
   * Tillsammans med/Instans/Benämning (Bilagor) (accompaniedBy/Instance/label = 300 ‡e) 
-För att lägga till Tillsammans med, klicka på plustecknet Lägg till egenskaper under: Instans och välj Tillsammans med. Skapa Instans som lokal entitet. (Plustecknet vid Tillsammans med, välj Skapa lokal entitet, längst ner i sidorutan till höger, skriv Instans och välj ** Instans.) Lägg till Benämning (plustecknet vid Instans - Lägg till egenskaper under: Instans).    
-Skriv in uppgiften.  
+  Lägg till Tillsammans med. Skapa Instans som lokal entitet (skriv Instans i rutan Skapa lokal entitet och välj ** Instans.)</br> 
+  Lägg till Benämning. Skriv in uppgiften.    
   ```Exempel: 1 CD```  
 
 #### Seriemedlemskap
-  * Seriemedlemskap/Seriemedlemskap/Ingår i serie (seriesMembership/SeriesMembership/inSeries)  
+  * Seriemedlemskap/Seriemedlemskap/Ingår i serie (seriesMembership/SeriesMembership/inSeries)   
   Avvakta med att skapa verk som länkade entiteter. Beskriv serien som lokal entitet, enligt följande instruktion.  
   *Nytt 2018-10-04:*   
   * Man måste inte längre fylla i två Seriemedlemskap för att vid export till MARC få ut både 490 och 830.  
@@ -318,8 +314,7 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
   
 #### Anmarkning
   * Anmärkning/Anmärkning/Benämning (hasNote/Note/label = 500 ‡a)   
-  Gör allmänna anmärkningar här.    
-  Skriv in uppgiften.
+  Gör allmänna anmärkningar här.
   <br/>```Exempel:```
     * ```Med realiserad, ej besiffrad, b.c.-stämma```
     * ```Noter med övnings-cd typ ”Music minus one”```
@@ -365,7 +360,6 @@ Observera att kodning av målgrupp, motsvarande 008/22, ska registreras under In
   
   Om andra delfält i 776 önskas, skapa istället Instans som lokal entitet och lägg till önskade egenskaper.  
   Om särskild anmärkningstext önskas, som ersätter frasen "Andra versioner", skapa Instans som lokal entitet och lägg till Typanmärkning (= (776 ‡i) samt Har titel/Titel och Identifikator/ISBN/Värde. Beskriven av/Post/Kontrollnummer, motsvarande delfält w, är för närvarande låst för redigering. Det går därmed inte att lägga till egenskapen eller redigera det i befintliga beskrivningar.  
-
 
 ### Verk   
 
