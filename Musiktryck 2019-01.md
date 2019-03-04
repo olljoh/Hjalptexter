@@ -11,144 +11,42 @@ tags:
 
 ## Musiktryck
 
-Denna hjälptext beskriver ett antal vanligt förekommande egenskaper vid katalogisering av musiktryck, med utgångspunkt från exempel. För instruktioner om att länka till entitet, skapa lokal entitet och om hur formuläret fungerar i övrigt, se Redigering i vänstermenyn. För information om katalogregler, Librispraxis, skrivregler och övriga katalogiseringsanvisningar, se [Anvisningar för katalogisering - RDA](http://www.kb.se/rdakatalogisering/Anvisningar/Arbetsfloden/Tryckta-monografier/ "Anvisningar för katalogisering - RDA") samt [RDA Toolkit](https://access.rdatoolkit.org).
+Denna hjälptext beskriver ett antal vanligt förekommande egenskaper vid katalogisering av musiktryck, med utgångspunkt från exempel. Många av egenskaperna finns redan i mallen Noterad musik - Musiktryck-RDA, andra kan behöva läggas till.
+
+För instruktioner om att länka till entitet, skapa lokal entitet och om hur formuläret fungerar i övrigt, se Redigering i vänstermenyn under Hjälp. För anvisningar om Adminmetadata, se Adminmetadata i vänstermenyn under Hjälp/Hjälptexter katalogisering.
+
+För information om katalogregler, Librispraxis, skrivregler och övriga katalogiseringsanvisningar, se [Anvisningar för katalogisering - RDA](http://www.kb.se/rdakatalogisering/Anvisningar/Arbetsfloden/Tryckta-monografier/ "Anvisningar för katalogisering - RDA") samt [RDA Toolkit](https://access.rdatoolkit.org).
 
 Se även [instruktionsfilmer](https://www.youtube.com/playlist?list=PLZVkEICvA5-GRT2oJQmLgq_2Pksx6zYPy)  
 
-I de flesta fall ska informationen delas upp i olika egenskaper (jfr fält) och underliggande egenskaper (jfr delfält). I några undantagsfall är det nödvändigt att använda ISBD-interpunktion i inom en egenskap, för att separera uppgifter. Dessa fall visas genom exempel nedan. I övriga fall, lägg inte in ISBD-interpunktion för att avsluta en egenskap (fält). Använd vid behov klamrar inom egenskap (fält), enligt Anvisningar för katalogisering - RDA.
+I de flesta fall ska informationen delas upp i olika egenskaper (jfr fält) och underliggande egenskaper (jfr delfält). I några undantagsfall är det nödvändigt att använda ISBD-interpunktion inom en egenskap, för att separera uppgifter. Dessa fall visas genom exempel nedan. I övriga fall, lägg INTE in ISBD-interpunktion för att avsluta en egenskap (fält). Använd vid behov klamrar inom egenskap (fält), enligt Anvisningar för katalogisering - RDA.
 
 I vissa fall fungerar det ännu inte fullt ut att lägga till alla uppgifter som beskrivs i denna hjälptext. Arbete pågår med förbättra gränssnittet. För att anmäla fel, använd detta formulär för [felrapportering](https://docs.google.com/forms/d/e/1FAIpQLSfOChJOGDoHUQguSF83F5XyTZiQL-yU47nvcqb6qwNT9GX7Aw/viewform). För att lämna synpunkter, använd detta formulär för  [ändringsförslag](https://docs.google.com/forms/d/e/1FAIpQLScgz_0enebhBn6uB8xvowkDBB4ax_dbvaobLSFfqFMoty6eQg/viewform).  
 
-
 ### Innehåll   
 
-| [Adminmetadata](#adminmetadata) | [Instans](#instans) | [Verk](#verk) | 
-| ------ | ----------- |  ----------- |
-| [Kontrollnummer](#kontrollnummer) | [Utgivningssätt](#utgivningssatt) | [Verkets titel](#verkets-titel) |
-| [Skapad av](#skapad-av) | [Medietyp](#medietyp) | [Medverkan och funktion](#medverkan-och-funktion) |
-| [Uppgraderad eller importerad av](#uppgraderad-eller-importerad-av) | [Bärartyp](#barartyp) | [Språk](#sprak) |
-| [Entry map](#entry-map) | [Titel](#titel) | [Genre](#genre) |
-| [Katalogiserande instans](#katalogiserande-instans) | [Upphovsuppgift](#upphovsuppgift) | [Klassifikation](#klassifikation) |
-| [Poststatus](#poststatus) | [Upplageuppgift](#upplageuppgift) | [Ämne](#amne) |
-| [Translitterering](#translitterering) | [Utgivning](#utgivning) | [Besättning](#besattning-for-framforande) |
-| [Systemnummer](#systemnummer) | [Tillverkning](#tillverkning) | [Notationssystem och språk](#notationssystem-och-sprak) |
-| [Katalogiseringsspråk](#katalogiseringssprak) | [Copyrightår](#copyrightar) | [Målgrupp](#malgrupp) |
-| [Katalogiseringsregler](#katalogiseringsregler) | [Identifikator](#identifikator) | [Sekundär DDK-klassifikation](#sekundar-ddk-klassifikation) |
-| [Beskrivningsnivå](#beskrivningsniva) | [Omfång](#omfang) | [Innehållstyp](#innehallstyp) |   
-| [Bibliografikod](#bibliografikod) | [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | [Relation](#relation) | 
-| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Mått](#matt) | |                                                                  
-| | [Bilagor](#bilagor) | |  
-| | [Seriemedlemskap](#seriemedlemskap) | |
-| | [Anmärkning](#anmarkning) | |
-| | [Musikalietyp](#musikalietyp) | |
-| | [Innehållsanmärkning](#innehallsanmarkning) | |
-| | [Målgruppsanmärkning](#malgruppsanmarkning) | |
-| | [Annat bärarformat](#annat-bararformat) | | 
-
-
-### Adminmetadata  
-För att lägga till egenskaper under Adminmetadata, klicka på plustecknet i redigeringsvyn (den stora runda plusikonen under Verktygsikonen) - Lägg till egenskaper under: Post. Sök fram egenskapen och välj den genom att klicka på plustecknet vid egenskapens namn.  
-
-#### Kontrollnummer
-* Kontrollnummer (controlNumber = 001)  
-Unikt alfanumeriskt ID i Libris, minimum 14 tecken, maximum 17 tecken. ID:n skapade före övergången till nya Libris innehåller endast siffror. Läs mer om [Nya ID i Libris](https://librisbloggen.kb.se/2018/04/25/nya-id-i-libris/)  
-
-#### Skapad av  
-* Skapad av/Organisation/Namn (descriptionCreator/Organization/name = 040 ‡a)  
-  Förval: den sigel som skapat posten. Ska inte ändras.  
-  ```Exempel: BOKR```  
-  Vid postimport: för närvarande hamnar det importerande bibliotekets sigel här. Detta kommer att ses över.  
-  
-#### Uppgraderad eller importerad av  
-* Uppgraderad eller importerad av/Bibliotek/Sigel (descriptionUpgrader/Library/sigel = 040 ‡d)  
-  Om beskrivningsnivån uppgraderas, lägg till denna uppgift. Lägg inte till uppgiften när posten endast ändras utan att beskrivningsnivån uppgraderas. Vid postimport, lägg till uppgiften.  
-  För att lägga till Uppgraderad eller importerad av, klicka på plustecknet Lägg till egenskaper under: Post. Klicka på plustecknet till vänster vid Uppgraderad eller importerad av (Lägg till agent). Välj Skapa lokal entitet (längst ner i sidorutan till höger). Välj Bibliotek.  
-  Lägg till Sigel (plustecknet Lägg till egenskap under: Bibliotek). Skriv in uppgiften.     
-  ```Exempel: S```  
-  
-#### Entry map  
-* Entry map (marc:entryMap = 000/20-23)  
-I vissa importerade poster förekommer Entry map. Låt det vara kvar oförändrat.  
-
-#### Katalogiserande instans
-* Katalogiserande instans (marc:catalogingSource = 008/39)  
-  Normalvärdet för Libris-bibliotek är: Libris-bibliotek/Kooperativt katalogiseringsprogram
- (marc/CooperativeCatalogingProgram).   
-  ```Exempel: Libris-bibliotek/Kooperativt katalogiseringsprogram```   
-  För poster som skapas av NB (ej Bokinfoposter), ändra till Nationalbibliografi. För Bokinfo-poster, se nedan.  
-  ```Exempel: Nationalbibliografi```   
-  I Bokinfoposter och importerade poster, ändra inte postens ursprungliga kod.  
-  ```Exempel: Annan verksamhet```  
-
-#### Bibliografikod
-* Bibliografi/Bibliotek/Sigel (bibliography/Library/sigel = 042 ‡9)  
-  Observera att bibliografikod ska läggas endast av de bibliotek som arbetar med respektive bibliografi. Som exempel läggs bibliografikod NB    endast av NB. För äldre tryck finns koderna COL, SOT och SB17 som används av alla bibliotek som katalogiserar äldre tryck. För en fullständig lista över sigler, se [Biblioteksdatabasen](https://biblioteksdatabasen.libris.kb.se/). 
- 
-  För att lägga till Bibliografi, klicka på plustecknet Lägg till egenskaper under: Post och välj Bibliografi. Klicka på Lägg till bibliotek (plustecknet vid Bibliografi), välj därefter Skapa lokal entitet (längst ner i sidorutan till höger).
-  <br/>Skriv in uppgiften under Sigel.
-  <br/>För att lägga in flera sigler, använd gärna Duplicera entitet och skriv in nästa sigel i den duplicerade entiteten.
-  <br/>```Exempel:```
-  * ```NB```
-  * ```SAMB```
-  
-#### Systemnummer  
-* Identifikator/Lokal identifikator/Värde (identifiedBy/SystemNumber/value = 035 ‡a)  
-  Om ett systemnummer finns i förhandspost, till exempel Bokinfos systemnummer eller ett annat biblioteks eller bibliotekskonsortiums systemnummer, låt det vara kvar oförändrat.  
-  ```Exempel: (BOKR)9789188107213```  
-  
-  För att lägga till ett lokalt systemnummer, till exempel ett DIVA-urn som systemnummer, lägg till Identifikator (plustecknet Lägg till egenskap under: Post, i Adminmetadata). Välj typ Systemnummer, under Lokal identifikator. Lägg till Värde (plustecknet vid Lokal identifikator). Fyll i aktuellt systemnummer.  
-  ```Exempel: (DIVA)urn:nbn:se:su:diva-83163```  
-
-Vid kopiering av post, ta bort den kopierade postens systemnummer.  
-
-För ISBN, se [Identifikator](#identifikator) under Instans.  
-  
-#### Katalogiseringssprak  
-* Katalogiseringsspråk (descriptionLanguage = 040 ‡b)  
-  För att lägga till Katalogiseringsspråk, klicka på plustecknet Lägg till egenskaper under: Post.  
-  Länka till entitet.  
-  ```Exempel: svenska (swe)```
-  
-#### Katalogiseringsregler  
-* Katalogiseringsregler (descriptionConventions = 040 ‡e)  
-  För att lägga till Katalogiseringsregler, klicka på plustecknet Lägg till egenskaper under: Post.   
-  För en post katalogiserad enligt RDA, sök fram och länka till entitet: "i" (= marc/Isbd). När man söker fram entiteten visas den som "i". I en sparad post visas samma entitet som "ISBD-interpunktion finns * i". När man skapar ny post från mall visas entiteten som "marc/Isbd". Alla är rätt.   
-  
-  Skapa också lokal entitet under Katalogiseringsregler. Klicka på plustecknet vid Katalogiseringsregler (Lägg till entitet). Välj Skapa lokal entitet (längst ner i sidorutan). Välj Katalogiseringsregler. Skriv in "rda" under Kod.      
-  ```Exempel: marc/Isbd (länkad entitet) + lokal entitet, Kod: rda```
-  
-#### Beskrivningsniva  
-* Beskrivningsnivå (encodingLevel = 000/17)  
-  För att lägga till Beskrivningsnivå, klicka på plustecknet Lägg till egenskaper under: Post.   
-  I samband med att du uppgraderar en Bokinfopost eller annan post med beskrivningsnivå: CIP-post (000/17: 8) eller Preliminär nivå (000/17: 5), ändra beskrivningsnivå till någon annan nivå (vanligen Miniminivå, Biblioteksnivå eller Nationalbibliografisk nivå), annars kan ändringar skrivas över.  
-  I mallar är standardvärdet Biblioteksnivå. Ändra vid behov.
-  Vid postimport kan beskrivningsnivå ibland saknas eller sakna värde. Lägg då dit beskrivningsnivå och välj värde. I mallar är Miniminivå förvalt. Ändra vid behov.  
-  Välj från lista.    
-  ```Exempel: Biblioteksnivå```  
-  
-#### Translitterering
-* Institution som gjort translitterering (marc:transcribingAgency = 040 ‡c)  
-  Sigel för det bibliotek som translittererat posten till maskinläsbar form. Låt det vara kvar oförändrat.  
-   
-#### Poststatus     
-* Poststatus (recordStatus = 000/05)  
-  Uppdateras automatiskt. Ändra inte.
-  <br/>```Exempel:```
-  * ```Ny post```
-  * ```Rättad eller reviderad post```
- 
-#### Systemteknisk anmarkning  
-* Systemteknisk anmärkning/Benämning (technicalNote/label = 599 ‡a)  
-  För att lägga till Systemteknisk anmärkning, klicka på plustecknet Lägg till egenskaper under: Post, välj Systemteknisk anmärkning. Lägg till Systemteknisk anmärkning (plustecknet till vänster vid Systemteknisk anmärkning). Lägg till Benämning (plustecknet till höger vid Systemteknisk anmärkning).  
-  Låt anmärkning om postimport ligga kvar.  
-  ```Exempel: Imported from: z3950cat.bl.uk:9909/BNB03U (Do not remove)```  
-
-  I samband med att du uppgraderar en Bokinfopost eller annan post med beskrivningsnivå: CIP-post eller Preliminär nivå, ändra beskrivningsnivå till annan nivå, annars kan ändringar skrivas över. Ta därefter bort systemteknisk anmärkning med innehåll:  
-  ```Exempel: Maskinellt genererad post. Ändra kod för fullständighetsnivå (leader/17), annars kommer manuellt gjorda ändringar att försvinna.```   
- 
-Följande anmärkningar är under arbete och fungerar ännu inte fullt ut:  
- * Katalogisatörens anmärkning  
- * Anmärkning om katalogiseringskälla  
+| [Instans](#instans) | [Verk](#verk) | 
+| ----------- |  ----------- |
+| [Utgivningssätt](#utgivningssatt) | [Verkets titel](#verkets-titel) |
+| [Medietyp](#medietyp) | [Medverkan och funktion](#medverkan-och-funktion) |
+| [Bärartyp](#barartyp) | [Språk](#sprak) |
+| [Titel](#titel) | [Genre](#genre) |
+| [Upphovsuppgift](#upphovsuppgift) | [Klassifikation](#klassifikation) |
+| [Upplageuppgift](#upplageuppgift) | [Ämne](#amne) |
+| [Utgivning](#utgivning) | [Besättning](#besattning-for-framforande) |
+| [Tillverkning](#tillverkning) | [Notationssystem och språk](#notationssystem-och-sprak) |
+| [Copyrightår](#copyrightar) | [Målgrupp](#malgrupp) |
+| [Identifikator](#identifikator) | [Sekundär DDK-klassifikation](#sekundar-ddk-klassifikation) |
+| [Omfång](#omfang) | [Innehållstyp](#innehallstyp) |   
+| [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | [Relation](#relation) | 
+| [Mått](#matt) | |                                                                  
+| [Bilagor](#bilagor) | |  
+| [Seriemedlemskap](#seriemedlemskap) | |
+| [Anmärkning](#anmarkning) | |
+| [Musikalietyp](#musikalietyp) | |
+| [Innehållsanmärkning](#innehallsanmarkning) | |
+| [Målgruppsanmärkning](#malgruppsanmarkning) | |
+| [Annat bärarformat](#annat-bararformat) | | 
 
 ### Instans  
 För att lägga till egenskaper under Instans, klicka på plustecknet i redigeringsvyn (den stora runda plusikonen under Verktygsikonen) - Lägg till egenskaper under: Instans. Sök fram egenskapen och välj den genom att klicka på plustecknet vid egenskapens namn.  
@@ -171,14 +69,13 @@ För att lägga till egenskaper under Instans, klicka på plustecknet i redigeri
 #### Titel  
 
 ##### Huvudtitel    
-* Har titel/Titel/Huvudtitel (hasTitle/Title/mainTitle = 245 ‡a)  
-  För att lägga till Har titel, klicka på plustecknet Lägg till egenskaper under: Post.  
+* Har titel/Titel/Huvudtitel (hasTitle/Title/mainTitle = 245 ‡a)   
+  För att lägga till Har titel, klicka på plustecknet Lägg till egenskaper under: Instans.
   Återge huvudtiteln från titelsidan eller annan föredragen källa så som den förekommer i källan. se [Anvisningar för katalogisering - RDA](http://www.kb.se/rdakatalogisering/Anvisningar/Arbetsfloden/Tryckta-monografier/#huvudtitel "Anvisningar för katalogisering - RDA").  
   Skriv in uppgiften.
   <br/>```Exempel:```
   * ```Lichtbogen```
   * ```Quartett Nr. 2 op. 92 für 2 Violinen, Viola und Violoncello```  
-  
   För en titel som börjar med bestämd eller obestämd artikel, ska artikeln fileras bort. Ange fileringsvärde genom att lägga till fileringsvärde (plustecknet vid Titel - Lägg till egenskaper under: Titel) och ange en siffra.  
   ```Exempel: Huvudtitel: The best of Heavy metal, fileringsvärde: 4```  
   Se exempel i formathandboken för Libris/Voyager: 
@@ -193,7 +90,7 @@ För att lägga till egenskaper under Instans, klicka på plustecknet i redigeri
   
 För att ange föredragen titel (=uniform titel), se Verk/Har titel/Titel/Huvudtitel.  
 
-För Varianttitel och andra titelvarianter, se hjälptexten för [Tryckt monografi](https://libris.kb.se/katalogisering/help/workflow-print-monograph#titel): Varianttitel
+För Varianttitel och andra titelvarianter, se hjälptexten för [Instans](https://libris.kb.se/katalogisering/help/workflow-instance#titel): Varianttitel
   
 #### Upphovsuppgift
 * Upphovsuppgift (responsibilityStatement = 245 ‡c)  
@@ -207,7 +104,7 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Tryckt monogra
   
 #### Upplageuppgift  
 * Upplageuppgift (editionStatement = 250 ‡a)  
-  Skriv in upplagebeteckning här. Om de anges i källan ange även uppgifter om musikalietyp (partitur, klaverutdrag) och sättning (låg/hög röst) här.
+  Skriv in upplagebeteckning här. Om de förekommer i källan ange även uppgifter om musikalietyp (partitur, klaverutdrag) och sättning (låg/hög röst) här.
   <br/>```Exempel:```
   * ```New edition```
   * ```Urtext```
@@ -220,26 +117,31 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Tryckt monogra
 
 #### Utgivning  
  * Utgivning (publication)  
-   Välj typ från lista. För monografier, använd Primär utgivning.     
+   Välj typ från lista. För monografisk resurs, använd Primär utgivning.     
    I konverterade och maskininlästa poster finns det ibland två avsnitt: ett Primär utgivning med År och Land, och ett Utgivning med Plats, Agent och Datum. När man redigerar maskininlästa poster med två utgivningsavsnitt får man, om man bedömer det nödvändigt, flytta uppgifterna om Plats, Agent och Datum till avsnittet Primär utgivning och ta bort avsnittet Utgivning.   
-   
-   NB inväntar en maskinell ändring av dessa poster och ändrar inte manuellt.    
-   
+   NB inväntar en maskinell ändring av dessa poster och ändrar inte manuellt.  
    Vid postimport: I importerade poster förekommer ibland både År och Copyrightår inom Utgivning (= 008/06: t, 008/07-10: År och 008/11-14: Copyrightår). Låt uppgiften ligga kvar oförändrad. Om posten är katalogiserad enligt RDA kan även Copyright/Copyright/Datum (copyright/Copyright/date = 264 -/4 ‡c) finnas med.  
  
  ##### Utgivningsplats  
   * Plats/Plats/Benämning (= Utgivningsort) (place/label = 264 -/1 ‡a)  
-    För att lägga till Plats, klicka på plustecknet vid Primär utgivning (lägg till egenskaper under Primär utgivning) och välj Plats. Sök inte efter Plats som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Plats och välj det.   
+    Sök inte efter Plats som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Plats och välj det.   
     Skriv in uppgiften under Benämning. Klamra vid behov.  
     ```Exempel: [Wiesbaden]```  
- 
+    
+##### Utgivningsland  
+  * Land (country = 008/15-17)  
+  Länka till entitet.  
+  ```Exempel: Sverige (sw)``` 
+  
  ##### Utgivarnamn  
   * Agent/Agent/Benämning (= Utgivarnamn) (agent/label = 264 -/1 ‡b)  
-    För att lägga till Agent, klicka på Lägg till egenskaper under Primär utgivning och välj Agent. Sök inte efter Agent som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Agent och välj det.       
+    Sök inte efter Agent som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Agent och välj det.       
     Skriv in uppgiften under Benämning.  
     ```Exempel: Breitkopf & Härtel```   
     
-    Om flera utgivare ska anges, lägg till Har del (hasPart) under Primär utgivning. Skapa Utgivning som lokal entitet (plustecknet vid Har del - Lägg till entitet). I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Utgivning och välj *** Utgivning. Upprepa Utgivning som lokal entitet genom att duplicera entiteten Utgivning. Ange Plats/Plats/Benämning och Agent/Agent/Benämning och vid behov Datum inom respektive utgivningsavsnitt (angående Datum, se anvisningar nedan). Samtliga utgivare med Plats och Agent ska ligga inom Har del/Utgivning. Land, År och eventuellt Datum ska ligga inom Primär utgivning.  
+    Om flera utgivare ska anges, lägg till Har del (hasPart) under Primär utgivning. Skapa Utgivning som lokal entitet (plustecknet vid Har del - Lägg till entitet). I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Utgivning och välj *** Utgivning. Upprepa Utgivning som lokal entitet genom att duplicera entiteten Utgivning.  
+    Ange Plats/Plats/Benämning och Agent/Agent/Benämning och vid behov Datum inom respektive utgivningsavsnitt (angående Datum, se anvisningar nedan). Samtliga utgivare med Plats och Agent ska ligga inom Har del/Utgivning.  
+    Land, År och eventuellt Datum ska ligga inom Primär utgivning.  
     Se [exempel](https://libris.kb.se/katalogisering/w4rp4hlwtr5lctjr#it).
   
 ##### År och datum 
