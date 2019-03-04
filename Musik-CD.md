@@ -163,7 +163,6 @@ Vid behov, lägg till Övrig titelinformation (subtitle) under Parallelltitel.
   Sök inte efter Agent som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Agent och välj det.     
   Skriv in uppgiften under Benämning.  
   ```Exempel: Dead End Exit Records```  
-  
   Om flera utgivare ska anges, lägg till Har del (hasPart) under Primär utgivning. Skapa Utgivning som lokal entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Utgivning och välj *** Utgivning. Upprepa Utgivning som lokal entitet genom att duplicera entiteten Utgivning.  
   Ange Plats/Plats/Benämning och Agent/Agent/Benämning inom respektive utgivningsavsnitt. Samtliga utgivare med Plats och Agent ska ligga inom Har del/Utgivning.  
   Land, År och eventuellt Datum ska ligga inom Primär utgivning.  
@@ -171,18 +170,16 @@ Vid behov, lägg till Övrig titelinformation (subtitle) under Parallelltitel.
   
 ##### År och datum 
   * År (= Utgivningstid) (date = 008/07-10, 264 -/1 ‡c)  
-  År får endast innehålla siffror (0-9) och bokstaven u. År ska endast förekomma inom Primär utgivning.  
-  Utgivningsår anges här, utan klamrar eller andra tecken - endast fyra positioner. Det kommer då att exporteras till både marcpostens 08/07-10 och 264 -/1 ‡c.  
-  Skriv in uppgiften.  
+    År får endast innehålla siffror (0-9) och bokstaven u. År ska endast förekomma inom Primär utgivning.  
+    Utgivningsår anges här, utan klamrar eller andra tecken - endast fyra positioner. Det kommer då att exporteras till både marcpostens 08/07-10 och 264 -/1 ‡c.  
   ```Exempel: 2017```  
   
   Observera att År måste finnas med i beskrivningen, även om datum finns med.</br>
   
   För att ange årtal med klamrar eller andra tecken utöver fyra positioner, använd Datum.  
   * Datum (= Utgivningstid) (date = 264 -/1 ‡c)  
-  Datum får innehålla text och interpunktionstecken.  
-  Utgivningsdatum med fler än fyra positioner, till exempel ett klamrat årtal, anges här. Det kommer att exporteras till marcpostens  264 -/1 ‡c.
-  Skriv in uppgiften.
+    Datum får innehålla text och interpunktionstecken.  
+    Utgivningsdatum med fler än fyra positioner, till exempel ett klamrat årtal, anges här. Det kommer att exporteras till marcpostens  264 -/1 ‡c.
   <br/>```Exempel:```
     * ```[2017]```
     * ```[mellan 2003 och 2005?]```
@@ -199,9 +196,9 @@ Vid behov, lägg till Övrig titelinformation (subtitle) under Parallelltitel.
 #### Copyright- eller p-ar
 För utgivna ljudinspelningar anges alltid copyright- eller p-år, även om det sammanfaller med utgivningsår, se [Librispraxis 2.11](http://access.rdatoolkit.org/kbspchp2_kbsp2-1030.html).</BR>
 * Copyright/Copyright/Datum (copyright/Copyright/date = 264 -/4 ‡c)  
-  Det går bara att ange ett år här, så om både copyright- och p-år förekommer på resursenn ange det senaste p-året.
-  För att få fram copyrighttecknet eller tecknet för p-år, kopiera härifrån eller sök på teckenuppsättning i “Sök i windows” och öppna programmet, markera och kopiera tecknet och sedan klistra in det.  
-  Se också [Specialtecken](https://libris-dev.kb.se/katalogisering/help/search-04-special-chars). 
+  Det går bara att ange ett år här, så om både copyright- och p-år förekommer på resursen ange det senaste p-året.
+  För att få fram copyrighttecknet eller tecknet för p-år, kopiera från exemplet nedan eller skriv Alt + 184. Se också [Specialtecken]  
+  Se också [Specialtecken](https://libris-dev.kb.se/katalogisering/help/search-04-special-chars). Du kan t ex söka på teckenuppsättning i “Sök i windows” och öppna programmet, markera och kopiera tecknet och sedan klistra in det.  
   Skriv in uppgiften.
   <br/>```Exempel:```
     * ```©2017```
@@ -244,19 +241,19 @@ Ange antal enheter samt typ av enhet, se [RDA 3.4.1.3](http://access.rdatoolkit.
   
 #### Bilagor
 * Tillsammans med/Instans/Benämning (Bilagor) (accompaniedBy/Instance/label = 300 ‡e)   
-Lägg till Tillsammans med. Skapa Instans som lokal entitet (skriv Instans i rutan Skapa lokal entitet och välj ** Instans.)</br> 
-Lägg till Benämning. Skriv in uppgiften.  
+  Lägg till Tillsammans med. Skapa Instans som lokal entitet (skriv Instans i rutan Skapa lokal entitet och välj ** Instans.)</br> 
+  Lägg till Benämning. Skriv in uppgiften.  
    ```Exempel: Sångtexter och kommentarer i bilaga```  
     
 #### Seriemedlemskap
-För anvisningar om hur man anger Seriemedlemskap, se hjälptexten [Instans](https://libris.kb.se/katalogisering/help/workflow-instance#seriemedlemskap): Seriemedlemskap. 
+  * Seriemedlemskap/Seriemedlemskap/Ingår i serie (seriesMembership/SeriesMembership/inSeries)  
+  För anvisningar om hur man anger Seriemedlemskap, se hjälptexten [Instans](https://libris.kb.se/katalogisering/help/workflow-instance#seriemedlemskap): Seriemedlemskap. 
    
 #### Innehallsanmarkning  
   * Har innehållsförteckning/Innehållsförteckning/Benämning (tableofContents = 505 8/_)  
   För en enkel innehållsanmärkning (505 ‡a), lägg till Har innehållsförteckning. Läggg därefter till Innehållsförteckning. Skriv in uppgiften under Benämning.    
    <br/>```Exempel:```
     * ```Concerto nach italienischem Gusto, BWV 971 ; Ouverture nach französischer Art, BWV 831 ; Appendix: Ouverture in c, BWV 831a```
-    * ```Chain of fools / Donald Covay -- A deeper love / David Cole, Robert Clivilles -- Do right woman, do right man / Chips Moman, Dan Penn -- I knew you were waiting (for me) / Dennis Morgan, Simon Climie```
     * ```Don't Deceive Me (Fats Domino) -- Cheatin' Woman (Frankie Ford) -- Honey Hush (Joe Turner) -- Diddy-Y-Diddy-O (Roy Brown) -- Whirlaway (Allen Toussaint) -- Cha Dooky Doo (Art Neville) -- Real Gone Party (Ruth & Al) -- Chickee Wah Wah (Bobby Marchan) --There'll Be No Backin' Out (Mickey & Sylvia) -- That's All I Need To Know (Sam Cooke) -- Carry On (Jerry Byrne)```
 
   * Har innehållsförteckning/Innehållsförteckning/Har del/Utökad innehållsanmärkning/Benämning/Upphovsuppgift (tableofContents = 505 8/0 ‡t, ‡r)  
@@ -266,8 +263,8 @@ För anvisningar om hur man anger Seriemedlemskap, se hjälptexten [Instans](htt
   
 #### Anmarkning
 * Anmärkning/Anmärkning/Benämning (hasNote/Note/label = 500 ‡a)  
-  Skriv in allmänna anmärkningar här.  
-  För att lägga till Anmärkning, klicka på plustecknet i redigeringsvyn (den stora runda ikonen under Verktygsikonen - Lägg till egenskaper under: Musik) och välj Anmärkning (hasNote). Tryck Enter för att lägga till Anmärkning.  
+  Gör allmänna anmärkningar här.  
+  För att lägga till Anmärkning, klicka på plustecknet i redigeringsvyn (den stora runda ikonen under Verktygsikonen - Lägg till egenskaper under: Ljudinspelning) och välj Anmärkning (hasNote). Tryck Enter för att lägga till Anmärkning.  
   Skriv in uppgiften under Benämning.</BR> 
   ```Titel från Discogs```  
   
