@@ -658,11 +658,11 @@ Klicka sedan på plustecknet vid DDK-klassifikation (sekundär) (Lägg till ddk-
       * ```Di Provenza il mar```
       * ```Allegro```  
 
-   Använd Huvudtitel för hela den föredragna titeln då ordningen mellan uppgifterna i Har titel, Tonart, Version, Besättning och språk för översättning blir felaktig i MARC-förhandsgranskningen, eller om den föredragna titeln är svår eller omöjlig att uttrycka med enbart dessa fält.
+Använd Huvudtitel för hela den föredragna titeln då ordningen mellan uppgifterna i Har titel, Tonart, Version, Besättning och språk för översättning blir felaktig i MARC-förhandsgranskningen, eller om den föredragna titeln är svår eller omöjlig att uttrycka med enbart dessa fält.
     <br/>```Exempel:```
       * ```Sonater och partitor, violin, BWV 1001-1006. Partita, nr 1, h-moll```
-      * ```Kvartett, stråkar, nr 13, D. 804, op. 29:1, a-moll, "Rosamunde". Entr'acte```
-        
+      * ```Kvartett, stråkar, nr 13, D. 804, op. 29:1, a-moll, "Rosamunde". Entr'acte```  
+      
    * Verk/Tonart (700 1/_ ‡r) 
     Ange tonart. Skriv in uppgiften.  
    ```Exempel: fiss-moll```  
