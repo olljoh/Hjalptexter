@@ -412,7 +412,7 @@ För att lägga till Målgruppsanmärkning (Målgrupp/Målgrupp/Benämning), se 
 
  #### Inspelning
  * Inspelning/Inspelning/Benämning (capture/Capture/label = 518 ‡a)</br>
- Här abges uppgift om inspelningens tid, plats och omständigheter.  
+ Här anges uppgift om inspelningens tid, plats och omständigheter.  
  Skapa lokal entitet, välj Inspelning och lägg till egenskapen Benämning.
  Skriv in uppgiften under Benämning.</br>
   ```Exempel:```  
