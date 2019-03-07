@@ -67,8 +67,7 @@ Notera att egenskapen Allmän medieterm (marc:mediaTerm = 245 #h) (= Medieterm) 
 ##### Övrig titelinformation (undertitel)
 * Har titel/Titel/Övrig titelinformation (= Undertitel) (hasTitle/Title/subtitle = 245 ‡b)  
   Skriv in uppgiften.  
-  ```Exempel: original motion picture soundtrack```
-
+  ```Exempel: original motion picture soundtrack```  
   Om det finns flera undertitlar, skriv in dem efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.  
   ```Exempel: fler progglåtar : rariteter för den inbitne samlaren```
   
@@ -186,7 +185,7 @@ Vid behov, lägg till Övrig titelinformation (subtitle) under Parallelltitel.
 För utgivna ljudinspelningar anges alltid copyright- eller p-år, även om det sammanfaller med utgivningsår, se [Librispraxis 2.11](http://access.rdatoolkit.org/kbspchp2_kbsp2-1030.html).</BR>
 * Copyright/Copyright/Datum (copyright/Copyright/date = 264 -/4 ‡c)  
   Det går bara att ange ett år här, så om både copyright- och p-år förekommer på resursen ange det senaste p-året.
-  För att få fram copyrighttecknet eller tecknet för p-år, kopiera från exemplet nedan eller skriv Alt + 184. Se också [Specialtecken]  
+  För att få fram copyrighttecknet eller tecknet för p-år, kopiera från exemplet nedan eller skriv Alt + 184.  
   Se också [Specialtecken](https://libris-dev.kb.se/katalogisering/help/search-04-special-chars). Du kan t ex söka på teckenuppsättning i “Sök i windows” och öppna programmet, markera och kopiera tecknet och sedan klistra in det.  
   Skriv in uppgiften.
   <br/>```Exempel:```
@@ -240,8 +239,8 @@ Ange antal enheter samt typ av enhet, se [RDA 3.4.1.3](http://access.rdatoolkit.
    
 #### Innehallsanmarkning  
   * Har innehållsförteckning/Innehållsförteckning/Benämning (tableofContents = 505 8/_)  
-  För en enkel innehållsanmärkning (505 ‡a), lägg till Har innehållsförteckning. Läggg därefter till Innehållsförteckning. Skriv in uppgiften under Benämning.    
-   <br/>```Exempel:```
+  För en enkel innehållsanmärkning (505 ‡a), lägg till Har innehållsförteckning. Läggg därefter till Innehållsförteckning. Skriv in uppgiften under Benämning.
+  <br/>```Exempel:```
     * ```Concerto nach italienischem Gusto, BWV 971 ; Ouverture nach französischer Art, BWV 831 ; Appendix: Ouverture in c, BWV 831a```
     * ```Don't Deceive Me (Fats Domino) -- Cheatin' Woman (Frankie Ford) -- Honey Hush (Joe Turner) -- Diddy-Y-Diddy-O (Roy Brown) -- Whirlaway (Allen Toussaint) -- Cha Dooky Doo (Art Neville) -- Real Gone Party (Ruth & Al) -- Chickee Wah Wah (Bobby Marchan) --There'll Be No Backin' Out (Mickey & Sylvia) -- That's All I Need To Know (Sam Cooke) -- Carry On (Jerry Byrne)```
 
@@ -355,7 +354,7 @@ För utförligare instruktioner, se även hjälptexten [Relationer till delar oc
 * Medverkan och funktion/Medverkan/Funktion (contribution/role = 700 ‡4)  
   Länka till entitet. Klicka på plustecknet vid Funktion (Lägg till funktion) och sök fram funktionskod. Skriv in kod eller utskriven form i sökrutan eller tryck på mellanslagstangenten för att se alla koder. Välj kod genom att klicka på plustecknet vid koden eller på koden.    
 För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funktions- och relationskoder](http://www.kb.se/katalogisering/Formathandboken/Funktionskoder/)    
-  ```Exempel: Filmproducent, pro (=producent, kommer att ändras till Producent, pro)```  
+  ```Exempel: Producent, pro```  
 
 #### Sprak 
 * Språk (language = 008/35-37)  
