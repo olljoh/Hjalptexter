@@ -117,15 +117,15 @@ Vid behov, lägg till Övrig titelinformation (subtitle) under Parallelltitel.
   ```Exempel: for computer and soprano```  
   
 #### Upphovsuppgift
-* Upphovsuppgift (responsibilityStatement = 245 ‡c)  
-    <br/>```Exempel:```
+* Upphovsuppgift (responsibilityStatement = 245 ‡c)
+  <br/>```Exempel:```
     * ```Pray for Locust```
     * ```Steve Dobrogosz, Anna Christoffersson```
-  
+
 #### Upplageuppgift
 * Upplageuppgift (editionStatement = 250 ‡a)</BR>
   För att lägga till upplageuppgift, klicka på plustecknet Lägg till egenskaper under: Elektronisk.
-  Skriv in upplagebeteckning här. Följ resursens formulering.
+  Skriv in upplagebeteckning här. Följ resursens formulering.  
   ```Exempel: Limiterad upplaga```  
   
 #### Utgivning  
@@ -398,7 +398,7 @@ För att lägga till Målgruppsanmärkning (Målgrupp/Målgrupp/Benämning), se 
   
 #### Anmarkning om medverkande
  * Anmärkning/Anmärkning om medverkande/Benämning (hasNote/marc:ParticipantOrPerformerNote/label = 511 ‡a)  
- Ange namn på medverkande följt av instrumentnamn och/eller röstläge.
+ Ange namn på medverkande följt av instrumentnamn och/eller röstläge.  
   ```Exempel: Mats Gustafsson, flutephone, tenorsaxofon ; David Grubbs, harmonium```
   
 #### Sammanfattning av innehall    
