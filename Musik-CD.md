@@ -20,12 +20,12 @@ Se även [instruktionsfilmer](https://www.youtube.com/playlist?list=PLZVkEICvA5-
 | [Medietyp](#medietyp) | [Medverkan och funktion](#medverkan-och-funktion) |
 | [Bärartyp](#barartyp) | [Språk](#sprak) |
 | [Titel](#titel) | [Genre](#genre) |
-| [Upphovsuppgift](#upphovsuppgift) |[Klassifikation](#klassifikation) |
-| [Upplageuppgift](#upplageuppgift) | [Ämne](#amne) |
-| [Utgivning](#utgivning) | [Målgrupp](#malgrupp) |
-| [Copyright- eller p-år](#copyright--eller-p-ar) | [Innehållstyp](#innehallstyp) |
-| [Identifikator](#identifikator) | [Anmärkning om medverkande](#anmarkning-om-medverkande) |
-| [Omfång](#omfang) | [Sammanfattning av innehåll](#sammanfattning-av-innehall) |
+| [Upphovsuppgift](#upphovsuppgift) | [Klassifikation](#klassifikation) |
+| [Upplageuppgift](#upplageuppgift) | [Målgrupp](#malgrupp) |
+| [Utgivning](#utgivning) | [Innehållstyp](#innehallstyp) |
+| [Copyright- eller p-år](#copyright--eller-p-ar) | [Anmärkning om medverkande](#anmarkning-om-medverkande) |
+| [Identifikator](#identifikator) | [Sammanfattning av innehåll](#sammanfattning-av-innehall) |
+| [Omfång](#omfang) | |
 | [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | |
 | [Bilagor](#bilagor) | |
 | [Seriemedlemskap](#seriemedlemskap) | | 
