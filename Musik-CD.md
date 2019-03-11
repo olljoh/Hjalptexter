@@ -1,6 +1,6 @@
 ## Musik-CD - ljudinspelning 
 
-Denna hjälptext tar upp ett antal vanligt förekommande egenskaper vid beskrivning av musik-CD med utgångspunkt från exempel. Många av egenskaperna finns redan i mallen Musik-CD - ljudinspelning, andra kan behöva läggas till.
+Denna hjälptext tar upp ett antal vanligt förekommande egenskaper vid beskrivning av musik-CD med utgångspunkt från exempel. Många av egenskaperna finns redan i mallen Musik-CD - ljudinspelning, andra kan behöva läggas till. Använd gärna Berika från mall för att få med de viktigaste egenskaperna. För en del egenskaper hänvisas till andra hjälptexter för mer detaljerad information.
 
 För instruktioner om att länka till entitet, skapa lokal entitet och om hur formuläret fungerar i övrigt, se Redigering i vänstermenyn under Hjälp. För anvisningar om Adminmetadata, se Adminmetadata i vänstermenyn under Hjälp/Hjälptexter katalogisering.  
 
@@ -64,47 +64,33 @@ Notera att egenskapen Allmän medieterm (marc:mediaTerm = 245 #h) (= Medieterm) 
   Se exempel i formathandboken för Libris/Voyager: 
 [Fileringsindikator]( http://www.kb.se/katalogisering/Formathandboken/Fileringsindikator/)
 
+För att ange Föredragen titel, se Verk/Har titel/Titel/Huvudtitel.  
+
 ##### Övrig titelinformation (undertitel)
 * Har titel/Titel/Övrig titelinformation (= Undertitel) (hasTitle/Title/subtitle = 245 ‡b)  
   Skriv in uppgiften.  
   ```Exempel: original motion picture soundtrack```  
   Om det finns flera undertitlar, skriv in dem efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.  
   ```Exempel: fler progglåtar : rariteter för den inbitne samlaren```
-  
-För att ange Föredragen titel, se Verk/Har titel/Titel/Huvudtitel.  
 
 ##### Varianttitel   
-En varianttitel är en titel förknippad med resursen som skiljer sig från den titel som angivits som huvudtitel, se [RDA 2.3.6](http://access.rdatoolkit.org/rdachp2_rda2-4004.html).  
-  Ange titlar med alternativ stavning här för att öka sökbarheten för titlar som innehåller exempelvis specialtecken, siffror eller oväntade stavningar av ord.  
+En varianttitel är en titel förknippad med resursen som skiljer sig från den titel som angivits som huvudtitel, se [RDA 2.3.6](http://access.rdatoolkit.org/rdachp2_rda2-4004.html). Här anges t.ex. varianter för titlar som innehåller specialtecken, siffror eller oväntade stavningar av ord</BR>
   För att lägga till varianttitel, klicka på plustecknet vid Har titel (lägg till titel) och välj typ Varanttitel.
   * Har titel/Varianttitel/Huvudtitel (hasTitle/VariantTitle/mainTitle = 246 ‡a)   
     Skriv in uppgiften under Huvudtitel.    
     ```Exempel: Live at M.```  
 
-För en parallell huvudtitel på ett annat språk eller i en annan skriftart, se [Parallelltitel](#parallelltitel).
+För en huvudtitel på ett annat språk eller i en annan skriftart, se [Parallelltitel](#parallelltitel).
 
 Om huvudtiteln är felstavad i källan anges en korrekt form av titeln som en varianttitel. Notera dock att för utgivna fysiska fonogram är hela resursen godkänd källa, utan prioritetsordning, se [Librispraxis 2.2.2.4.1](http://access.rdatoolkit.org/kbspchp2_kbsp2-51.html). Det innebär att man vanligen kan hitta en korrekt form av titeln och ange den som huvudtitel.
 
 En varianttitel kan specificeras med en Typanmärkning, en anmärkningstext som i ett sökgränssnitt ska föregå varanttiteln. För att lägga till en Typanmärkning, klicka på plustecknet vid Varianttitel (Lägg till egenskaper under: Varianttitel) och välj Typanmärkning.
+
   * Har titel/Varianttitel/Typanmärkning (hasTitle/VariantTitle/typeNote = 246 1/_ ‡i)  
   ```Exempel: Titeln felstavad, korrekt titel:```   
     
-##### Delbeteckning
-* Har titel/Titel/Har del/Titeldel/Delbeteckning (hasTitle/Title/hasPart/TitlePart/partNumber = 245 ‡n)  
-Lägg till Har del (hasPart) under Har titel/Titel (plustecknet vid Titel - lägg till egenskaper under: Titel, välj Har del).  
-Under Har del, skapa Titeldel (TitlePart) som lokal entitet (plustecknet vid Har del - Lägg till resurs, välj Skapa lokal entitet, längst ner i sidorutan till höger. Skriv "titeldel" i rutan Skapa lokal entitet och välj * Titeldel. Titeldel läggs till under Har del. Klicka på Titeldel och det fälls ut.)   
-Om Har del/Titeldel/Deltitel redan finns, lägg till Delbeteckning under Titeldel (plustecknet vid Titeldel - Lägg till egenskaper under: Titeldel, välj Delbeteckning (partNumber)).   
-Skriv in uppgiften under Delbeteckning.  
-  ```Exempel: Vol. 2```   
-
-##### Deltitel  
-* Har titel/Titel/Har del/Titeldel/Deltitel (hasTitle/Title/hasPart/TitlePart/partName = 245 ‡p)  
-Lägg till Har del (hasPart) under Har titel/Titel. Under Har del, skapa Titeldel (TitlePart) som lokal entitet (skriv "titeldel" i rutan Skapa lokal entitet och välj * Titeldel). Titeldel läggs till under Har del. Klicka på Titeldel och det fälls ut.</BR>
-Om Har del/Titeldel/Delbeteckning redan finns, lägg till Deltitel under Titeldel (plustecknet vid Titeldel - Lägg till egenskaper under: Titeldel, välj Deltitel (partName)).   
-Skriv in uppgiften under Deltitel.  
-  ```Exempel: Jazz som är som balsam för själen...```  
-
-För att ange Delbeteckning och Deltitel i en annan ordning, till exempel en deltitel som har efterföljande delbeteckningar, upprepa Titeldel och ange Delbeteckning och Deltitel som det passar i det aktuella fallet.  
+##### Delbeteckning och deltitel
+För anvisningar om hur man anger delbeteckning och deltitel, se hjälptexten [Instans](https://libris.kb.se/katalogisering/help/workflow-instance#titel): Titel. 
 
 ##### Parallelltitel  
 Ange parallelltitel här. Upprepa inte parallelltitel efter Har titel/Titel/Huvudtitel (245 ‡a) med interpunktion.   
@@ -117,14 +103,14 @@ Vid behov, lägg till Övrig titelinformation (subtitle) under Parallelltitel.
   ```Exempel: for computer and soprano```  
   
 #### Upphovsuppgift
-* Upphovsuppgift (responsibilityStatement = 245 ‡c)
+* Upphovsuppgift (responsibilityStatement = 245 ‡c)  
+  Skriv in uppgiften.   
   <br/>```Exempel:```
     * ```Pray for Locust```
     * ```Steve Dobrogosz, Anna Christoffersson```
 
 #### Upplageuppgift
 * Upplageuppgift (editionStatement = 250 ‡a)</BR>
-  För att lägga till upplageuppgift, klicka på plustecknet Lägg till egenskaper under: Elektronisk.
   Skriv in upplagebeteckning här. Följ resursens formulering.  
   ```Exempel: Limiterad upplaga```  
   
@@ -137,7 +123,7 @@ Vid behov, lägg till Övrig titelinformation (subtitle) under Parallelltitel.
  
 ##### Utgivningsplats
 * Plats/Plats/Benämning (= Utgivningsort) (place/label = 264 -/1 ‡a)  
-  Sök inte efter Plats som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Plats och välj det.   
+  Sök inte efter Plats som entitet. Skapa Plats som lokal entitet.     
   Skriv in uppgiften under Benämning. Klamra vid behov.</br>
   ```Exempel: Malmö```  
   
@@ -148,7 +134,7 @@ Vid behov, lägg till Övrig titelinformation (subtitle) under Parallelltitel.
   
 ##### Utgivarnamn
 * Agent/Agent/Benämning (= Utgivarnamn) (agent/label = 264 -/1 ‡b)  
-  Sök inte efter Agent som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Agent och välj det.     
+  Sök inte efter Agent som entitet. Skapa Agent som lokal entitet.       
   Skriv in uppgiften under Benämning.  
   ```Exempel: Dead End Exit Records```  
   Om flera utgivare ska anges, lägg till Har del (hasPart) under Primär utgivning. Skapa Utgivning som lokal entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Utgivning och välj *** Utgivning. Upprepa Utgivning som lokal entitet genom att duplicera entiteten Utgivning.  
@@ -174,7 +160,7 @@ Vid behov, lägg till Övrig titelinformation (subtitle) under Parallelltitel.
 
   För att ange ett år utan klamrar eller andra tecken, använd År.  
 
-  För att ange ett osäkert utgivningsdatum där endast tidigaste och senaste årtal kan anges, följ exempel i hjälptexten [Instans](https://libris.kb.se/katalogisering/help/workflow-instance#produktion): Produktion. Lägg in egenskaper under Utgivning/Utgivning och Huvudsakligt tillgängliggörande/Primär utgivning). Ange Land, År, Kompletterande datum och Typ av utgivningsdatum under Huvudsakligt tillgängliggörande.  
+  För att ange ett osäkert utgivningsdatum där endast tidigaste och senaste årtal kan anges, följ exempel i hjälptexten [Instans](https://libris.kb.se/katalogisering/help/workflow-instance#produktion): Produktion: Huvudsakligt tillgängliggörande.  
   
 * Flera år (flerbandsverk)  
  För anvisningar om hur man anger flera år (flerbandsverk), se hjälptexten [Instans](https://libris.kb.se/katalogisering/help/workflow-instance#utgivning): Utgivning. 
