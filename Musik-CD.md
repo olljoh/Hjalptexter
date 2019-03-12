@@ -104,7 +104,7 @@ Vid behov, lägg till Övrig titelinformation (subtitle) under Parallelltitel.
   
 #### Upphovsuppgift
 * Upphovsuppgift (responsibilityStatement = 245 ‡c)  
-  Skriv in uppgiften.   
+  Skriv in uppgiften.
   <br/>```Exempel:```
     * ```Pray for Locust```
     * ```Steve Dobrogosz, Anna Christoffersson```
