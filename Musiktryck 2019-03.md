@@ -320,7 +320,7 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
     * ```Noter med övnings-cd typ ”Music minus one”```
     * ```Speltid: 21 min.```
 
-#### Format för noterad musik
+#### Format for noterad musik
   * Format för noterad musik/Format för noterad musik/Benämning (musicFormat/MusicFormat/label = 348 ‡a)   
   Ange musikalietyp enligt [KBSP för RDA 7.20.1.3 Ange musikalietyp](http://access.rdatoolkit.org/kbspchp7_kbsp7-251.html)  
   Partitur anges enligt svensk praxis, dvs. utelämnas för noter för soloinstrument och röst med piano samt för flerstämmig vokalmusik noterad på två notsystem. Om det behövs fler än en term, exempelvis partitur och stämma, skapa flera entiteter.   
