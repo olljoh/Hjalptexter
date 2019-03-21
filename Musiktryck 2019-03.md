@@ -43,7 +43,7 @@ I vissa fall fungerar det ännu inte fullt ut att lägga till alla uppgifter som
 | [Bilagor](#bilagor) | |  
 | [Seriemedlemskap](#seriemedlemskap) | |
 | [Anmärkning](#anmarkning) | |
-| [Musikalietyp](#musikalietyp) | |
+| [Format för noterad musik](#format-for-noterad-musik) | |
 | [Innehållsanmärkning](#innehallsanmarkning) | |
 | [Målgruppsanmärkning](#malgruppsanmarkning) | |
 | [Annat bärarformat](#annat-bararformat) | | 
