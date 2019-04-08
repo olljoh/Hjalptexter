@@ -19,7 +19,7 @@ För information om katalogregler, Librispraxis, skrivregler och övriga katalog
 
 I de flesta fall ska informationen delas upp i olika egenskaper (jfr fält) och underliggande egenskaper (jfr delfält). I några undantagsfall är det nödvändigt att använda ISBD-interpunktion inom en egenskap, för att separera uppgifter. Dessa fall visas genom exempel nedan. I övriga fall, lägg INTE in ISBD-interpunktion för att avsluta en egenskap (fält). Använd vid behov klamrar inom egenskap (fält), enligt Anvisningar för katalogisering - RDA.
 
-I vissa fall fungerar det ännu inte fullt ut att lägga till alla uppgifter som beskrivs i denna hjälptext. Arbete pågår med förbättra gränssnittet. För att anmäla fel, använd detta formulär för [felrapportering](https://docs.google.com/forms/d/e/1FAIpQLSfOChJOGDoHUQguSF83F5XyTZiQL-yU47nvcqb6qwNT9GX7Aw/viewform). För att lämna synpunkter, använd detta formulär för  [ändringsförslag](https://docs.google.com/forms/d/e/1FAIpQLScgz_0enebhBn6uB8xvowkDBB4ax_dbvaobLSFfqFMoty6eQg/viewform).  
+I vissa fall fungerar det ännu inte fullt ut att lägga till alla uppgifter som beskrivs i denna hjälptext. Arbete pågår med att förbättra gränssnittet. För att anmäla fel, använd detta formulär för [felrapportering](https://docs.google.com/forms/d/e/1FAIpQLSfOChJOGDoHUQguSF83F5XyTZiQL-yU47nvcqb6qwNT9GX7Aw/viewform). För att lämna synpunkter, använd detta formulär för  [ändringsförslag](https://docs.google.com/forms/d/e/1FAIpQLScgz_0enebhBn6uB8xvowkDBB4ax_dbvaobLSFfqFMoty6eQg/viewform).  
 
 Se även [instruktionsfilmer](https://www.youtube.com/playlist?list=PLZVkEICvA5-GRT2oJQmLgq_2Pksx6zYPy)  
 
@@ -83,10 +83,12 @@ För att lägga till egenskaper under Instans, klicka på plustecknet i redigeri
 
 ##### Övrig titelinformation (undertitel)
 * Har titel/Titel/Övrig titelinformation (= Undertitel) (hasTitle/Title/subtitle = 245 ‡b)  
-  Skriv in uppgiften. Om det finns flera undertitlar, skriv in dessa efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.
+  Skriv in uppgiften. 
   <br/>```Exempel:```
   * ```for nine musicians and live electronics```
-  * ```auf kabardinische Themen```
+  * ```auf kabardinische Themen```  
+  Om det finns flera undertitlar, skriv in dessa efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.  
+    ```Exempel: fler progglåtar : guldkorn från 70-talet```
   
 För att ange föredragen titel (=uniform titel), se Verk/Har titel/Titel/Huvudtitel.  
 
@@ -119,7 +121,7 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Instans](https
  * Utgivning (publication)  
    Välj typ från lista. För monografisk resurs, använd Primär utgivning.     
    I konverterade och maskininlästa poster finns det ibland två avsnitt: ett Primär utgivning med År och Land, och ett Utgivning med Plats, Agent och Datum. När man redigerar maskininlästa poster med två utgivningsavsnitt får man, om man bedömer det nödvändigt, flytta uppgifterna om Plats, Agent och Datum till avsnittet Primär utgivning och ta bort avsnittet Utgivning.   
-   NB inväntar en maskinell ändring av dessa poster och ändrar inte manuellt.  
+   En maskinell ändring av dessa poster kommer att ske på sikt.  
    Vid postimport: I importerade poster förekommer ibland både År och Copyrightår inom Utgivning (= 008/06: t, 008/07-10: År och 008/11-14: Copyrightår). Låt uppgiften ligga kvar oförändrad. Om posten är katalogiserad enligt RDA kan även Copyright/Copyright/Datum (copyright/Copyright/date = 264 -/4 ‡c) finnas med.  
  
  ##### Utgivningsplats  
@@ -146,9 +148,8 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Instans](https
 ##### År och datum 
   * År (= Utgivningstid) (date = 008/07-10, 264 -/1 ‡c)  
     År får endast innehålla siffror (0-9) och bokstaven u. År ska endast förekomma inom Primär utgivning.  
-    Ange utgivningsår, utan klamrar eller andra tecken, endast fyra positioner. Skriv in uppgiften.  
     Utgivningsår anges här, utan klamrar eller andra tecken - endast fyra positioner. Det kommer då att exporteras till både marcpostens 08/07-10 och 264 -/1 ‡c.  
-    ```Exempel: 2017```  
+  ```Exempel: 2017```  
 
   Observera att År måste finnas med i beskrivningen, även om datum finns med.</br>
   
@@ -307,7 +308,7 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
   
   När man redigerar importerade poster med två Seriemedlemskap får man, om man bedömer det nödvändigt, slå ihop dem till ett genom att lägga till Serieuppgift och Indikator för seriebiuppslag i det Seriemedlemskap som innehåller Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel.  
   
-  Om man försöker göra tvärt om och lägga till Instans av Verk i ett Seriemedlemskap så orsakar en bugg att detta kopplas till Instans av Verk/Noterad musik (överst i beskrivningen) och det går sedan inte att ändra. I dessa fall måste Seriemedlemskapet tas bort i sin helhet och ett nytt läggas till och fyllas i. 
+  Om man försöker göra tvärtom och lägga till Instans av Verk i ett Seriemedlemskap så orsakar en bugg att detta kopplas till Instans av Verk/Noterad musik (överst i beskrivningen) och det går sedan inte att ändra. I dessa fall måste Seriemedlemskapet tas bort i sin helhet och ett nytt läggas till och fyllas i. 
   
   OBS! Om ISSN finns i både 490 och 830 och om volymbeteckningen är angiven på olika sätt i 490 och 830, dubbleras dessa inom Seriemedlemskapet. Radera en av de dubblerade ISSN- och/eller voIymbeteckningarna.  
   
@@ -343,7 +344,7 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
 
   * Har innehållsförteckning/Innehållsförteckning/Har del/Utökad innehållsanmärkning/Benämning/Upphovsuppgift (tableofContents = 505 8/0 ‡t, ‡r)  
   För en utökad innehållsanmärkning med titlar och upphovsuppgifter. Musik- och teaterbiblioteket rekommenderar dock enkel innehållsanmärkning för musiktryck.  
-  Klicka på på pilen vid Innehållsförteckning: {Namnlös} för att fälla ut Utökad innehållsanmärkning med Benämning och Upphovsuppgift. Lägg in titel under Benämning och upphov under Upphovsuppgift. Vid behov, lägg in Kommentar.  
+  Klicka på pilen vid Innehållsförteckning: {Namnlös} för att fälla ut Utökad innehållsanmärkning med Benämning och Upphovsuppgift. Lägg in titel under Benämning och upphov under Upphovsuppgift. Vid behov, lägg in Kommentar.  
   För att lägga till ytterligare en Utökad innehållsanmärkning med titel (Benämning) och Upphovsuppgift som lokal entitet, klicka på Duplicera entitet.
 
 #### Malgruppsanmarkning
@@ -362,7 +363,7 @@ Observera att kodning av målgrupp, motsvarande 008/22, ska registreras under In
 
 ### Verk   
 
-#### Instans av Verk/Musiktryck  
+#### Instans av Verk
   * Instans av Verk/Noterad musik (instanceOf/Work/NotatedMusic)  
   Skapa verket som lokal entitet (bryt inte ut verket till en länkbar entitet). Denna hjälptext beskriver exempel på verk som lokal entitet. Det betyder att du anger de uppgifter som listas här nedan, under Instans av Verk, utan att klicka på länksymbolen (Länka entitet) vid Instans av Verk/Noterad musik.  
   Läs mer om [Verk och Instans](https://librisbloggen.kb.se/2018/05/30/verk-och-instans-i-startversionen/).  
@@ -382,11 +383,6 @@ Föredragen titel för ett verk med primär medverkande ska anges i Har titel/Ti
     * ```Symfoni```
     * ```Pianomusik```
  
-    Ange besättning i Huvudtitel efter form/genre/pregnant titel.
-  <br/>```Exempel:```
-    * ```Kvartett, stråkar```
-    * ```Fosterlandspsalm, röst, orkester```  
-  
     Använd även Huvudtitel för *hela* den föredragna titeln då ordningen mellan uppgifterna i Har titel, Tonart, Version och språk för översättning blir felaktig i MARC-förhandsgranskningen, eller om den föredragna titeln är svår eller omöjlig att uttrycka med enbart dessa fält.
   <br/>```Exempel:```
     * ```Sonater och partitor, violin, BWV 1001-1006. Partita, nr 1, h-moll```
@@ -410,6 +406,13 @@ Ange numreringar för verket här, vid behov. Skriv in uppgiften.
     Lägg till eventuell grupptitel genom att klicka på plustecknet vid Titel (lägg till fält under: Titel), välj Specificering i form av grupptitel. Skriv in uppgiften.  
      ```Exempel: Urval```  
 
+  * Besättning för framförande (musicMedium = 240 ‡m)  
+  Ange besättning. Skriv in uppgiften.
+  <br/>```Exempel:```
+    * ```orkester```
+    * ```klarinett, piano```
+    * ```blandad kör```
+      
   * Tonart (240 1/0 ‡r)       
     Ange tonart. Skriv in uppgiften.  
     ```Exempel: fiss-moll```  
@@ -422,10 +425,12 @@ Ange numreringar för verket här, vid behov. Skriv in uppgiften.
 Föredragen titel för ett verk utan primär medverkande ska anges i Uttryck av verk/Verk/Har titel/Huvudtitel .</BR>
 *	Uttryck av/Verk/Har titel/Titel/Huvudtitel (expressionOf/Work/hasTitle/Title/mainTitle (= 130 ‡a)  
 Under Instans av Verk, lägg till Uttryck av. Skapa verk som lokal entitet (plustecknet vid Uttryck av - Lägg till verk, välj Skapa lokal entitet, längst ner i sidorutan till höger), välj Verk. Lägg till Har titel. Välj Titel. Skriv in uppgiften under Huvudtitel.   
+     ```Exempel: Cancionero de Upsala```  
 *	Uttryck av/Verk/Har titel/Titel/Deltitel (expressionOf/Work/hasTitle/Title/partName = 130 ‡p)  
 Lägg till eventuell deltitel (plustecknet vid Titel - lägg till egenskaper under: Titel, välj Deltitel).
+     ```Exempel: Piae cantiones. Ecce novum gaudium```  
 *	Uttryck av/Verk/Har titel/Titel/Delbeteckning (expressionOf/Work/hasTitle/Title/partName = 130 ‡n)  
-Lägg till eventuell delbeteckning (plustecknet vid Titel - lägg till egenskaper under: Titel, välj Delbeteckning).  
+Lägg till eventuell delbeteckning (plustecknet vid Titel - lägg till egenskaper under: Titel, välj Delbeteckning).
 *	Uttryck av/Verk/Språk/Språk/Benämning (expressionOf/Work/language/Language/label = 130 ‡l)  
 Lägg till eventuell benämning på språk som ska ingå i den föredragna titeln. Klicka på plustecknet vid Verk (Lägg till egenskaper under: Verk) och välj Språk. Klicka på plustecknet vid Språk (Lägg till språk) och välj Skapa lokal entitet. Lägg till Benämning (plustecknet vid Språk - Lägg till egenskaper under: Språk, välj Benämning. Ange språket i klartext. Denna klartext - verkets (översättningens) språk - visas som ett tillägg till verkets titel i marcpostens 130 ‡l.</BR>
 
@@ -457,7 +462,7 @@ För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funkt
     * ```Sångtext/lyr```
     * ```Redaktör/edt```
   
-#### Sprak 
+#### Sprak  
   * Språk (language = 008/35-37)  
     För instrumentalmusik, ange Icke-språkligt medium (=language/zxx). För texter till musik, ange textens språk. För en text på svenska, ange svenska. För att ange originalspråk för ett översatt verk, se Originalversion/Verk/Språk.  
   Länka till entitet.
@@ -467,32 +472,7 @@ För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funkt
   För att ange att texten är på flera språk, ange ytterligare en språkkod genom att klicka på plustecknet vid Språk (Lägg till språk) och söka fram ytterligare en entitet för ett språk och länka till den.  
 
 ##### Översättning  
-För en översättning, ange även:  
-   * Språk/Språk/Benämning (Language/label = 240 ‡l)  
-   Lägg till ytterligare en förekomst av Språk, under Språk (klicka på plustecknet vid Språk), skapa lokal entitet (klicka på Skapa lokal entitet längst ner i sidorutan till höger och lägg till Benämning (klicka på Lägg till egenskaper under: Språk).   
-   Skriv in språket i klartext. Denna klartext - verkets (översättningens) språk - visas som ett tillägg till verkets titel i marcpostens 240 ‡l.  
-  ```Exempel: Svenska```  
-
-  * Anmärkning: Språk (marc:LanguageNote = 041 i1: 1)  
-    Ange om resursen är/innehåller en översättning.  
-    För att lägga till uppgiften, klicka på plustecknet vid Instans av verk/Noterad musik och välj Anmärkning: Språk. Välj fras från lista.  
-    ```Exempel: objektet är/innehåller översättning```  
-  
-  * Originalversion/Verk/Språk (originalversion/Work/language = 041 ‡h)  
-    Ange det språk som en översatt text är översatt från. För en text som är översatt från engelska till svenska, ange engelska här.   
-    Klicka på Lägg till egenskaper under: Noterad musik, välj Originalversion, klicka på plustecknet vid Originalversion, välj Skapa lokal entitet (längst ner i sidorutan). Skriv Verk i rutan för Skapa lokal entitet och välj * Verk. Klicka på plustecknet vid Verk (Lägg till egenskaper under: Verk) och välj Språk. Klicka på plustecknet vid Språk. Sök fram språkentiteten och länka.  
-    ```Exempel: engelska (eng)```  
-    För översättningar i flera led, länka först till det mellanliggande språket och därefter till originalspråket.  
-    
-###### Texten delvis översatt (041 0/- #a + 041 1/- #a #h)  
-  * Språk (language = 008/35-37) +
-    Anmärkning: Språk: Objektet är/innehåller ej översättning (marc:languageNote = 041 0/- #a)   
-  * Har del/Verk/Språk (hasPart/Work/language = 041 ‡a) +  
-    Anmärkning: Språk: Objektet är/innehåller översättning (marc:languageNote 041 1/-) +  
-    Originalversion/Verk/Språk (originalVersion/Work/language = 041 ‡h)  
-    För att ange att texten delvis är översatt, till exempel när en publikation innehåller parallelltext på två språk och den ena texten är en översättning: ange först Språk under Instans av Verk/Noterad musik (se Språk ovan). Sök fram och länka till entiteten för det språk som inte är en översättning. Klicka sedan på plustecknet vid Verk - Lägg till egenskap under: Noterad musik och välj Anmärkning: Språk. Välj Objektet är/innehåller ej översättning.   
-  
-   Lägg sedan till Har del under Instans av Verk/Noterad musik. Skapa verk som lokal entitet (plustecknet vid Har del - Lägg till resurs. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Verk och välj ++++ Verk.) Klicka på plustecknet vid den lokala entiteten Verk (Lägg till egenskaper under: Verk) och välj Språk. Sök fram och länka till entiteten för språket som texten är översatt till. Under den lokala entiteten Verk, lägg till Anmärkning: Språk och ange att resursen är/innehåller en översättning. Under Har del, lägg till Originalversion/Verk/Språk (se ovan under Översättning). Länka till entiteten för språket som resursen delvis är en översättning från.  
+För en översättning, se [Generell beskrivning - Verk](https://libris.kb.se/katalogisering/help/workflow-work#sprak)
 
 #### Genre  
   Länka till entitet.  
@@ -571,14 +551,6 @@ Skriv in uppgiften under Kod.
    Länka till entitet. Om du inte får träff vid sökning på entiteter, pröva att söka på första ledet i ett sammansatt ord, t ex "1800" istället för "1800-talet".  
    ```Exempel: 1800-talet```  
   
-#### Besattning for framforande
-  * Besättning för framförande (musicMedium = 240 ‡m)  
-  Ange besättning. Skriv in uppgiften.
-  <br/>```Exempel:```
-    * ```orkester```
-    * ```klarinett, piano```
-    * ```blandad kör```
-      
 #### Notationssystem och sprak
   * Anmärkning: Språk/Anmärkning om språk/Notationssystem /Notation/Benämning (hasNote/marc:LanguageNote/hasNotation/Notation/label = 546 ‡b)  
   Ange notationssystem enligt [KBSP för RDA 7.13.3.3 Ange typ av musiknotation](http://access.rdatoolkit.org/kbspchp7_kbsp7-120.html) 
@@ -612,13 +584,6 @@ Klicka sedan på plustecknet vid DDK-klassifikation (sekundär) (Lägg till ddk-
   Länka till entitet.  
   ```Exempel: term/rda/NotatedMusic```  
   För att lägga till ytterligare innehållstyp, lägg till Har del under Instans av Verk, från plustecknet vid Noterad musik (Lägg till egenskaper under: Noterad musik). Skapa därefter Verk som lokal entitet genom att klicka på plustecknet vid Har del (Lägg till resurs). Välj Skapa lokal entitet och välj därefter ++ Verk i listan. Lägg därefter till Innehållstyp från plustecknet vid Verk (Lägg till egenskaper under: Verk). Sök fram och länka till entitet.  
-
-##### Relationer till andra verk  JÄMFÖR MED RELATION NEDAN
-För att ange verk som är relaterade, men inte ingår i det beskrivna verket, motsvarande fält 700 0/_ ‡a ‡d + ‡t (icke-analytisk sökingingång för verk med primär medverkande) eller 730 0/_ ‡a (icke-analytisk sökingång för verk utan primär medverkande) i marc: 
-Under Instans av Verk/Noterad musik, lägg till Relation. Välj typ Relation. Lägg till Entitet och välj Entitet. Skapa verk som lokal entitet. Lägg till Har titel och välj Titel. Ange föredragen titel i Huvudtitel.</br> 
-Lägg till eventuell deltitel, delbeteckning och benämning på språk (lägg till Språk under Verk, skapa lokal entitet och lägg till Benämning. Skriv in språket).</br>
-För ingående verk med primär medverkande, lägg till Medverkan och funktion/Primär medverkan enligt anvisningarna nedan under [Medverkan och funktion](#medverkan-och-funktion): Primär medverkan. 
-För utförligare instruktioner, se även hjälptexten [Relationer till delar och verk](https://libris.kb.se/katalogisering/help/workflow-agent-relation).
 
 #### Relation
   * Relation (Relationship = 700 1/_ )  
