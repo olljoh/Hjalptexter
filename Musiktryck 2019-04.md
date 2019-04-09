@@ -137,7 +137,7 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Instans](https
   
  ##### Utgivarnamn  
   * Agent/Agent/Benämning (= Utgivarnamn) (agent/label = 264 -/1 ‡b)  
-    Sök inte efter Agent som entitet. I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Agent och välj det.       
+    Sök inte efter Agent som entitet. Skapa Agent som lokal entitet.       
     Skriv in uppgiften under Benämning.  
     ```Exempel: Breitkopf & Härtel```   
     Om flera utgivare ska anges, lägg till Har del (hasPart) under Primär utgivning. Skapa Utgivning som lokal entitet (plustecknet vid Har del - Lägg till entitet). I rutan Skapa lokal entitet, längst ner i sidorutan till höger, skriv Utgivning och välj *** Utgivning. Upprepa Utgivning som lokal entitet genom att duplicera entiteten Utgivning.  
@@ -148,7 +148,7 @@ För Varianttitel och andra titelvarianter, se hjälptexten för [Instans](https
 ##### År och datum 
   * År (= Utgivningstid) (date = 008/07-10, 264 -/1 ‡c)  
     År får endast innehålla siffror (0-9) och bokstaven u. År ska endast förekomma inom Primär utgivning.  
-    Utgivningsår anges här, utan klamrar eller andra tecken - endast fyra positioner. Det kommer då att exporteras till både marcpostens 08/07-10 och 264 -/1 ‡c.  
+    Utgivningsår anges här, utan klamrar eller andra tecken - endast fyra positioner. Det kommer då att exporteras till både marcpostens 08/07-10 och 264 -/1 ‡c (till 264 förutsatt att inte Datum är angivet). 
   ```Exempel: 2017```  
 
   Observera att År måste finnas med i beskrivningen, även om datum finns med.</br>
@@ -343,7 +343,7 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
     * ```Chain of fools / Donald Covay -- A deeper love / David Cole, Robert Clivilles -- Do right woman, do right man / Chips Moman, Dan Penn -- I knew you were waiting (for me) / Dennis Morgan, Simon Climie```
 
   * Har innehållsförteckning/Innehållsförteckning/Har del/Utökad innehållsanmärkning/Benämning/Upphovsuppgift (tableofContents = 505 8/0 ‡t, ‡r)  
-  För en utökad innehållsanmärkning med titlar och upphovsuppgifter. Musik- och teaterbiblioteket rekommenderar dock enkel innehållsanmärkning för musiktryck.  
+  För en utökad innehållsanmärkning med titlar och upphovsuppgifter.  
   Klicka på pilen vid Innehållsförteckning: {Namnlös} för att fälla ut Utökad innehållsanmärkning med Benämning och Upphovsuppgift. Lägg in titel under Benämning och upphov under Upphovsuppgift. Vid behov, lägg in Kommentar.  
   För att lägga till ytterligare en Utökad innehållsanmärkning med titel (Benämning) och Upphovsuppgift som lokal entitet, klicka på Duplicera entitet.
 
@@ -472,7 +472,7 @@ För en sorterad lista på koder, se Formathandboken för Libris/Voyager: [Funkt
   För att ange att texten är på flera språk, ange ytterligare en språkkod genom att klicka på plustecknet vid Språk (Lägg till språk) och söka fram ytterligare en entitet för ett språk och länka till den.  
 
 ##### Översättning  
-För en översättning, se [Generell beskrivning - Verk](https://libris.kb.se/katalogisering/help/workflow-work#sprak)
+För en översättning, se [Generell beskrivning - Verk](https://libris.kb.se/katalogisering/help/workflow-work#sprak): Språk/Översättning.
 
 #### Genre  
   Länka till entitet.  
