@@ -11,11 +11,16 @@ tags:
 
 ## Musiktryck
 
-Denna hjälptext beskriver ett antal vanligt förekommande egenskaper vid katalogisering av musiktryck, med utgångspunkt från exempel. Många av egenskaperna finns redan i mallen Noterad musik - Musiktryck-RDA, andra kan behöva läggas till. Använd gärna Berika från mall för att få med de viktigaste egenskaperna. För en del egenskaper hänvisas till andra hjälptexter för mer detaljerad information.
+Beskrivningen av ett musiktryck innehåller följande tre delar:  
+* [Adminmetadata](https://libris.kb.se/katalogisering/help/workflow-adminmetadata) - administrativa data om instansbeskrivningen, såsom kontrollnummer och beskrivningsnivå
+* [Instans](https://libris.kb.se/katalogisering/help/workflow-instance) - instans kan också kallas utgåva eller manifestation. Exempel på egenskaper under Instans är utgivningsplats, utgivare och utgivningsår, bärartyp, omfång.
+* [Verk](https://libris.kb.se/katalogisering/help/workflow-work) – återger egenskaper för det abstrakta verket såsom medverkan och funktion (t.ex. författare), ämne, klassifikation, språk och innehållstyp. Verksbeskrivningen ligger under rubriken Instans av verk.
 
-För instruktioner om att länka till entitet, skapa lokal entitet och om hur formuläret fungerar i övrigt, se Redigering i vänstermenyn under Hjälp. För instruktioner om adminmetadata, se generell hjälptext för [Adminmetadata](https://libris.kb.se/katalogisering/help/workflow-adminmetadata).
+Denna hjälptext ger kortfattade instruktioner för de vanligaste egenskaperna för musiktryck. För utförliga instruktioner, se de generella hjälptexterna för Adminmetadata, Instans och Verk, se ovan.  
 
-För information om katalogregler, Librispraxis, skrivregler och övriga katalogiseringsanvisningar, se [Anvisningar för katalogisering - RDA](http://www.kb.se/rdakatalogisering/Anvisningar/Arbetsfloden/Tryckta-monografier/ "Anvisningar för katalogisering - RDA") samt [RDA Toolkit](https://access.rdatoolkit.org).
+Många av egenskaperna finns redan i mallen Noterad musik, andra kan behöva läggas till. För instruktioner om att lägga till eller ta bort egenskaper, länka till entitet, skapa lokal entitet och om hur formuläret fungerar i övrigt, se Redigering i vänstermenyn. För en förhandspost, använd gärna Berika från mall och välj Noterad musik.  
+
+För information om katalogregler, skrivregler och övriga katalogiseringsanvisningar, se [Anvisningar för katalogisering - RDA](http://www.kb.se/rdakatalogisering/Anvisningar/Arbetsfloden/Tryckta-monografier/ "Anvisningar för katalogisering - RDA") och [RDA Toolkit](https://access.rdatoolkit.org/).
 
 I de flesta fall ska informationen delas upp i olika egenskaper (jfr fält) och underliggande egenskaper (jfr delfält). I några undantagsfall är det nödvändigt att använda ISBD-interpunktion inom en egenskap, för att separera uppgifter. Dessa fall visas genom exempel nedan. I övriga fall, lägg INTE in ISBD-interpunktion för att avsluta en egenskap (fält). Använd vid behov klamrar inom egenskap (fält), enligt Anvisningar för katalogisering - RDA.
 
@@ -25,28 +30,29 @@ Se även [instruktionsfilmer](https://www.youtube.com/playlist?list=PLZVkEICvA5-
 
 ### Innehåll   
 
-| [Instans](#instans) | [Verk](#verk) | 
-| ----------- |  ----------- |
-| [Utgivningssätt](#utgivningssatt) | [Verkets titel](#verkets-titel) |
-| [Medietyp](#medietyp) | [Medverkan och funktion](#medverkan-och-funktion) |
-| [Bärartyp](#barartyp) | [Språk](#sprak) |
-| [Titel](#titel) | [Genre](#genre) |
-| [Upphovsuppgift](#upphovsuppgift) | [Klassifikation](#klassifikation) |
-| [Upplageuppgift](#upplageuppgift) | [Ämne](#amne) |
-| [Utgivning](#utgivning) | [Besättning](#besattning-for-framforande) |
-| [Tillverkning](#tillverkning) | [Notationssystem och språk](#notationssystem-och-sprak) |
-| [Copyrightår](#copyrightar) | [Målgrupp](#malgrupp) |
-| [Identifikator](#identifikator) | [Sekundär DDK-klassifikation](#sekundar-ddk-klassifikation) |
-| [Omfång](#omfang) | [Innehållstyp](#innehallstyp) |   
-| [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | [Relation](#relation) | 
-| [Mått](#matt) | |                                                                  
-| [Bilagor](#bilagor) | |  
-| [Seriemedlemskap](#seriemedlemskap) | |
-| [Anmärkning](#anmarkning) | |
-| [Format för noterad musik](#format-for-noterad-musik) | |
-| [Innehållsanmärkning](#innehallsanmarkning) | |
-| [Målgruppsanmärkning](#malgruppsanmarkning) | |
-| [Annat bärarformat](#annat-bararformat) | | 
+| [Adminmetadata](#adminmetadata) | [Instans](#instans) | [Verk](#verk) | 
+| ----------- |  ----------- | ----------- | 
+|  [Generell hjälptext för Adminmetadata](https://libris.kb.se/katalogisering/help/workflow-adminmetadata) | [Generell hjälptext för Instans](https://libris.kb.se/katalogisering/help/workflow-instance) | [Generell hjälptext för Verk](https://libris.kb.se/katalogisering/help/workflow-work) |
+| | [Utgivningssätt](#utgivningssatt) | [Verkets titel](#verkets-titel) |
+| | [Medietyp](#medietyp) | [Medverkan och funktion](#medverkan-och-funktion) |
+| | [Bärartyp](#barartyp) | [Språk](#sprak) |
+| | [Titel](#titel) | [Genre](#genre) |
+| | [Upphovsuppgift](#upphovsuppgift) | [Klassifikation](#klassifikation) |
+| | [Upplageuppgift](#upplageuppgift) | [Ämne](#amne) |
+| | [Utgivning](#utgivning) | [Besättning](#besattning-for-framforande) |
+| | [Tillverkning](#tillverkning) | [Notationssystem och språk](#notationssystem-och-sprak) |
+| | [Copyrightår](#copyrightar) | [Målgrupp](#malgrupp) |
+| | [Identifikator](#identifikator) | [Sekundär DDK-klassifikation](#sekundar-ddk-klassifikation) |
+| | [Omfång](#omfang) | [Innehållstyp](#innehallstyp) |   
+| | [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | [Relation](#relation) | 
+| | [Mått](#matt) | |                                                                  
+| | [Bilagor](#bilagor) | |  
+| | [Seriemedlemskap](#seriemedlemskap) | |
+| | [Anmärkning](#anmarkning) | |
+| | [Format för noterad musik](#format-for-noterad-musik) | |
+| | [Innehållsanmärkning](#innehallsanmarkning) | |
+| | [Målgruppsanmärkning](#malgruppsanmarkning) | |
+| | [Annat bärarformat](#annat-bararformat) | | 
 
 ### Instans  
 För att lägga till egenskaper under Instans, klicka på plustecknet i redigeringsvyn (den stora runda plusikonen under Verktygsikonen) - Lägg till egenskaper under: Instans. Sök fram egenskapen och välj den genom att klicka på plustecknet vid egenskapens namn.  
@@ -368,7 +374,11 @@ Observera att kodning av målgrupp, motsvarande 008/22, ska registreras under In
   Skapa verket som lokal entitet (bryt inte ut verket till en länkbar entitet). Denna hjälptext beskriver exempel på verk som lokal entitet. Det betyder att du anger de uppgifter som listas här nedan, under Instans av Verk, utan att klicka på länksymbolen (Länka entitet) vid Instans av Verk/Noterad musik.  
   Läs mer om [Verk och Instans](https://librisbloggen.kb.se/2018/05/30/verk-och-instans-i-startversionen/).  
 
-  För att lägga till egenskaper under Instans av Verk/Noterad musik, klicka på plustecknet vid Instans av Verk/Noterad musik - Lägg till egenskaper under: Noterad musik. Sök fram egenskapen och välj den genom att klicka på plustecknet vid egenskapens namn.  
+  För att lägga till egenskaper under Instans av Verk/Noterad musik, klicka på plustecknet vid Instans av Verk/Noterad musik - Lägg till egenskaper under: Noterad musik. Sök fram egenskapen och välj den genom att klicka på plustecknet vid egenskapens namn. 
+  
+  *Byte av verkstyp:* Ibland finns behov av att ändra verkstyp från Text till Noterad musik. Det gäller t ex förhandsposter från Bokinfo (eller om den katalogiserande instansen har valt en annan verkstyp).  
+  För att ändra verkstyp, radera den befintliga verkstypen och lägg till en ny. Rekommendation: ta fram posten i ytterligare ett webbläsarfönster innan verkstypen raderas. Då kan uppgifter senare kopieras från den gamla verkstypen till den nya.  
+  Börja med att ta bort verkstypen Text genom att klicka på papperskorgen till höger om Text. Lägg till en ny verkstyp genom att klicka på plustecknet till vänster om Instans av verk. Välj Skapa lokal entitet - Noterad musik. Klicka på Verktyg och välj Berika från mall - Noterad musik.
 
 #### Verkets titel
 Ange den föredragna titeln för verket här, vid behov. Följ [Anvisningar för katalogisering - RDA](http://www.kb.se/rdakatalogisering/Anvisningar/Allmanna-anvisningar/Sokingangar-for-verk-och-uttryck "Anvisningar för katalogisering - RDA"). Pregnanta titlar för musik anges ofilerade enligt svensk musikbibliotekstradition.  
@@ -436,7 +446,7 @@ Lägg till eventuell benämning på språk som ska ingå i den föredragna titel
 
 #### Medverkan och funktion  
   * Medverkan och funktion  
-     Under Medverkan och funktion, ange relationer till de agenter som medverkar i verket samt funktionskod för respektive agent.  Relationer till utgivare (710) anges för närvarande också här.</BR>
+     Under Medverkan och funktion, ange relationer till de agenter som medverkar i verket samt funktionskod för respektive agent. Relationer till utgivare (710) anges för närvarande också här.</BR>
   För ytterligare instruktioner om hur man anger relationer till agenter, se: [Relationer till Agent](https://libris.kb.se/katalogisering/help/workflow-agent-org-instance).</BR>
   Se även: [Auktoritetsgruppens rekommendationer](https://kundo.se/org/librisxl/d/kbs-auktoritetsgrupp-informerar-jraz/).  
   
