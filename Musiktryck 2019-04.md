@@ -42,7 +42,7 @@ Se även [instruktionsfilmer](https://www.youtube.com/playlist?list=PLZVkEICvA5-
 | | [Copyrightår](#copyrightar) | [Målgrupp](#malgrupp) |
 | | [Identifikator](#identifikator) | [Sekundär DDK-klassifikation](#sekundar-ddk-klassifikation) |
 | | [Omfång](#omfang) | [Innehållstyp](#innehallstyp) |   
-| | [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | [Relation](#relation) | 
+| | [Övriga fysiska detaljer](#ovriga-fysiska-detaljer) | [Har del](#har-del) | 
 | | [Mått](#matt) | |                                                                  
 | | [Bilagor](#bilagor) | |  
 | | [Seriemedlemskap](#seriemedlemskap) | |
