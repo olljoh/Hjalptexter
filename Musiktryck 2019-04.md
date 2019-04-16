@@ -92,8 +92,8 @@ För att lägga till egenskaper under Instans, klicka på plustecknet i redigeri
   * ```for nine musicians and live electronics```
   * ```auf kabardinische Themen```  
   
-Om det finns flera undertitlar, skriv in dessa efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.  
-  ```Exempel: fler progglåtar : guldkorn från 70-talet```
+  Om det finns flera undertitlar, skriv in dessa efter varandra i samma fält, åtskilda av mellanslag, kolon, mellanslag.  
+    ```Exempel: fler progglåtar : guldkorn från 70-talet```
   
 För att ange föredragen titel (=uniform titel), se Verk/Har titel/Titel/Huvudtitel.  
 
