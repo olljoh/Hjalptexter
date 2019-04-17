@@ -309,7 +309,8 @@ Läs mer om [Seriemedlemskap](https://kundo.se/org/librisxl/d/uppgifter-om-serie
   Ange indikator 1 om dessutom Instans/Instans av Verk/Verk (830) anges (om det finns en seriehuvudpost).   
   ```Exempel: 1```   
 
-  *Seriemedlemskap, vid postimport:* Om fält 490 ‡a och 830 ‡a matchar, läggs de vid import i samma Seriemedlemskap. Om de inte matchar, skapas två Seriemedlemskap: ett med Seriemedlemskap/Serieuppgift och ett med Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel.
+  *Seriemedlemskap, vid postimport:* 
+  Om fält 490 ‡a och 830 ‡a matchar, läggs de vid import i samma Seriemedlemskap. Om de inte matchar, skapas två Seriemedlemskap: ett med Seriemedlemskap/Serieuppgift och ett med Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel.
   
   När man redigerar importerade poster med två Seriemedlemskap får man, om man bedömer det nödvändigt, slå ihop dem till ett genom att lägga till Serieuppgift och Indikator för seriebiuppslag i det Seriemedlemskap som innehåller Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel.  
   
@@ -375,7 +376,8 @@ Observera att kodning av målgrupp, motsvarande 008/22, ska registreras under In
 
   För att lägga till egenskaper under Instans av Verk/Noterad musik, klicka på plustecknet vid Instans av Verk/Noterad musik - Lägg till egenskaper under: Noterad musik. Sök fram egenskapen och välj den genom att klicka på plustecknet vid egenskapens namn. 
   
-  *Byte av verkstyp:* Ibland finns behov av att ändra verkstyp från Text till Noterad musik. Det gäller t ex förhandsposter Byte av verkstyp: Ibland finns behov av att ändra verkstyp, t ex från Text till Noterad musik. Det kan gälla förhandsposter från Bokinfo eller andra poster där den katalogiserande instansen har valt en annan verkstyp.  
+  *Byte av verkstyp:* 
+  Ibland finns behov av att ändra verkstyp från Text till Noterad musik. Det gäller t ex förhandsposter Byte av verkstyp: Ibland finns behov av att ändra verkstyp, t ex från Text till Noterad musik. Det kan gälla förhandsposter från Bokinfo eller andra poster där den katalogiserande instansen har valt en annan verkstyp.  
   Rekommendation: Ta fram posten i ytterligare ett webbläsarfönster innan verkstypen raderas om du vill kunna kopiera uppgifter från den gamla verkstypen till den nya, eller jämföra posten före och efter.  
   För att ändra verkstyp, radera den befintliga verkstypen och lägg till en ny. Börja med att ta bort verkstypen Text genom att klicka på papperskorgen till höger om Text (eller annan verkstyp som du vill ändra). Lägg till en ny verkstyp genom att klicka på plustecknet till vänster om Instans av verk. Välj Skapa lokal entitet - Noterad musik.  
   Välj sedan om du vill berika posten med metadata som fanns i den gamla verkstypen (klicka på Verktyg och välj Berika från post - Från ID och kopiera in det kontrollnummer som återfinns under Adminmetadata i samma post) ELLER om du vill berika från mall för att få fram de vanligaste egenskaperna (Klicka på Verktyg och välj Berika från mall - Noterad musik). (OBS! Om du väljer att berika posten med metadata från den gamla verkstypen behöver du sedan ändra Innehållstyp under Noterad musik till ”notated music · ntm”.)
@@ -437,7 +439,7 @@ Föredragen titel för ett verk utan primär medverkande ska anges i Uttryck av 
 Under Instans av Verk, lägg till Uttryck av. Skapa verk som lokal entitet (plustecknet vid Uttryck av - Lägg till verk, välj Skapa lokal entitet, längst ner i sidorutan till höger), välj Verk. Lägg till Har titel. Välj Titel. Skriv in uppgiften under Huvudtitel.   
      ```Exempel: Cancionero de Upsala```  
 *	Uttryck av/Verk/Har titel/Titel/Deltitel (expressionOf/Work/hasTitle/Title/partName = 130 ‡p)  
-Lägg till eventuell deltitel (plustecknet vid Titel - lägg till egenskaper under: Titel, välj Deltitel).
+Lägg till eventuell deltitel (plustecknet vid Titel - lägg till egenskaper under: Titel, välj Deltitel).  
      ```Exempel: Piae cantiones. Ecce novum gaudium```  
 *	Uttryck av/Verk/Har titel/Titel/Delbeteckning (expressionOf/Work/hasTitle/Title/partName = 130 ‡n)  
 Lägg till eventuell delbeteckning (plustecknet vid Titel - lägg till egenskaper under: Titel, välj Delbeteckning).
