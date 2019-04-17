@@ -589,63 +589,9 @@ För anvisningar om hur man anger Klassifikation, se hjälptexten [Verk](https:/
     ```Exempel: Svenska```    
     
 ##### Relationer till andra verk
-  * Relationer till andra verk med Primär medverkan (700 1/- #a, #d, #t) Se Relationer till delar och verk.  
+  * Relationer till andra verk med Primär medverkan (700 1/- #a, #d, #t) Se [Relationer till delar och verk](https://libris.kb.se/katalogisering/help/workflow/-agent-relation)
 
   * Relationer till andra verk utan Medverkan och funktion/Primär medverkan (730 0/_ , icke-analytisk sökingång)  
   Under Instans av Verk, lägg till Relation. Välj typ Relation. Lägg till Entitet och välj Entitet. Skapa verk som lokal entitet. Lägg till Har titel och välj Titel. Om det relaterade verket är en översättning, lägg till Språk, skapa lokal entitet och lägg till Benämning. Skriv in språket.
 
 
------------------
-NEDAN GAMMAL TEXT
-#### Relation
-  * Relation (Relationship = 700 1/_ )  
-  Här anges ingående verk om instansen manifesterar fler än ett verk, med föredragna titlar och medverkande.  
-  För att ange verk som ingår i det beskrivna verket, klicka på pilen vid Relation och skriv in uppgifterna enligt instruktionerna nedan. För att ange ytterligare verk klicka på ikonen med dubbla fyrkanter till höger om Relation (Duplicera entitet).  
-  
-  ##### Verk/Har titel/Titel
-   * Huvudtitel (hasTitle/Title/mainTitle = 700 1/_ ‡a)  
-   Ange den föredragna titeln för verket här, vid behov. Pregnanta titlar för musik anges ofilerade. Skriv in uppgiften.
-   <br/>```Exempel:```
-      * ```La traviata```
-      * ```Symfoni```
-         
-   * Delbeteckning (hasTitle/Title/mainTitle = 700 1/_  ‡n)  
-    Ange numreringar för verket här, vid behov. Skriv in uppgiften.
-    <br/>```Exempel:```
-      * ```nr 96, Hob. I:96```
-      * ```nr 3, op. 90```
-         
-   * Uttryck av/Verk/Har titel/Titel/Deltitel (expressionOf/Work/hasTitle/Title/partName = 700 1/_ ‡p)  
-    Lägg till eventuell deltitel genom att klicka på plustecknet vid Titel (lägg till fält under: Titel), välj Deltitel. Skriv in uppgiften.
-    <br/>```Exempel:```
-      * ```Di Provenza il mar```
-      * ```Allegro```  
-
-   * Använd Huvudtitel för hela den föredragna titeln då ordningen mellan uppgifterna i Har titel, Tonart, Version, Besättning och språk för översättning blir felaktig i MARC-förhandsgranskningen, eller om den föredragna titeln är svår eller omöjlig att uttrycka med enbart dessa fält.
-    <br/>```Exempel:```
-      * ```Sonater och partitor, violin, BWV 1001-1006. Partita, nr 1, h-moll```
-      * ```Kvartett, stråkar, nr 13, D. 804, op. 29:1, a-moll, "Rosamunde". Entr'acte```  
-      
-   * Verk/Tonart (700 1/_ ‡r) 
-    Ange tonart. Skriv in uppgiften.  
-   ```Exempel: fiss-moll```  
-
-   * Verk/Version (700 1/_ ‡o)  
-    Ange eventuellt arrangemang. Skriv in uppgiften.  
-    ```Exempel: arr. röst, piano```  
-
-   * Verk/Primär medverkan/Agent/Person (contribution/PrimaryContribution/agent/Person = 700 1/_ ‡a)
-    Länka till entitet. Börja alltid med att söka efter om agenten redan finns. Vid behov, skapa ny entitet för agent (se Skapa ny agent i hjälpsektionen). I undantagsfall, skapa lokal entitet.  
-    ```Exempel: Maier-Röntgen, Amanda, 1853-1894```  
-
-   * Verk/Besättning för framförande (700 1/_ ‡m)  
-    Ange besättning. Skriv in uppgiften.
-    <br/>```Exempel:```
-      * ```orkester```
-      * ```klarinett, piano```
-      * ```blandad kör```
-      
-   * Verk/Språk/Språk/Benämning (Language/label = 700 1/_ ‡l)  
-   Språk för översättning. Lägg till en förekomst av Språk under Relation/Verk genom att klicka på plustecknet vid Verk. Sök fram Språk i sidorutan, klicka på termen och sedan på Skapa lokal entitet. Lägg till Benämning (klicka på Lägg till egenskaper under: Språk).  
-    Skriv in språket i klartext. Denna klartext - verkets (översättningens) språk - visas som ett tillägg till verkets titel i marcpostens 700 1/_ ‡l.  
-    ```Exempel: Svenska```    
