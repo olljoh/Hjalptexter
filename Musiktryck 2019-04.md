@@ -375,7 +375,7 @@ Observera att kodning av målgrupp, motsvarande 008/22, ska registreras under In
 
   För att lägga till egenskaper under Instans av Verk/Noterad musik, klicka på plustecknet vid Instans av Verk/Noterad musik - Lägg till egenskaper under: Noterad musik. Sök fram egenskapen och välj den genom att klicka på plustecknet vid egenskapens namn. 
   
-  *Byte av verkstyp:* 
+  *Byte av verkstyp:*  
   Ibland finns behov av att ändra verkstyp, t ex från Text till Noterad musik. Det kan gälla förhandsposter från Bokinfo eller andra poster där den katalogiserande instansen har valt en annan verkstyp.  
   Rekommendation: Ta fram posten i ytterligare ett webbläsarfönster innan verkstypen raderas om du vill kunna kopiera uppgifter från den gamla verkstypen till den nya, eller jämföra posten före och efter.  
   För att ändra verkstyp, radera den befintliga verkstypen och lägg till en ny. Börja med att ta bort verkstypen Text genom att klicka på papperskorgen till höger om Text (eller annan verkstyp som du vill ändra). Lägg till en ny verkstyp genom att klicka på plustecknet till vänster om Instans av verk. Välj Skapa lokal entitet - Noterad musik.  
